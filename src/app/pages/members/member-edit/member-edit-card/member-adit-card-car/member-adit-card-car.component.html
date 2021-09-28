@@ -1,0 +1,68 @@
+<div class="d-flex justify-content-between">
+    <div class="align-self-center">
+        <h6><strong>ยานพาหนะ</strong></h6>
+    </div>
+    <div class="col">
+        <a href="members/add-cars">
+            <button type="button" class="btn btn-dark float-end">
+                <img src="/assets/add.svg" alt="add" class="float-start">
+                <div class="p-2 text-center">
+                    เพิ่มยานพาหนะ
+                </div>
+            </button>
+        </a>
+    </div>
+</div>
+<hr>
+<div class="card">
+    <div class="card-body">
+        <div class="row align-items-center">
+            <h6><strong>(brand)</strong></h6>
+            <div class="d-flex align-items-center">
+                <div class="row align-items-center">
+                    <label for="modelCar" class="col-sm-5 col-form-label">รุ่นรถยนต์ :</label>
+                    <div class="col-sm-7">
+                        <input type="text" readonly class="form-control-plaintext" id="modelCar" value="111">
+                    </div>
+                    <label for="colorCar" class="col-sm-5 col-form-label">สีรถยนต์ :</label>
+                    <div class="col-sm-7">
+                        <input type="text" readonly class="form-control-plaintext" id="colorCar" value="***">
+                    </div>
+                    <label for="regisNumber" class="col-sm-5 col-form-label">เลขทะเบียน :</label>
+                    <div class="col-sm-7">
+                        <input type="text" readonly class="form-control-plaintext" id="regisNumber" value="***">
+                    </div>
+                </div>
+
+                <a href="members/edit-cars">
+                    <button type="button" id="btnEdit" class="btn btn-outline-secondary"><img
+                            src="/assets/Vector_edit.svg" alt="edit">
+                    </button>
+                </a>
+                &nbsp;
+                <button type="button" id="btnDelete" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                    data-bs-target="#delModal"><img src="/assets/Vector_delete.svg" alt="delete"></button>
+            </div>
+            <hr>
+
+        </div>
+    </div>
+</div>
+
+<!-- delModal -->
+<div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="/assets/delModal.svg" alt="" class="centerImg"><br>
+                <p><b>คุณต้องการลบข้อมูลยานพาหนะนี้หรือไม่</b></p>
+
+                <div class="row justify-content-center">
+                    <button type="button" id="btnCancle" class="btn btn-outline-dark"
+                        data-bs-dismiss="modal">ยกเลิก</button>&nbsp;&nbsp;
+                    <button type="button" id="btnSave" class="btn btn-dark">ลบยานพาหนะ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

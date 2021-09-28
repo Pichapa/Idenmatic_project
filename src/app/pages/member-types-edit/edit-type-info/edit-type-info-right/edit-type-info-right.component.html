@@ -1,0 +1,179 @@
+<div class="card">
+    <div class="card-body">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="door-tab" data-toggle="tab" href="#door" role="tab" aria-controls="door"
+                    aria-selected="true">สิทธิ์การเข้าออกประตู</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="elevator-tab" data-toggle="tab" href="#elevator" role="tab"
+                    aria-controls="elevator" aria-selected="true">สิทธิ์การเข้าออกลิฟต์</a>
+            </li>
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="door" role="tabpanel" aria-labelledby="door-tab"><br>
+
+                <div class="form-group">
+                    <div class="form-group row">
+
+                        <div class="col-auto align-self-center">
+                            <label>ชั้น</label>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <select class="form-select" placeholder="เลือกชั้น" required>
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkDoorAll">
+                    <label class="form-check-label" for="checkDoorAll">
+                        เลือกทั้งหมด
+                    </label>
+                </div>
+                <hr>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="door1">
+                    <label class="form-check-label" for="door1">
+                        ประตูทางเข้า 1
+                    </label>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <input type="text" class="form-control" id="open" placeholder="เปิด">
+                            <button class="btn btn-outline-secondary" type="button"><img src="/assets/Vector-time.svg"
+                                    alt=""></button>
+                            <!-- <img src="/assets/Vector-time.svg" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <input type="text" class="form-control" id="close" placeholder="ปิด">
+                            <button class="btn btn-outline-secondary" type="button"><img src="/assets/Vector-time.svg"
+                                    alt=""></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="door2">
+                    <label class="form-check-label" for="door2">
+                        ประตูทางเข้า 2
+                    </label>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <input type="text" class="form-control" id="open2" placeholder="เปิด">
+                            <button class="btn btn-outline-secondary" type="button"><img src="/assets/Vector-time.svg"
+                                    alt=""></button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <input type="text" class="form-control" id="close2" placeholder="ปิด">
+                            <button class="btn btn-outline-secondary" type="button"><img src="/assets/Vector-time.svg"
+                                    alt=""></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="door3">
+                    <label class="form-check-label" for="door3">
+                        ประตูทางเข้า 3
+                    </label>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <input type="text" class="form-control" id="open3" placeholder="เปิด">
+                            <button class="btn btn-outline-secondary" type="button"><img src="/assets/Vector-time.svg"
+                                    alt=""></button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <input type="text" class="form-control" id="close3" placeholder="ปิด">
+                            <button class="btn btn-outline-secondary" type="button"><img src="/assets/Vector-time.svg"
+                                    alt=""></button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="tab-pane fade" id="elevator" role="tabpanel" aria-labelledby="elevator-tab">
+                <br>
+
+                <div class="form-group">
+                    <div class="form-group row">
+                        <label class="col-sm-2 control-label">ชั้น</label>
+                        <div class="col-sm-3">
+                            <select class="form-select" placeholder="เลือกชั้น" required>
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkElevatorAll">
+                    <label class="form-check-label" for="checkElevatorAll">
+                        เลือกทั้งหมด
+                    </label>
+                </div>
+                <hr>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="elevator1">
+                    <label class="form-check-label" for="elevator1">
+                        ประตูทางเข้า 1
+                    </label>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <input type="text" class="form-control" id="elevatorOpen" placeholder="เปิด">
+                            <img src="/assets/Vector-time.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <input type="text" class="form-control" id="elevatorClose" placeholder="ปิด">
+                            <img src="/assets/Vector-time.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="elevator2">
+                    <label class="form-check-label" for="elevator2">
+                        ประตูทางเข้า 2
+                    </label>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <input type="text" class="form-control" id="elevatorOpen2" placeholder="เปิด">
+                            <img src="/assets/Vector-time.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <input type="text" class="form-control" id="elevatorClose2" placeholder="ปิด">
+                            <img src="/assets/Vector-time.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

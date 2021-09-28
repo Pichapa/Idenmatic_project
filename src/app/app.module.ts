@@ -3,11 +3,85 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AddPersonTypeComponent } from './components/add-person-type/add-person-type.component';
-import { PersonTypeComponent } from './components/person-type/person-type.component';
+
+import { MemberTypesComponent } from './pages/member-types/member-types.component';
+import { MemberTypesInfoComponent } from './pages/member-types/member-types-info/member-types-info.component';
+import { MemberTypesSelectorComponent } from './pages/member-types/member-types-selector/member-types-selector.component';
+import { MemberTypesInfoLeftCardComponent } from './pages/member-types/member-types-info/member-types-info-left-card/member-types-info-left-card.component';
+import { MemberTypesInfoRightCardComponent } from './pages/member-types/member-types-info/member-types-info-right-card/member-types-info-right-card.component';
+//add members
+import { MemberTypesAddComponent } from './pages/member-types-add/member-types-add.component';
+import { AddTypeInfoComponent } from './pages/member-types-add/add-type-info/add-type-info.component';
+import { AddTypeInfoLeftCardComponent } from './pages/member-types-add/add-type-info/add-type-info-left-card/add-type-info-left-card.component';
+import { AddTypeInfoRightCardComponent } from './pages/member-types-add/add-type-info/add-type-info-right-card/add-type-info-right-card.component';
+//edit member
+import { MemberTypesEditComponent } from './pages/member-types-edit/member-types-edit.component';
+import { EditTypeInfoComponent } from './pages/member-types-edit/edit-type-info/edit-type-info.component';
+import { EditTypeInfoLeftComponent } from './pages/member-types-edit/edit-type-info/edit-type-info-left/edit-type-info-left.component';
+import { EditTypeInfoRightComponent } from './pages/member-types-edit/edit-type-info/edit-type-info-right/edit-type-info-right.component';
+//member list
+import { MemberListComponent } from './pages/members/member-list/member-list.component';
+import { MemberInfoComponent } from './pages/members/member-info/member-info.component';
+import { MemberEditComponent } from './pages/members/member-edit/member-edit.component';
+import { MemberAddComponent } from './pages/members/member-add/member-add.component';
+import { MemberListCardComponent } from './pages/members/member-list/member-list-card/member-list-card.component';
+import { MemberInfoCardComponent } from './pages/members/member-info/member-info-card/member-info-card.component';
+import { MemberInfoCardCarComponent } from './pages/members/member-info/member-info-card/member-info-card-car/member-info-card-car.component';
+import { MemberAddCardComponent } from './pages/members/member-add/member-add-card/member-add-card.component';
+import { MemberEditCardComponent } from './pages/members/member-edit/member-edit-card/member-edit-card.component';
+import { MemberAditCardCarComponent } from './pages/members/member-edit/member-edit-card/member-adit-card-car/member-adit-card-car.component';
+import { MemberEditCardDocComponent } from './pages/members/member-edit/member-edit-card/member-edit-card-doc/member-edit-card-doc.component';
+import { MemberAddCarComponent } from './pages/members/member-add-car/member-add-car.component';
+import { MemberAddCarCardComponent } from './pages/members/member-add-car/member-add-car-card/member-add-car-card.component';
+import { MemberEditCarComponent } from './pages/members/member-edit-car/member-edit-car.component';
+import { MemberEditCarCardComponent } from './pages/members/member-edit-car/member-edit-car-card/member-edit-car-card.component';
+import { AddScanComponent } from './pages/members/member-add/add-scan/add-scan.component';
+import { AddScanCardComponent } from './pages/members/member-add/add-scan/add-scan-card/add-scan-card.component';
+import { AddRoomAccessComponent } from './pages/members/member-add/add-room-access/add-room-access.component';
+import { AddRoomAccessCardComponent } from './pages/members/member-add/add-room-access/add-room-access-card/add-room-access-card.component';
+import { SystemAddPeopleComponent } from './pages/members/system-add-people/system-add-people.component';
+import { SystemAddPeopleCardComponent } from './pages/members/system-add-people/system-add-people-card/system-add-people-card.component';
+import { SystemAddPeopleShowComponent } from './pages/members/system-add-people-show/system-add-people-show.component';
 
 @NgModule({
-  declarations: [AppComponent, AddPersonTypeComponent, PersonTypeComponent],
+  declarations: [
+    AppComponent,
+    MemberTypesComponent,
+    MemberTypesInfoComponent,
+    MemberTypesSelectorComponent,
+    MemberTypesInfoLeftCardComponent,
+    MemberTypesInfoRightCardComponent,
+    MemberTypesAddComponent,
+    AddTypeInfoComponent,
+    AddTypeInfoLeftCardComponent,
+    AddTypeInfoRightCardComponent,
+    MemberTypesEditComponent,
+    EditTypeInfoComponent,
+    EditTypeInfoLeftComponent,
+    EditTypeInfoRightComponent,
+    MemberListComponent,
+    MemberInfoComponent,
+    MemberEditComponent,
+    MemberAddComponent,
+    MemberListCardComponent,
+    MemberInfoCardComponent,
+    MemberInfoCardCarComponent,
+    MemberAddCardComponent,
+    MemberEditCardComponent,
+    MemberAditCardCarComponent,
+    MemberEditCardDocComponent,
+    MemberAddCarComponent,
+    MemberAddCarCardComponent,
+    MemberEditCarComponent,
+    MemberEditCarCardComponent,
+    AddScanComponent,
+    AddScanCardComponent,
+    AddRoomAccessComponent,
+    AddRoomAccessCardComponent,
+    SystemAddPeopleComponent,
+    SystemAddPeopleCardComponent,
+    SystemAddPeopleShowComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

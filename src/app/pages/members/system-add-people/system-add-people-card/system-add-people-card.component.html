@@ -1,0 +1,166 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="mb-3">
+                <div class="form-group">
+                    <div class="row justify-content-around">
+                        <div class="col-5">
+                            <input type="search" class="form-control" id="searchUser" name="searchUser"
+                                placeholder="ค้นหา">
+                        </div>
+                        <div class="col align-self-center">
+                            <div class="col-7">
+                                <img src="/assets/search.svg" alt="" class="align-middle">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>เลข ID</th>
+                        <th>เลขบัตรประชาชน</th>
+                        <th>ชื่อ</th>
+                        <th>นามสกุล</th>
+                        <th>เบอร์โทร</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="align-middle">123456</td>
+                        <td class="align-middle">1234567891234</td>
+                        <td class="align-middle">ชาญชัย</td>
+                        <td class="align-middle">สุขดี</td>
+                        <td class="align-middle">0856244432</td>
+                        <td>
+                            <div class="col-sm">
+                                <div class="d-flex justify-content-start">
+                                    <a href="members/show-members">
+                                        <button type="button" class="btn btnShow btn-outline-secondary">
+                                            <img src="/assets/Vector-show.svg" alt="show">
+                                        </button>
+                                    </a>&nbsp;
+                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#accessModal">อนุมัติ</button>&nbsp;
+                                    <button type="button" class="btn btn-outline-dark">ขอข้อมูลเพิ่ม</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">123456</td>
+                        <td class="align-middle">1234567891234</td>
+                        <td class="align-middle">ชาญชัย</td>
+                        <td class="align-middle">สุขดี</td>
+                        <td class="align-middle">0856244432</td>
+                        <td>
+                            <div class="col-sm">
+                                <div class="d-flex justify-content-start">
+                                    <a href="members/show-members">
+                                        <button type="button" class="btn btnShow btn-outline-secondary">
+                                            <img src="/assets/Vector-show.svg" alt="show">
+                                        </button>
+                                    </a>&nbsp;
+                                    <button type="button" class="btn btn-secondary">อนุมัติแล้ว</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">123456</td>
+                        <td class="align-middle">1234567891234</td>
+                        <td class="align-middle">ชาญชัย</td>
+                        <td class="align-middle">สุขดี</td>
+                        <td class="align-middle">0856244432</td>
+                        <td>
+                            <div class="col-sm">
+                                <div class="d-flex justify-content-start">
+                                    <a href="members/show-members">
+                                        <button type="button" class="btn btnShow btn-outline-secondary">
+                                            <img src="/assets/Vector-show.svg" alt="show">
+                                        </button>
+                                    </a>&nbsp;
+                                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#accessModal">อนุมัติ</button>&nbsp;
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                        data-bs-target="#cancleAccessModal">ยกเลิกคำขอ</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+</div><br>
+
+<div class="PageNav">
+    <nav class="pagination-outer" aria-label="Page navigation">
+        <ul class="pagination">
+            <li class="page-item">
+                <a href="#" class="page-link" aria-label="Previous" style="background-color:#B5B5B5 ;">
+                    <span aria-hidden="true"><img src="/assets/back.svg" alt=""></span>
+                </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a href="#" class="page-link" aria-label="Next" style="background-color: #231F20;">
+                    <span aria-hidden="true"><img src="/assets/next.svg" alt=""></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- accessModal -->
+<div class="modal fade" id="accessModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="text-center">
+                    <div class="mb-3">
+                        <img src="/assets/warning.svg" alt="">
+                    </div>
+                    <p><b>คุณยืนยันที่จะอนุมัติเพิ่มคนหรือไม่</b></p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <button type="button" id="btnCancle" class="btn btn-outline-dark"
+                        data-bs-dismiss="modal">ยกเลิก</button>&nbsp;&nbsp;
+                    <button type="submit" id="btnSave" class="btn btn-dark">อนุมัติ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- cancleAccessModal -->
+<div class="modal fade" id="cancleAccessModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="text-center">
+                    <div class="mb-3">
+                        <img src="/assets/warning.svg" alt="">
+                    </div>
+                    <p><b>คุณยืนยันที่จะยกเลิกคำขออนุมัตินี้หรือไม่</b></p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <button type="button" id="btnCancle" class="btn btn-outline-dark"
+                        data-bs-dismiss="modal">ยกเลิก</button>&nbsp;&nbsp;
+                    <button type="submit" id="btnSave" class="btn btn-dark">ยกเลิกคำขอ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

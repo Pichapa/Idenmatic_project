@@ -1,0 +1,116 @@
+<div class="mb-3">
+    <div class="d-flex justify-content-between">
+        <div class="align-self-center">
+            <h6><strong>รายชื่อผู้เข้าถึงห้อง</strong></h6>
+        </div>
+        <div class="col">
+            <a href="members/add-access">
+                <button type="button" class="btn btn-dark float-end">
+                    <img src="/assets/add.svg" alt="add" class="float-start">
+                    <div class="p-2 text-center">
+                        เพิ่มผู้เข้าถึงห้อง
+                    </div>
+                </button>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="d-flex justify-content-between">
+                    <div class="row align-items-center">
+                        <div class="col-sm">
+                            <img class="imgUser" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" alt="">
+                        </div>
+
+                        <div class="col-sm">
+                            <div class="row" style="font-size: 18px;color: #890203;">
+                                ID : 1111
+                            </div>
+
+                            <div class="row" style="font-size: 14px;">
+                                ชื่อ : Ppp
+                            </div>
+
+                            <div class="row" style="font-size: 14px;">
+                                นามสกุล : Pppooop
+                            </div>
+
+                            <div class="row" style="font-size: 14px;">
+                                ประเภทบุคคล : ผู้อาศัย
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <div class="d-flex justify-content-end">
+                                <button type="button" id="btnEdit" class="btn btn-outline-secondary"><img
+                                        src="/assets/Vector_edit.svg" alt="edit">
+                                </button>
+                                &nbsp;
+                                <button type="button" id="btnDelete" class="btn btn-outline-secondary"
+                                    data-bs-toggle="modal" data-bs-target="#deleteModal"><img
+                                        src="/assets/Vector_delete.svg" alt="delete"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+    </div>
+</div>
+
+<div class="mb-3">
+    <h6><strong>เอกสาร 1</strong></h6>
+    <hr>
+    <div class="card">
+        <div class="card-body">
+            <!-- <input type="text" class="form-control" id="Docname" name="Docname"> -->
+
+            <div class="text-center">
+                <hr>
+                <button type="button" class="btn btn-dark">
+                    <img src="/assets/add.svg" alt="add" class="float-start">
+                    <div class="p-2 text-center">
+                        อัพโหลดเอกสาร
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-3">
+    <h6><strong>สแกนใบหน้า</strong></h6>
+    <hr>
+    <div class="row justify-content-between">
+        <div class="col-9">
+            <input type="text" class="form-control" id="formScan">
+        </div>
+        <div class="col-3">
+            <a href="members/add-scan">
+                <button class="btn btn-dark float-end" style="width:94px;height:39px ;">สแกน</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- delModal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="/assets/delModal.svg" alt="" class="centerImg"><br>
+                <p style="text-align: center;"><b>คุณต้องการลบข้อมูลผู้อยู่อาศัยนี้หรือไม่</b></p>
+
+                <div class="row justify-content-center">
+                    <button type="button" id="btnCancle" class="btn btn-outline-dark"
+                        data-bs-dismiss="modal">ยกเลิก</button>&nbsp;&nbsp;
+                    <button type="button" id="btnSave" class="btn btn-dark">ลบผู้อยู่อาศัย</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

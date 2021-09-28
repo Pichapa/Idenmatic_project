@@ -12,50 +12,28 @@
                         class="people" src="/assets/Icon-People.svg"> การจัดการผู้ใช้</a>
                 <ul class="collapse list-unstyled" id="peopleSubmenu">
                     <li>
-                        <a href="#">Home 1</a>
+                        <a href="members/all-members">ข้อมูลคนทั้งหมด</a>
                     </li>
                     <li>
-                        <a href="#">Home 2</a>
+                        <a href="type_person">ประเภทบุคคล</a>
                     </li>
                     <li>
-                        <a href="#">Home 3</a>
+                        <a href="#">ระบบอนุมัติการเพิ่มคน</a>
                     </li>
-                </ul>
+                        </ul>
             </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li>
-                        <a href="#">Page 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
+            </ul>
+            </nav>
+        
 
-        <ul class="list-unstyled CTAs">
-            <li>
-                <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div id="content">
+<div id="content">
 
     <router-outlet></router-outlet>
 </div>
+<script>
+    $(document).ready(function () {
+        $('#sidebar').toggleClass('active');
+    });
+
+</script>
 </body>
