@@ -14,6 +14,7 @@ import { MemberTypesAddComponent } from './pages/member-types-add/member-types-a
 import { MemberTypesEditComponent } from './pages/member-types-edit/member-types-edit.component';
 import { SystemAddPeopleComponent } from './pages/members/system-add-people/system-add-people.component';
 import { SystemAddPeopleShowComponent } from './pages/members/system-add-people-show/system-add-people-show.component';
+import { SystemAddPeopleRequestComponent } from './pages/members/system-add-people-request/system-add-people-request.component';
 
 const routes: Routes = [
   {
@@ -67,6 +68,10 @@ const routes: Routes = [
   {
     path: 'members/approve-people-show',
     component: SystemAddPeopleShowComponent,
+  },
+  {
+    path: 'members/approve-people-request',
+    component: SystemAddPeopleRequestComponent,
   },
   {
     path: '',

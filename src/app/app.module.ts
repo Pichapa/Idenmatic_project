@@ -43,7 +43,9 @@ import { SystemAddPeopleComponent } from './pages/members/system-add-people/syst
 import { SystemAddPeopleCardComponent } from './pages/members/system-add-people/system-add-people-card/system-add-people-card.component';
 import { SystemAddPeopleShowComponent } from './pages/members/system-add-people-show/system-add-people-show.component';
 import { SystemAddPeopleShowCardComponent } from './pages/members/system-add-people-show/system-add-people-show-card/system-add-people-show-card.component';
-import { SystemAddPeopleRequestInfoComponent } from './pages/members/system-add-people-request-info/system-add-people-request-info.component';
+import { SystemAddPeopleRequestComponent } from './pages/members/system-add-people-request/system-add-people-request.component';
+import { RequestCardLeftComponent } from './pages/members/system-add-people-request/request-card-left/request-card-left.component';
+import { RequestCardRightComponent } from './pages/members/system-add-people-request/request-card-right/request-card-right.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +86,9 @@ import { SystemAddPeopleRequestInfoComponent } from './pages/members/system-add-
     SystemAddPeopleCardComponent,
     SystemAddPeopleShowComponent,
     SystemAddPeopleShowCardComponent,
-    SystemAddPeopleRequestInfoComponent,
+    SystemAddPeopleRequestComponent,
+    RequestCardLeftComponent,
+    RequestCardRightComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
