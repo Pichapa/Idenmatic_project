@@ -42,6 +42,8 @@ import { AddRoomAccessCardComponent } from './pages/members/member-add/add-room-
 import { SystemAddPeopleComponent } from './pages/members/system-add-people/system-add-people.component';
 import { SystemAddPeopleCardComponent } from './pages/members/system-add-people/system-add-people-card/system-add-people-card.component';
 import { SystemAddPeopleShowComponent } from './pages/members/system-add-people-show/system-add-people-show.component';
+import { SystemAddPeopleShowCardComponent } from './pages/members/system-add-people-show/system-add-people-show-card/system-add-people-show-card.component';
+import { SystemAddPeopleRequestInfoComponent } from './pages/members/system-add-people-request-info/system-add-people-request-info.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +83,8 @@ import { SystemAddPeopleShowComponent } from './pages/members/system-add-people-
     SystemAddPeopleComponent,
     SystemAddPeopleCardComponent,
     SystemAddPeopleShowComponent,
+    SystemAddPeopleShowCardComponent,
+    SystemAddPeopleRequestInfoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

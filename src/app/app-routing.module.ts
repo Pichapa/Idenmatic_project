@@ -13,6 +13,7 @@ import { MemberTypesComponent } from './pages/member-types/member-types.componen
 import { MemberTypesAddComponent } from './pages/member-types-add/member-types-add.component';
 import { MemberTypesEditComponent } from './pages/member-types-edit/member-types-edit.component';
 import { SystemAddPeopleComponent } from './pages/members/system-add-people/system-add-people.component';
+import { SystemAddPeopleShowComponent } from './pages/members/system-add-people-show/system-add-people-show.component';
 
 const routes: Routes = [
   {
@@ -62,6 +63,10 @@ const routes: Routes = [
   {
     path: 'members/approve-people',
     component: SystemAddPeopleComponent,
+  },
+  {
+    path: 'members/approve-people-show',
+    component: SystemAddPeopleShowComponent,
   },
   {
     path: '',
