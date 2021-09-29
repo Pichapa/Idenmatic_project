@@ -1,6 +1,6 @@
 <nav class="navbar sticky-top navbar-light">
     <div class="col-sm-12">
-        <a class="navbar-brand" href="#"><img class="group" src="/assets/Group.svg" alt=""></a>
+        <a class="navbar-brand" href="#"><img class="group" src="/assets/Group.svg" alt="" /></a>
     </div>
 </nav>
 
@@ -8,8 +8,23 @@
     <nav id="sidebar">
         <ul class="list-unstyled components">
             <li class="active">
+                <a href="#roomSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <img class="people" src="/assets/Icon-Room.svg" /> การจัดการห้อง
+                </a>
+                <ul class="collapse list-unstyled" id="roomSubmenu">
+                    <li>
+                        <a href="rooms/room-list">ข้อมูลห้องทั้งหมด</a>
+                    </li>
+                    <li>
+                        <a href="">รูปแบบห้อง</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="list-unstyled components">
+            <li class="active">
                 <a href="#memberSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                    <img class="people" src="/assets/Icon-People.svg"> การจัดการผู้ใช้
+                    <img class="people" src="/assets/Icon-People.svg" /> การจัดการผู้ใช้
                 </a>
                 <ul class="collapse list-unstyled" id="memberSubmenu">
                     <li>
@@ -25,12 +40,11 @@
             </li>
         </ul>
     </nav>
-        
 
-<div id="content">
-    <router-outlet></router-outlet>
-</div>
-<!-- <script>
+    <div id="content">
+        <router-outlet></router-outlet>
+    </div>
+    <!-- <script>
     $(document).ready(function () {
         $('#sidebar').toggleClass('active');
     });

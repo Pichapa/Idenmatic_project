@@ -15,6 +15,7 @@ import { MemberTypesEditComponent } from './pages/member-types-edit/member-types
 import { SystemAddPeopleComponent } from './pages/members/system-add-people/system-add-people.component';
 import { SystemAddPeopleShowComponent } from './pages/members/system-add-people-show/system-add-people-show.component';
 import { SystemAddPeopleRequestComponent } from './pages/members/system-add-people-request/system-add-people-request.component';
+import { RoomListComponent } from './pages/rooms/room/room-list/room-list.component';
 
 const routes: Routes = [
   {
@@ -78,10 +79,14 @@ const routes: Routes = [
     redirectTo: 'members/all-members',
     pathMatch: 'full',
   },
+  {
+    path: 'rooms/room-list',
+    component: RoomListComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

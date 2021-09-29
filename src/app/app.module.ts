@@ -46,6 +46,9 @@ import { SystemAddPeopleShowCardComponent } from './pages/members/system-add-peo
 import { SystemAddPeopleRequestComponent } from './pages/members/system-add-people-request/system-add-people-request.component';
 import { RequestCardLeftComponent } from './pages/members/system-add-people-request/request-card-left/request-card-left.component';
 import { RequestCardRightComponent } from './pages/members/system-add-people-request/request-card-right/request-card-right.component';
+import { RoomListComponent } from './pages/rooms/room/room-list/room-list.component';
+import { RoomListCardSelectComponent } from './pages/rooms/room/room-list/room-list-card-select/room-list-card-select.component';
+import { RoomListCardTableComponent } from './pages/rooms/room/room-list/room-list-card-table/room-list-card-table.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +92,9 @@ import { RequestCardRightComponent } from './pages/members/system-add-people-req
     SystemAddPeopleRequestComponent,
     RequestCardLeftComponent,
     RequestCardRightComponent,
+    RoomListComponent,
+    RoomListCardSelectComponent,
+    RoomListCardTableComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
