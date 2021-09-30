@@ -49,6 +49,8 @@ import { RequestCardRightComponent } from './pages/members/system-add-people-req
 import { RoomListComponent } from './pages/rooms/room/room-list/room-list.component';
 import { RoomListCardSelectComponent } from './pages/rooms/room/room-list/room-list-card-select/room-list-card-select.component';
 import { RoomListCardTableComponent } from './pages/rooms/room/room-list/room-list-card-table/room-list-card-table.component';
+import { SidebarComponent } from './menu/sidebar/sidebar.component';
+import { NavbarComponent } from './menu/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -95,6 +97,8 @@ import { RoomListCardTableComponent } from './pages/rooms/room/room-list/room-li
     RoomListComponent,
     RoomListCardSelectComponent,
     RoomListCardTableComponent,
+    SidebarComponent,
+    NavbarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -1,76 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Kanit');
-
-nav{
-background: #890203;
-padding-bottom: 0%;
-}
-img{
-    margin-top: 1.5%;
-    margin-left: 2%;
-}
-
 body {
     display: flex;
     width: 100%;
     align-items: stretch;
     background-color: #F8F8F8;
 }
-
-a{
-    text-decoration:none
-}
-
-#sidebar {
-    font-family: 'Kanit', sans-serif;
-    min-width: 250px;
-    max-width: 250px;
-    background: #FFFFFF;
-    color: rgb(15, 11, 11);
-    transition: all 0.3s;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-
-
-}
-
-#sidebar.active {
-    margin-left: -250px;
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #FFFFFF;
-}
-
-#sidebar ul p {
-    color: rgb(15, 10, 10);
-    padding: 10px;
-}
-
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-    color: rgb(19, 12, 12);
-    background: #FFFFFF;
-}
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-.dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-
 #content {
     width: 100%;
     padding: 20px;
@@ -78,16 +11,5 @@ a[data-toggle="collapse"] {
     transition: all 0.3s;
 }
 
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
-}
 
 
