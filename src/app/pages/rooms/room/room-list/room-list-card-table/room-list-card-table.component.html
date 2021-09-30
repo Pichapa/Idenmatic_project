@@ -1,1 +1,117 @@
-<p>room-list-card-table works!</p>
+<div class="row">
+    <div class="col-sm-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>เลขที่ห้อง</th>
+                    <th>รูปแบบห้อง</th>
+                    <th>ชั้น</th>
+                    <th>ID ผู้ใช้</th>
+                    <th>เจ้าของห้องปัจจุบัน</th>
+                    <th>เบอร์โทร</th>
+                    <th>เปิด/ปิดห้อง</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="align-middle" style="width: 11%;">AA/001</td>
+                    <td class="align-middle" style="width: 14%;">รูปแบบห้อง 1</td>
+                    <td class="align-middle" style="width: 7%;">1</td>
+                    <td class="align-middle" style="width: 10%;">123456</td>
+                    <td class="align-middle" style="width: 18%;">ชาญชัย สุขดี</td>
+                    <td class="align-middle" style="width: 13%;">0987654321</td>
+                    <td class="align-middle" style="width: 16%;">
+                        <div class="hstack gap-3">
+                            <button type="button" class="btn" id="btnOn">
+                                ON
+                            </button>
+                            <button type="button" class="btn" id="btnOff">
+                                OFF
+                            </button>
+                        </div>
+                    </td>
+                    <td class="text-end align-middle" style="width: 14%;">
+                        <div class="hstack gap-3">
+                            <button type="button" class="btn btn-outline-secondary"><img src="/assets/Vector_edit.svg"
+                                    alt="edit">
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                data-bs-target="#delModal"><img src="/assets/Vector_delete.svg" alt="delete">
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-middle" style="width: 11%;">AA/002</td>
+                    <td class="align-middle" style="width: 14%;">รูปแบบห้อง 1</td>
+                    <td class="align-middle" style="width: 7%;">1</td>
+                    <td class="align-middle" style="width: 10%;">123456</td>
+                    <td class="align-middle" style="width: 18%;">ชาญชัย สุขดี</td>
+                    <td class="align-middle" style="width: 13%;">0987654321</td>
+                    <td class="align-middle" style="width: 16%;">
+                        <div class="hstack gap-3">
+                            <button type="button" class="btn" id="btnOnn">ON
+                            </button>
+                            <button type="button" class="btn" id="btnOfff">
+                                OFF
+                            </button>
+                        </div>
+                    </td>
+                    <td class="text-end align-middle" style="width: 14%;">
+                        <div class="hstack gap-3">
+                            <button type="button" class="btn btn-outline-secondary"><img src="/assets/Vector_edit.svg"
+                                    alt="edit">
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                data-bs-target="#delModal"><img src="/assets/Vector_delete.svg" alt="delete">
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- delModal -->
+    <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="/assets/delModal.svg" alt="" class="centerImg"><br>
+                    <p class="text-center"><b>คุณต้องการลบข้อมูลห้องนี้หรือไม่</b></p>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="hstack gap-3">
+                            <button type="button" id="btnCancle" class="btn btn-outline-dark"
+                                data-bs-dismiss="modal">ยกเลิก</button>
+                            <button type="button" id="btnSave" class="btn btn-dark">ลบผู้อยู่อาศัย</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="PageNav">
+    <nav class="pagination-outer" aria-label="Page navigation">
+        <ul class="pagination">
+            <li class="page-item">
+                <a href="#" class="page-link" aria-label="Previous" style="background-color:#B5B5B5 ;">
+                    <span aria-hidden="true"><img src="/assets/back.svg" alt=""></span>
+                </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a href="#" class="page-link" aria-label="Next" style="background-color: #231F20;">
+                    <span aria-hidden="true"><img src="/assets/next.svg" alt=""></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
