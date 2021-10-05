@@ -49,8 +49,16 @@ import { RequestCardRightComponent } from './pages/members/system-add-people-req
 import { RoomListComponent } from './pages/rooms/room/room-list/room-list.component';
 import { RoomListCardSelectComponent } from './pages/rooms/room/room-list/room-list-card-select/room-list-card-select.component';
 import { RoomListCardTableComponent } from './pages/rooms/room/room-list/room-list-card-table/room-list-card-table.component';
+//menu
 import { SidebarComponent } from './menu/sidebar/sidebar.component';
 import { NavbarComponent } from './menu/navbar/navbar.component';
+
+//rooms
+import { RoomAddComponent } from './pages/rooms/room/room-add/room-add.component';
+import { RoomAddCardComponent } from './pages/rooms/room/room-add/room-add-card/room-add-card.component';
+import { RoomAddInfoComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info.component';
+import { RoomAddInfoCardLeftComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info-card-left/room-add-info-card-left.component';
+import { RoomAddInfoCardRightComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info-card-right/room-add-info-card-right.component';
 
 @NgModule({
   declarations: [
@@ -99,6 +107,11 @@ import { NavbarComponent } from './menu/navbar/navbar.component';
     RoomListCardTableComponent,
     SidebarComponent,
     NavbarComponent,
+    RoomAddComponent,
+    RoomAddCardComponent,
+    RoomAddInfoComponent,
+    RoomAddInfoCardLeftComponent,
+    RoomAddInfoCardRightComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

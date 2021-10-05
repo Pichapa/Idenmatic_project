@@ -16,6 +16,8 @@ import { SystemAddPeopleComponent } from './pages/members/system-add-people/syst
 import { SystemAddPeopleShowComponent } from './pages/members/system-add-people-show/system-add-people-show.component';
 import { SystemAddPeopleRequestComponent } from './pages/members/system-add-people-request/system-add-people-request.component';
 import { RoomListComponent } from './pages/rooms/room/room-list/room-list.component';
+import { RoomAddComponent } from './pages/rooms/room/room-add/room-add.component';
+import { RoomAddInfoComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info.component';
 
 const routes: Routes = [
   {
@@ -79,9 +81,18 @@ const routes: Routes = [
     redirectTo: 'members/all-members',
     pathMatch: 'full',
   },
+  //Rooms
   {
     path: 'rooms/room-list',
     component: RoomListComponent,
+  },
+  {
+    path: 'rooms/room-add',
+    component: RoomAddComponent,
+  },
+  {
+    path: 'rooms/room-add-info',
+    component: RoomAddInfoComponent,
   },
 ];
 

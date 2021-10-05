@@ -1,13 +1,19 @@
 #btnCancle,#btnSave{
     width: 150px;
-height : 48px;
-border-radius: 8px;
+    height : 48px;
+    border-radius: 8px;
 }
 .centerImg{
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-p{
-    text-align: center;
+
+input,select{
+    border-radius: 8px;
+}
+.btn{
+    height : 48px;
+    width: 48px;
+    border-radius: 8px;
 }

@@ -1,26 +1,34 @@
 <div class="container-fluid">
     <div class="row mb-3">
         <div class="col-md-12">
-            <a href="members/types">
+            <a href="rooms/room-list">
                 <button type="button" class="btn btn-outline-dark float-start"><img src="/assets/Vector_back.svg"
                         alt="back">
                 </button>
             </a>
             <div class="d-flex flex-row">
                 <div class="p-2">
-                    <strong>การจัดการผู้ใช้</strong>
+                    <strong>การจัดการห้อง</strong>
                 </div>
                 <div class="p-2"><img src="/assets/next-page.svg" alt=""></div>
                 <div class="p-2">
-                    <strong>ประเภทบุคคล</strong>
+                    <strong>ข้อมูลห้องทั้งหมด</strong>
                 </div>
                 <div class="p-2"><img src="/assets/next-page.svg" alt=""></div>
                 <div class="p-2">
-                    <strong>เพิ่มประเภทบุคคล</strong>
+                    <strong>เพิ่มห้อง</strong>
                 </div>
             </div>
         </div>
     </div>
 
-    <app-add-type-info></app-add-type-info>
+    <div class="row">
+        <div class="col-md-4">
+            <app-room-add-info-card-left></app-room-add-info-card-left>
+        </div>
+        <div class="col-md-8">
+            <app-room-add-info-card-right></app-room-add-info-card-right>
+        </div>
+    </div>
+
 </div>

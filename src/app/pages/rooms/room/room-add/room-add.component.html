@@ -1,10 +1,9 @@
 <div class="container-fluid">
     <div class="row mb-3">
         <div class="col-md-12">
-            <a href="rooms/room-add">
-                <button type="button" class="btn btn-dark float-end">
-                    <img src="/assets/add.svg" class="float-start" alt="add">
-                    <span class="align-middle" style="font-size:14px">เพิ่มห้อง</span>
+            <a href="rooms/room-list">
+                <button type="button" class="btn btn-outline-dark float-start"><img src="/assets/Vector_back.svg"
+                        alt="back">
                 </button>
             </a>
             <div class="d-flex flex-row">
@@ -15,15 +14,13 @@
                 <div class="p-2">
                     <strong>ข้อมูลห้องทั้งหมด</strong>
                 </div>
+                <div class="p-2"><img src="/assets/next-page.svg" alt=""></div>
+                <div class="p-2">
+                    <strong>เพิ่มห้อง</strong>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="card">
-        <div class="card-body">
-            <app-room-list-card-select></app-room-list-card-select>
-            <div class="mt-4"></div>
-            <app-room-list-card-table></app-room-list-card-table>
-        </div>
-    </div>
+    <app-room-add-card></app-room-add-card>
 </div>
