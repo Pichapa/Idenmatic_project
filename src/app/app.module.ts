@@ -59,6 +59,8 @@ import { RoomAddCardComponent } from './pages/rooms/room/room-add/room-add-card/
 import { RoomAddInfoComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info.component';
 import { RoomAddInfoCardLeftComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info-card-left/room-add-info-card-left.component';
 import { RoomAddInfoCardRightComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info-card-right/room-add-info-card-right.component';
+import { AddCardRightCurrentComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info-card-right/add-card-right-current/add-card-right-current.component';
+import { AddCardRightPreviousComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info-card-right/add-card-right-previous/add-card-right-previous.component';
 
 @NgModule({
   declarations: [
@@ -112,6 +114,8 @@ import { RoomAddInfoCardRightComponent } from './pages/rooms/room/room-add/room-
     RoomAddInfoComponent,
     RoomAddInfoCardLeftComponent,
     RoomAddInfoCardRightComponent,
+    AddCardRightCurrentComponent,
+    AddCardRightPreviousComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
