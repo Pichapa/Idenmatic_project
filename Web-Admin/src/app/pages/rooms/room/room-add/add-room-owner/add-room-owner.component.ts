@@ -9,7 +9,7 @@ export class AddRoomOwnerComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }

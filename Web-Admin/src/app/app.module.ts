@@ -52,7 +52,6 @@ import { RoomListCardTableComponent } from './pages/rooms/room/room-list/room-li
 //menu
 import { SidebarComponent } from './menu/sidebar/sidebar.component';
 import { NavbarComponent } from './menu/navbar/navbar.component';
-
 //rooms
 import { RoomAddComponent } from './pages/rooms/room/room-add/room-add.component';
 import { RoomAddCardComponent } from './pages/rooms/room/room-add/room-add-card/room-add-card.component';
@@ -61,6 +60,10 @@ import { RoomAddInfoCardLeftComponent } from './pages/rooms/room/room-add/room-a
 import { RoomAddInfoCardRightComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info-card-right/room-add-info-card-right.component';
 import { AddCardRightCurrentComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info-card-right/add-card-right-current/add-card-right-current.component';
 import { AddCardRightPreviousComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info-card-right/add-card-right-previous/add-card-right-previous.component';
+import { AddRoomOwnerComponent } from './pages/rooms/room/room-add/add-room-owner/add-room-owner.component';
+import { AddRoomOwnerCardComponent } from './pages/rooms/room/room-add/add-room-owner/add-room-owner-card/add-room-owner-card.component';
+import { AddAccessRoomComponent } from './pages/rooms/room/room-add/add-access-room/add-access-room.component';
+import { AddAccessRoomCardComponent } from './pages/rooms/room/room-add/add-access-room/add-access-room-card/add-access-room-card.component';
 
 @NgModule({
   declarations: [
@@ -116,6 +119,10 @@ import { AddCardRightPreviousComponent } from './pages/rooms/room/room-add/room-
     RoomAddInfoCardRightComponent,
     AddCardRightCurrentComponent,
     AddCardRightPreviousComponent,
+    AddRoomOwnerComponent,
+    AddRoomOwnerCardComponent,
+    AddAccessRoomComponent,
+    AddAccessRoomCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

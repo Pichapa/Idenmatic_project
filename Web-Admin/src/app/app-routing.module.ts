@@ -18,6 +18,8 @@ import { SystemAddPeopleRequestComponent } from './pages/members/system-add-peop
 import { RoomListComponent } from './pages/rooms/room/room-list/room-list.component';
 import { RoomAddComponent } from './pages/rooms/room/room-add/room-add.component';
 import { RoomAddInfoComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info.component';
+import { AddRoomOwnerComponent } from './pages/rooms/room/room-add/add-room-owner/add-room-owner.component';
+import { AddAccessRoomComponent } from './pages/rooms/room/room-add/add-access-room/add-access-room.component';
 
 const routes: Routes = [
   {
@@ -93,6 +95,14 @@ const routes: Routes = [
   {
     path: 'rooms/room-add-info',
     component: RoomAddInfoComponent,
+  },
+  {
+    path: 'rooms/add-owner',
+    component: AddRoomOwnerComponent,
+  },
+  {
+    path: 'rooms/add-access-room',
+    component: AddAccessRoomComponent,
   },
 ];
 
