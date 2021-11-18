@@ -1,41 +1,20 @@
-.btn{
-    border-radius: 8px;
-    width: 212px;
-    height: 48px;
-    font-size: 14px;
-    line-height: 16px;
-    
+#card-doc {
+  box-shadow: none;
+  border-radius: 8px;
 }
-h6{
-    font-size: 18px;
-    color: #890203;
+.form-control {
+  border-radius: 8px;
 }
-#btnEdit,#btnDelete{
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
+
+.fw-bold {
+  color: #890203;
 }
-#userId{
-     font-size: 18px;
-    color: #890203;
+.fw-normal {
+  font-size: 14px;
 }
-.imgUser{
-    width: 104px;
-height: 104px;
-border-radius: 8px;
-}
-p{
-   color: #231F20;
-   font-size: 14px;
-    line-height: 14px;
-}
-#btnSave,#btnCancle{
-    width : 118px;
-    height: 48px;
-    border-radius: 8px;
-}
-.centerImg{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
+
+.btn {
+  border-radius: 8px;
+  height: 48px;
+  font-size: 14px;
 }

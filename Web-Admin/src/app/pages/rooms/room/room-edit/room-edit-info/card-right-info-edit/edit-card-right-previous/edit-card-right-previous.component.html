@@ -1,0 +1,205 @@
+<div class="card-body">
+
+    <!-- owner -->
+    <div class="row mb-4">
+        <div class="col-8 ">
+            <label for="namePartner" class="form-label fw-bold">รายชื่อเจ้าของห้องคนก่อน</label>
+            <select class="form-select form-select-lg form-rounded fw-normal" name="namePartner" id="namePartner"
+                required>
+                <option value="" selected disabled hidden>เลือกรายชื่อเจ้าของห้องคนก่อน</option>
+                <option class="text-dark" value="name1">กิตติ ดวงดี (รายชื่อผู้เข้าถึงห้อง 7 คน)</option>
+                <option class="text-dark" value="name2">เทพไทย รักชาติ (รายชื่อผู้เข้าถึงห้อง 9 คน)</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col">
+            <h4 class="fw-bold">เจ้าของห้อง (ก่อนหน้า)</h4>
+        </div>
+        <div class="mt-3"></div>
+        <div class="col-12">
+            <div class="card" id="owner">
+                <div class="card-body">
+
+                    <div class="table-responsive">
+                        <table class="table table-borderless w-100">
+                            <thead>
+                                <tr class="align-bottom fw-bold">
+                                    <th class="col">ID ผู้ใช้</th>
+                                    <th class="col">ชื่อ</th>
+                                    <th class="col">นามสกุล</th>
+                                    <th class="col">ประเภทบุคคล</th>
+                                    <th class="col">วันที่เข้า</th>
+                                    <th class="col">วันที่ออก</th>
+                                    <th class="col-1"></th>
+                                    <th class="col-1"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="align-middle">
+                                    <td>123456</td>
+                                    <td>ชาญชัย</td>
+                                    <td>สุขดี</td>
+                                    <td>เจ้าของห้อง</td>
+                                    <td>12 ก.พ. 64</td>
+                                    <td>28 ก.พ. 64</td>
+                                    <td>
+                                        <!-- <div class="hstack gap-3"> -->
+                                        <div class="justify-content-end">
+                                            <a href="members/show-members">
+                                                <button type="button" class="btn btn-outline-secondary">
+                                                    <div class="d-flex justify-content-center">
+                                                        <img src="/assets/Vector-show.svg" alt="show" width="20">
+                                                    </div>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="justify-content-end">
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                                <div class="d-flex justify-content-center">
+                                                    <img src="/assets/Vector_delete.svg" alt="delete" width="20">
+                                                </div>
+                                            </button>
+                                        </div>
+
+                                        <!-- </div> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- partner -->
+    <div class="row mb-4">
+        <div class="col">
+            <h4 class="fw-bold">รายชื่อผู้เข้าถึงห้อง (ก่อนหน้า)</h4>
+        </div>
+        <div class="mt-3"></div>
+
+        <div class="col-12">
+            <div class="card" id="partner">
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-7">
+                            <input type="search" class="form-control" name="" id="searchInput"
+                                aria-describedby="searchAdmin" placeholder="ค้นหา">
+                        </div>
+                        <div class="col-md-4 ms-auto">
+                            <select class="form-select form-select-lg fw-normal" name="namePartner" id="namePartner">
+                                <option value="" selected disabled hidden>ทุกประเภท</option>
+                                <option value="partner1"></option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <table class="table w-100">
+                        <thead>
+                            <tr class="align-bottom">
+                                <th class="col fw-bold">ID ผู้ใช้</th>
+                                <th class="col fw-bold">ชื่อ</th>
+                                <th class="col fw-bold"> นามสกุล</th>
+                                <th class="col fw-bold"> ประเภทบุคคล</th>
+                                <th class="col fw-bold">วันที่เข้า</th>
+                                <th class="col fw-bold">วันที่ออก</th>
+                                <th class="col-1"></th>
+                                <th class="col-1"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle">
+                                <td>123456</td>
+                                <td>สมชาย</td>
+                                <td>ดวงดี</td>
+                                <td>ผู้อยู่อาศัย</td>
+                                <td>13 ก.พ. 64</td>
+                                <td>28 ก.พ. 64</td>
+                                <td>
+                                    <div class="justify-content-end">
+                                        <!-- <div class="hstack gap-3"> -->
+                                        <a href="members/show-members">
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <div class="d-flex justify-content-center">
+                                                    <img src="/assets/Vector-show.svg" alt="show" width="20">
+                                                </div>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="justify-content-end">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#partnerModal">
+                                            <div class="d-flex justify-content-center">
+                                                <img src="/assets/Vector_delete.svg" alt="delete" width="20">
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <!-- </div> -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="mt-3"></div>
+                <div class="text-center">
+                    <img src="/assets/delModal.svg" alt="icon delete">
+                    <div class="mt-4"></div>
+                    <p class="fw-bold text-dark">คุณต้องการลบเจ้าของห้องก่อนหน้าหรือไม่</p>
+                </div>
+                <div class="row g-3 col-10 mx-auto">
+                    <div class="col d-grid">
+                        <button type="button" class="btn btn-outline-secondary btn-lg"
+                            data-bs-dismiss="modal">ยกเลิก</button>
+                    </div>
+                    <div class="col d-grid">
+                        <button type="button" class="btn btn-dark btn-lg">ลบเจ้าของก่อนหน้า</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal partner -->
+<div class="modal fade" id="partnerModal" tabindex="-1" aria-labelledby="partnerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="mt-3"></div>
+                <div class="text-center">
+                    <img src="/assets/delModal.svg" alt="icon delete">
+                    <div class="mt-4"></div>
+                    <p class="fw-bold text-dark">คุณต้องการลบผู้เข้าถึงห้องก่อนหน้าหรือไม่</p>
+                </div>
+                <div class="row g-3 col-10 mx-auto">
+                    <div class="col d-grid">
+                        <button type="button" class="btn btn-outline-secondary btn-lg"
+                            data-bs-dismiss="modal">ยกเลิก</button>
+                    </div>
+                    <div class="col d-grid">
+                        <button type="button" class="btn btn-dark btn-lg">ลบผู้เข้าถึงก่อนหน้า</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

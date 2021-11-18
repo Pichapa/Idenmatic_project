@@ -1,0 +1,144 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-5 mx-auto">
+
+                <div class="col mb-2">
+                    <label class="fw-bold">ชื่อแผนที่*</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected style="color: #9C9C9C;">เลือกชื่อแผนที่</option>
+                        <option value="1">แผนที่ 1</option>
+                        <option value="2">แผนที่ 2</option>
+                        <option value="3">แผนที่ 3</option>
+                    </select>
+                </div>
+
+                <div class="col mb-2">
+                    <label class="fw-bold">ชั้นแผนที่*</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected style="color: #9C9C9C;">เลือกชั้นแผนที่</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+
+                <div class="col mb-2">
+                    <label class="fw-bold">ประเภทห้อง / รูปแบบห้อง*</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected style="color: #9C9C9C;">เลือกประเภทห้อง/รูปแบบห้อง</option>
+                        <option value="1">รูปแบบห้อง 1</option>
+                        <option value="2">รูปแบบห้อง 2</option>
+                        <option value="3">รูปแบบห้อง 3</option>
+                    </select>
+                </div>
+
+                <div class="col mb-1">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label class="fw-bold" for="inputNumRoom">เลขที่ห้อง*</label>
+                            <input type="text" class="form-control" id="inputNumRoom" placeholder="กรอกเลขที่ห้อง">
+                        </div>
+                        <div class="col-md-1">
+                            <div class="mt-4"></div>
+                            <p class="fw-bolder">/</p>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="fw-bold" for="inputStart">จำนวนเริ่มต้น*</label>
+                            <input type="number" class="form-control" id="inputStart" placeholder="0">
+                        </div>
+                        <div class="col-md-1">
+                            <div class="mt-4"></div>
+                            <p class="fw-bolder">-</p>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="fw-bold" for="inputEnd">จำนวนสิ้นสุด</label>
+                            <input type="number" class="form-control" id="inputEnd" placeholder="0">
+                        </div>
+                    </div>
+                    <div id="description" class="form-text text-dark">
+                        <div class="d-flex align-items-start">
+                            *สร้างจำนวน <p class="fw-bold"> 0 </p>ห้อง เลขที่ห้อง <p class="fw-bold">0/0-0/0
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-2">
+                    <div class="row">
+                        <div class="col-md-1 align-self-center">
+                            <input type="checkbox" class="form-check-input" id="Check">
+                        </div>
+                        <div class="col-md-3">
+                            <label class="fw-bold" for="inputNumHome">เลขที่บ้าน*</label>
+                            <input type="text" class="form-control" id="inputNumHome" placeholder="0">
+                        </div>
+                        <div class="col-md-1">
+                            <div class="mt-4"></div>
+                            <p class="fw-bolder">/</p>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="fw-bold" for="StartHome">จำนวนเริ่มต้น*</label>
+                            <input type="number" class="form-control" id="StartHome" placeholder="0">
+                        </div>
+                        <div class="col-md-1">
+                            <div class="mt-4"></div>
+                            <p class="fw-bolder">-</p>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="fw-bold" for="EndHome">จำนวนสิ้นสุด*</label>
+                            <input type="number" class="form-control" id="EndHome" placeholder="0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="hstack gap-3">
+                        <button type="button" name="cancle" id="btn-cancle"
+                            class="btn btn-outline-dark btn-lg">ยกเลิก</button>
+                        <button type="button" id="btnSave" name="save" class="btn btn-lg btn-dark"
+                            data-bs-toggle="modal" data-bs-target="#saveModal">บันทึก</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- saveModal -->
+<div class="modal fade" id="saveModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="text-center">
+                    <img src="/assets/Add-room.svg" alt="">
+                </div>
+                <div class="mt-4"></div>
+                <div id="descriptionModal" class="form-text text-dark">
+                    <div class="d-flex justify-content-center">
+                        <p class="fw-bolder">ยืนยันการสร้างห้อง</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="fw-bolder">จำนวน :</p>
+                        <p class="fw-bold"> 100 </p>
+                        <p class="fw-bolder">ห้อง</p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="fw-bolder">เลขที่ห้อง :</p>
+                        <p class="fw-bold"> AA/001-AA/100 </p>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <div class="hstack gap-3">
+                        <button type="button" id="btnCancle" class="btn btn-outline-dark"
+                            data-bs-dismiss="modal">ยกเลิก</button>
+                        <a href="rooms/room-edit-info">
+                            <button type="button" id="btnSubmit" class="btn btn-dark">ยืนยัน</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

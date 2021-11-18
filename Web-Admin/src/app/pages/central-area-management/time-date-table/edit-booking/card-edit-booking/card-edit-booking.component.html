@@ -1,0 +1,117 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <div class="mt-4"></div>
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="activityInput" class="form-label fw-bold">กิจกรรม*</label>
+                        <select class="form-select form-select-lg" aria-label="activityInput" required>
+                            <option value="" selected disabled hidden>
+                                เลือกกิจกกรม
+                            </option>
+                            <option class="text-dark" value="activity1">กิจกรรมที่ 1</option>
+                            <option class="text-dark" value="activity2">กิจกรรมที่ 2</option>
+                            <option class="text-dark" value="activity3">กิจกรรมที่ 3</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            กรุณาเลือกกิจกรรม
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="idInput" class="form-label fw-bold">หมายเลข ID*</label>
+                        <input type="text" class="form-control form-control-lg" id="idInput"
+                            placeholder="กรอกหมายเลข ID" required>
+                        <div class="invalid-feedback">
+                            กรุณากรอกหมายเลข ID
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dateBooking" class="form-label fw-bold">วันที่จอง*</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="เลือกวันที่"
+                            onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                        <div class="invalid-feedback">
+                            กรุณาเลือกวันที่
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="startTime" class="form-label fw-bold">เวลาเริ่มต้น*</label>
+                        <select class="form-select form-select-lg" aria-label="startTime" required>
+                            <option value="" selected disabled hidden>
+                                เลือกเวลาเริ่มต้น
+                            </option>
+                            <option class="text-dark" value="time1">12.00 น.</option>
+                            <option class="text-dark" value="time2">13.00 น.</option>
+                            <option class="text-dark" value="time3">14.00 น.</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            กรุณาเลือกเวลาเริ่มต้น
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="endTime" class="form-label fw-bold">เวลาสิ้นสุด*</label>
+                        <select class="form-select form-select-lg" aria-label="endTime" required>
+                            <option value="" selected disabled hidden>
+                                เลือกเวลาสิ้นสุด
+                            </option>
+                            <option class="text-dark" value="end1">14.45 น. (1 ชม.)</option>
+                            <option class="text-dark" value="end2">15.00 น. (1 ชม. 15 น.)</option>
+                            <option class="text-dark" value="end3">15.15 น. (1 ชม. 30 น.)</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            กรุณาเลือกเวลาสิ้นสุด
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <hr>
+                        <label for="numUser" class="form-label fw-bold">จำนวนผู้เข้าร่วมกิจกรรม*</label>
+                        <select class="form-select form-select-lg" aria-label="numUser" required>
+                            <option value="" selected disabled hidden>
+                                เลือกจำนวนผู้เข้าร่วมกิจกรรม
+                            </option>
+                            <option class="text-dark" value="num2">2</option>
+                            <option class="text-dark" value="num3">3</option>
+                            <option class="text-dark" value="num4">4</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            กรุณาเลือกจำนวนผู้เข้าร่วมกิจกรรม
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="member" class="form-label fw-bold">ผู้เข้าร่วมกิจกรรมคนที่ 1*</label>
+                        <select class="form-select form-select-lg" aria-label="member" required>
+                            <option value="" selected disabled hidden>
+                                เลือกผู้เข้าร่วมกิจกรรม
+                            </option>
+                            <option class="text-dark" value="member1">Ta</option>
+                            <option class="text-dark" value="member2">Pa</option>
+                            <option class="text-dark" value="member3">Na</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            กรุณาเลือกผู้เข้าร่วมกิจกรรม
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="mt-5"></div>
+
+                    <div class="row g-3">
+                        <div class="col d-grid">
+                            <button type="button" name="cancel" class="btn btn-outline-dark btn-lg">
+                                <div class="fs-6">ยกเลิก</div>
+                            </button>
+                        </div>
+                        <div class="col d-grid">
+                            <button type="button" name="submit" class="btn btn-dark btn-lg">
+                                <div class="fs-6">บันทึก</div>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

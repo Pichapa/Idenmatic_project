@@ -1,0 +1,54 @@
+.card {
+  border-radius: 8px;
+}
+
+//input,select
+.form-control,
+.form-select,
+.btn {
+  border-radius: 8px;
+  font-size: 14px;
+}
+//form-select
+select:invalid {
+  color: gray;
+}
+
+//card-toggle
+#openTime,
+#closeTime {
+  background: url(/assets/Icon-Time.svg) right 5% center no-repeat;
+}
+#contentOpen,
+#contentClose {
+  background: none;
+  border-radius: 8px;
+  height: auto;
+  width: 250px;
+  border: none;
+}
+
+//font
+.form-label {
+  color: #890203;
+  font-size: 14px;
+}
+.fw-bold {
+  color: #890203;
+}
+
+//card image
+.card-example {
+  height: 25rem;
+  box-shadow: none;
+  border-radius: 8px;
+}
+
+//modal
+.modal-content {
+  border-radius: 8px;
+}
+.btn {
+  height: 58px;
+  border-radius: 8px;
+}

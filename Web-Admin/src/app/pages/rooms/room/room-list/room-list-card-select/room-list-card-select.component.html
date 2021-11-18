@@ -1,45 +1,34 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <div class="row justify-content-around">
-                <div class="col-11">
-                    <input type="search" class="form-control"
-                        id="searchUser" name="searchUser"
-                        placeholder="ค้นหา" />
-                </div>
-                <div class="col-1 align-self-center">
-                    <img src="/assets/search.svg" alt=""
-                        class="align-middle" />
-                </div>
+<div class="row mt-2 mb-4">
+    <div class="col-5">
+        <input type="search" class="form-control" name="" id="searchInput" aria-describedby="searchAdmin"
+            placeholder="ค้นหา">
+    </div>
+    <div class="col">
+        <div class="row g-3">
+            <div class="col-auto align-self-center">
+                <label class="form-lable fw-bold" for="floor-selector">เลือกชั้น</label>
+            </div>
+            <div class="col-9">
+                <select class="form-select form-select-lg" id="floorSelect">
+                    <option value="floor1">1</option>
+                    <option value="floor2">2</option>
+                    <option value="floor3">3</option>
+                </select>
             </div>
         </div>
-        <div class="col">
-            <div class="row justify-content-around">
-                <div class="col-3 align-self-center">
-                    <label class="fw-bold" for="floor-selector">เลือกชั้น</label>
-                </div>
-                <div class="col-8">
-                    <select class="form-select" id="floor-selector">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                </div>
+    </div>
+    <div class="col">
+        <div class="row g-3">
+            <div class="col-auto align-self-center">
+                <label class="form-lable fw-bold" for="room-type-selector">รูปแบบห้อง</label>
             </div>
-        </div>
-        <div class="col">
-            <div class="row justify-content-around">
-                <div class="col-auto align-self-center">
-                    <label class="fw-bold" for="room-type-selector">รูปแบบห้อง</label>
-                </div>
 
-                <div class="col-8">
-                    <select class="form-select" id="room-type-selector">
-                        <option>รูปแบบห้อง 1</option>
-                        <option>รูปแบบห้อง 2</option>
-                        <option>รูปแบบห้อง 3</option>
-                    </select>
-                </div>
+            <div class="col-8">
+                <select class="form-select form-select-lg" id="roomTypeSelect">
+                    <option>รูปแบบห้อง 1</option>
+                    <option>รูปแบบห้อง 2</option>
+                    <option>รูปแบบห้อง 3</option>
+                </select>
             </div>
         </div>
     </div>

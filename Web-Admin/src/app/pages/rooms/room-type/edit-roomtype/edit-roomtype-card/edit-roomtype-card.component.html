@@ -1,0 +1,67 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <div class="mb-2">
+                    <label for="nameInput" class="form-label fw-bold">ชื่อรูปแบบห้อง*</label>
+                    <input type="text" class="form-control form-control-lg" id="nameInput"
+                        placeholder="กรอกชื่อรูปแบบห้อง">
+                </div>
+                <div class="mb-2">
+                    <label for="residentsInput" class="form-label fw-bold">จำนวนผู้อยู่อาศัยสูงสุด*</label>
+                    <input type="text" class="form-control form-control-lg" id="residentsInput"
+                        placeholder="กรอกจำนวนผู้อยู่อาศัยสูงสุด">
+                </div>
+                <div class="mb-2">
+                    <label for="sizeRoomInput" class="form-label fw-bold">ขนาดห้อง (ตร. ม.)*</label>
+                    <input type="text" class="form-control form-control-lg" id="sizeRoomInput"
+                        placeholder="กรอกขนาดห้อง">
+                </div>
+                <div class="mb-2">
+                    <label for="numBedrooms" class="form-label fw-bold">จำนวนห้องนอน</label>
+                    <input type="text" class="form-control form-control-lg" id="numBedrooms"
+                        placeholder="กรอกจำนวนห้องนอน">
+                </div>
+                <div class="mb-2">
+                    <label for="numBathrooms" class="form-label fw-bold">จำนวนห้องน้ำ</label>
+                    <input type="text" class="form-control form-control-lg" id="numBathrooms"
+                        placeholder="กรอกจำนวนห้องน้ำ">
+                </div>
+                <div class="mb-2">
+                    <label for="uploadFile" class="form-label fw-bold">อัพโหลดรูปห้อง*</label>
+                    <div class="hstack gap-3">
+                        <input class="form-control form-control-lg me-auto" id="uploadFile" type="text"
+                            onfocus="(this.type = 'file')">
+                        <button type="button" class="btn btn-dark btn-lg btn-upload">
+                            <div class="fs-6">อัพโหลด</div>
+                        </button>
+                    </div>
+                    <div id="uploadFile" class="form-text text-dark">*อัพโหลดเฉพาะไฟล์ JPG. หรือ
+                        PNG.
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <label for="exampleInputFile" class="form-label fw-bold">ดูตัวอย่างรูปห้อง</label>
+                    <div class="card" id="cardImage">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80"
+                            class="card-img" alt="room-image" height="300">
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col d-grid">
+                        <button type="button" class="btn btn-outline-dark btn-footer">
+                            <div class="fs-6">ยกเลิก</div>
+                        </button>
+                    </div>
+                    <div class="col d-grid">
+                        <button type="button" name="submit" class="btn btn-dark btn-footer">
+                            <div class="fs-6">บันทึก</div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

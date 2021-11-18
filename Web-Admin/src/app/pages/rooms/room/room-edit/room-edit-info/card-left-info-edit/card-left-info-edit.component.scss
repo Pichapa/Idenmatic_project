@@ -1,0 +1,22 @@
+.card {
+  height: calc(100vh - 100px);
+  border-radius: 8px;
+}
+
+//input,select
+.form-control,
+.form-select {
+  border-radius: 8px;
+  font-size: 14px;
+}
+.form-label {
+  font-size: 14px;
+  color: #890203;
+}
+
+//button
+.btn {
+  border-radius: 8px;
+  height: 48px;
+  font-size: 14px;
+}

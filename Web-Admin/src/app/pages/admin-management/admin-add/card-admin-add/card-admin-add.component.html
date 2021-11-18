@@ -1,0 +1,77 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <form class="was-validated">
+                    <div class="mb-2 mt-2">
+                        <label class="form-label fw-bold">เลข ID ผู้ดูแล</label>
+                        <input type="text" class="form-control form-control-lg is-invalid" id="adminID" required>
+                        <div class="invalid-feedback">
+                            กรุณากรอกเลข ID ผู้ดูแล
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label fw-bold">อัพโหลดรูปโปรไฟล์</label>
+                        <div class="hstack gap-4">
+                            <input type="text" class="form-control me-auto form-control-lg"
+                                onfocus="(this.type = 'file')" aria-label="file example" required>
+                            <button type="submit" id="btnUpload" class="btn btn-dark">อัพโหลด</button>
+                        </div>
+                        <div class="invalid-feedback">กรูณาอัพโหลดรูปโปรไฟล์</div>
+                        <div id="fileUpload" class="form-text text-dark">*อัพโหลดเฉพาะไฟล์ .jpg .png เท่านั้น</div>
+                    </div>
+
+                    <div class="mb-2">
+                        <label class="form-label fw-bold">ประเภทผู้ดูแล</label>
+                        <select class="form-select form-select-lg" required>
+                            <option selected disabled value="">เลือกระดับผู้ดูแล</option>
+                            <option value="admin1">ผู้ดูแลระดับที่ 1</option>
+                            <option value="admin2">ผู้ดูแลระดับที่ 2</option>
+                            <option value="admin3">ผู้ดูแลระดับที่ 3</option>
+                        </select>
+                        <div class="invalid-feedback">กรุณาเลือกประเภทผู้ดูแล</div>
+                    </div>
+
+                    <div class="mb-2">
+                        <label class="form-label fw-bold">ชื่อผู้ดูแล*</label>
+                        <input type="text" class="form-control form-control-lg is-invalid" id="adminName"
+                            placeholder="กรอกชื่อผู้ดูแล" required>
+                        <div class="invalid-feedback">
+                            กรุณากรอกชื่อผู้ดูแล
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label fw-bold">นามสกุล*</label>
+                        <input type="text" class="form-control form-control-lg is-invalid" id="adminLastName"
+                            placeholder="กรอกนามสกุล" required>
+                        <div class="invalid-feedback">
+                            กรุณากรอกนามสกุล
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label fw-bold">เบอร์โทร</label>
+                        <input type="text" class="form-control form-control-lg is-invalid" id="adminTel"
+                            placeholder="กรอกเบอร์โทร" required>
+                    </div>
+                    <div class="mb-5">
+                        <label class="form-label fw-bold">อีเมล*</label>
+                        <input type="text" class="form-control form-control-lg is-invalid" id="adminEmail"
+                            placeholder="กรอกอีเมล" required>
+                        <div class="invalid-feedback">
+                            กรุณากรอกอีเมล
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row g-3 justify-content-center">
+                    <div class="col-4 d-grid">
+                        <button type="button" class="btn btn-outline-dark" style="height: 48px;">ยกเลิก</button>
+                    </div>
+                    <div class="col-4 d-grid">
+                        <button type="submit" class="btn btn-dark" style="height: 48px;">บันทึก</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

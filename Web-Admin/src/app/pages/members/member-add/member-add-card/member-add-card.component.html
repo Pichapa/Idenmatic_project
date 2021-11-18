@@ -3,144 +3,128 @@
         <div class="col-sm-5 mx-auto">
 
             <div class="mb-3">
-                <label for="formFile" class="form-label"><strong>อัพโหลดรูปผู้ใช้*</strong></label>
+                <label for="formFile" class="form-label fw-bold">อัพโหลดรูปผู้ใช้*</label>
                 <div class="form-group">
-                    <div class="row justify-content-between">
-                        <div class="col-9">
-                            <input type="text" class="form-control" id="formFile">
-                        </div>
-                        <div class="col-3">
-                            <button class="btn btn-dark float-end" style="width:94px;height:39px ;">อัพโหลด</button>
-                        </div>
+                    <div class="hstack gap-3">
+                        <input class="form-control form-control-lg me-auto" id="formFile" onfocus="(this.type = 'file')"
+                            type="text">
+                        <button type="button" class="btn btn-lg btn-dark">อัพโหลด</button>
                     </div>
                 </div>
-                <!-- <input class="form-control" type="file" id="formFile"> -->
-                <span>*อัพโหลดเฉพาะไฟล์ jpg. หรือ png.</span>
+                <div id="fileHelp" class="form-text text-dark">*อัพโหลดเฉพาะไฟล์ jpg. หรือ png.</div>
             </div>
+
             <div class="mb-3">
-                <label for="formFileId" class="form-label"><strong>อัพโหลดรูปบัตรประชาชน*</strong></label>
+                <label for="formFileId" class="form-label fw-bold">อัพโหลดรูปบัตรประชาชน*</label>
                 <div class="form-group">
-                    <div class="row justify-content-between">
-                        <div class="col-9">
-                            <input type="text" class="form-control" id="formFileId">
-                        </div>
-                        <div class="col-3">
-                            <button class="btn btn-dark float-end" style="width:94px;height:39px ;">อัพโหลด</button>
-                        </div>
+                    <div class="hstack gap-3">
+                        <input class="form-control form-control-lg me-auto" id="formFileId"
+                            onfocus="(this.type = 'file')" type="text">
+                        <button type="button" class="btn btn-lg btn-dark">อัพโหลด</button>
                     </div>
                 </div>
-                <!-- <input class="form-control" type="file" id="formFileId"> -->
-                <span>*อัพโหลดเฉพาะไฟล์ jpg. หรือ png.</span>
+                <div id="fileHelp" class="form-text text-dark">*อัพโหลดเฉพาะไฟล์ jpg. หรือ png.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="formName" class="form-label fw-bold">ชื่อ*</label>
+                <input class="form-control form-control-lg" type="text" id="formName" placeholder="กรอกชื่อ">
             </div>
             <div class="mb-3">
-                <label for="formName" class="form-label"><strong>ชื่อ*</strong></label>
-                <input class="form-control" type="text" id="formName" placeholder="กรอกชื่อ">
+                <label for="formLast" class="form-label fw-bold">นามสกุล*</label>
+                <input class="form-control form-control-lg" type="text" id="formLast" placeholder="กรอกนามสกุล">
             </div>
             <div class="mb-3">
-                <label for="formLast" class="form-label"><strong>นามสกุล*</strong></label>
-                <input class="form-control" type="text" id="formLast" placeholder="กรอกนามสกุล">
+                <label for="formIdCard" class="form-label fw-bold">หมายเลขบัตรประชาชน*</label>
+                <input class="form-control form-control-lg" type="text" id="formIdCard"
+                    placeholder="กรอกหมายเลขบัตรประชาชน">
             </div>
             <div class="mb-3">
-                <label for="formIdCard" class="form-label"><strong>หมายเลขบัตรประชาชน*</strong></label>
-                <input class="form-control" type="text" id="formIdCard" placeholder="กรอกหมายเลขบัตรประชาชน">
+                <label for="formTel" class="form-label fw-bold">เบอร์โทรศัพท์*</label>
+                <input class="form-control form-control-lg" type="text" id="formTel"
+                    placeholder="กรอกอีเมลเบอร์โทรศัพท์">
             </div>
             <div class="mb-3">
-                <label for="formTel" class="form-label"><strong>เบอร์โทรศัพท์*</strong></label>
-                <input class="form-control" type="text" id="formTel" placeholder="กรอกอีเมลเบอร์โทรศัพท์">
+                <label for="formEmail" class="form-label fw-bold">อีเมล*</label>
+                <input class="form-control form-control-lg" type="text" id="formEmail" placeholder="กรอกอีเมล">
             </div>
             <div class="mb-3">
-                <label for="formEmail" class="form-label"><strong>อีเมล*</strong></label>
-                <input class="form-control" type="text" id="formEmail" placeholder="กรอกอีเมล">
-            </div>
-            <div class="mb-3">
-                <label for="formPassword" class="form-label"><strong>รหัสผ่าน*</strong></label>
-                <input class="form-control" type="password" name="password" id="formPassword"
+                <label for="formPassword" class="form-label fw-bold">รหัสผ่าน*</label>
+                <input class="form-control form-control-lg" type="password" name="password" id="formPassword"
                     placeholder="กรอกรหัสผ่าน">
             </div>
             <div class="mb-3">
-                <label for="formType" class="form-label"><strong>ประเภทบุคคล*</strong></label>
-                <select class="form-select">
-                    <option selected>เลือกประเภทบุคคล</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                <label for="formType" class="form-label fw-bold">ประเภทบุคคล*</label>
+                <select class="form-select" size="3" multiple required>
+                    <option value="" selected disabled>เลือกประเภทบุคคล</option>
+                    <option class="text-dark" value="1">เจ้าของห้อง</option>
+                    <option class="text-dark" value="2">ผู้อยู่อาศัย</option>
+                    <option class="text-dark" value="3">ผู้เข้าพบ</option>
                 </select>
             </div>
 
             <div class="mb-3">
-                <label for="dateStart" class="form-label"><strong>วันที่เริ่มต้น*</strong></label>
-                <input class="form-control" type="date" value="2020-11-30" />
+                <label for="dateStart" class="form-label fw-bold">วันที่เริ่มต้น*</label>
+                <input class="form-control form-control-lg" type="text" onfocus="(this.type = 'date')"
+                    placeholder="เลือกวันที่เริ่มต้น" required />
             </div>
             <div class="mb-3">
-                <label for="dateEnd" class="form-label"><strong>วันที่สิ้นสุด</strong></label>
-                <input class="form-control" type="date" value="2020-11-30" />
+                <label for="dateEnd" class="form-label fw-bold">วันที่สิ้นสุด</label>
+                <input class="form-control form-control-lg" type="text" onfocus="(this.type = 'date')"
+                    placeholder="เลือกวันที่สิ้นสุด" />
             </div>
             <div class="mb-3">
-                <label for="rooms" class="form-label"><strong>ห้อง*</strong></label>
-                <select class="form-select">
-                    <option selected>เลือกห้อง</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                <label for="rooms" class="form-label fw-bold">ห้อง*</label>
+                <select class="form-select form-select-lg" required>
+                    <option value="" selected disabled hidden>เลือกห้อง</option>
+                    <option class="text-dark" value="1">One</option>
+                    <option class="text-dark" value="2">Two</option>
+                    <option class="text-dark" value="3">Three</option>
                 </select>
             </div>
 
-            <div class="mb-3">
+            <!-- <div class="mb-3">
                 <div class="d-flex justify-content-between">
                     <div class="align-self-center">
-                        <h6><strong>ยานพาหนะ</strong></h6>
+                        <h6 class="fw-bold">ยานพาหนะ</h6>
                     </div>
                     <div class="col">
                         <a href="members/add-cars">
-                            <button type="button" class="btn btn-dark float-end">
-                                <img src="/assets/add.svg" alt="add" class="float-start">
-                                <div class="p-2 text-center">
-                                    เพิ่มยานพาหนะ
+                            <button type="button" class="btn btn-dark float-end btnRight">
+                                <div class="row align-items-center">
+                                    <div class="col-1">
+                                        <img src="/assets/add.svg" class="float-start" alt="add">
+                                    </div>
+                                    <div class="col-10">
+                                        <span class="align-middle">เพิ่มยานพาหนะ</span>
+                                    </div>
                                 </div>
                             </button>
                         </a>
                     </div>
                 </div>
                 <hr>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="InputCar">
-                </div>
-            </div>
+                <div class="card" id="formCar"></div>
+            </div> -->
 
             <div class="mb-3">
-                <div class="d-flex justify-content-between">
-                    <div class="align-self-center">
-                        <h6><strong>ผู้อยู่อาศัย</strong></h6>
-                    </div>
-                    <div class="col">
-                        <a href="members/add-access">
-                            <button type="button" class="btn btn-dark float-end">
-                                <img src="/assets/add.svg" alt="add" class="float-start">
-                                <div class="p-2 text-center">
-                                    เพิ่มผู้อยู่อาศัย
-                                </div>
-                            </button>
-                        </a>
-                    </div>
-                </div>
+                <h6 class="fw-bold">เอกสาร 1</h6>
                 <hr>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="InputCar">
-                </div>
-            </div>
-
-            <div class="mb-3">
-                <h6><strong>เอกสาร 1</strong></h6>
-                <hr>
-                <div class="card">
-                    <div class="card-body">
-                        <input type="text" class="form-control" id="Docname" name="Docname">
-
-                        <div class="text-center">
-                            <button type="button" class="btn btn-dark">
-                                <img src="/assets/add.svg" alt="add" class="float-start">
-                                <div class="p-2 text-center">
-                                    อัพโหลดเอกสาร
+                <div class="card" id="formDoc">
+                    <div class="overflow-auto">
+                        <div class="text-center mb-3">
+                            <!-- เอกสารอัพโหลด -->
+                        </div>
+                        <hr>
+                        <div class="text-center mb-3">
+                            <button type="button" class="btn btn-dark btnRight">
+                                <div class="row align-items-center">
+                                    <div class="col-1">
+                                        <img src="/assets/add.svg" class="float-start" alt="add">
+                                    </div>
+                                    <div class="col-10">
+                                        <span class="align-middle text-center">อัพโหลดเอกสาร</span>
+                                    </div>
                                 </div>
                             </button>
                         </div>
@@ -149,36 +133,27 @@
             </div>
 
             <div class="mb-3">
-                <h6><strong>สแกนใบหน้า</strong></h6>
+                <h6 class="fw-bold">สแกนใบหน้า</h6>
                 <hr>
-                <div class="row justify-content-between">
-                    <div class="col-9">
-                        <input type="text" class="form-control" id="formScan">
-                    </div>
-                    <div class="col-3">
-                        <a href="members/add-scan">
-                            <button class="btn btn-dark float-end" style="width:94px;height:39px ;">สแกน</button>
-                        </a>
-                    </div>
+                <div class="hstack gap-3">
+                    <input class="form-control form-control-lg me-auto" id="formScan" onfocus="(this.type = 'file')"
+                        type="text">
+                    <a href="members/add-scan">
+                        <button type="button" class="btn btn-lg btn-dark">สแกน</button>
+                    </a>
                 </div>
             </div>
 
-            <div class="row justify-content-between">
-                <div class="col-6">
-                    <button type="button" name="cancle" id="btn-cancle"
-                        class="btn btn-outline-dark btn-lg">ยกเลิก</button>
+            <div class="row g-3">
+                <div class="col d-grid">
+                    <button type="button" name="cancel" id="btn-cancel" class="btn btn-outline-dark btn-lg"
+                        style="height: 48px;">ยกเลิก</button>
                 </div>
-                <div class="col-6">
-                    <button type="button" name="save" class="btn btn-secondary btn-lg">บันทึก</button>
+                <div class="col d-grid">
+                    <button type="button" name="save" class="btn btn-dark btn-lg" style="height: 48px;">บันทึก</button>
                 </div>
             </div>
 
         </div>
     </div>
 </div>
-
-<!-- <input type="date" value="2020-11-30" /> -->
-<script>
-    const input = document.querySelector('input');
-    input.value = '2020-11-30';
-</script>

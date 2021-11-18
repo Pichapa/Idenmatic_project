@@ -1,54 +1,60 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="form-group row">
+<div class="card">
+    <div class="card-body">
+        <div class="form-group row">
 
-                        <div class="col-auto align-self-center">
-                            <label for="member-type-selector">ประเภทบุคคล</label>
-                        </div>
+            <div class="col-auto align-self-center">
+                <label for="member-type-selector">ประเภทบุคคล</label>
+            </div>
 
-                        <div class="col-sm-3 align-self-center">
-                            <select class="form-select" id="member-type-selector">
-                                <option selected>เจ้าของห้อง</option>
-                            </select>
-                        </div>
+            <div class="col-sm-3 align-self-center">
+                <select class="form-select form-select-lg" id="member-type-selector" required>
+                    <option value="" disabled selected hidden>เลือกประเภทบุคคล</option>
+                    <option class="text-dark" value="owner">เจ้าของห้อง</option>
+                    <option class="text-dark" value="residents">ผู้อยู่อาศัย</option>
+                    <option class="text-dark" value="visitor">ผู้เข้าพบ</option>
+                </select>
+            </div>
 
-                        <div class="col text-end">
-                            <a href="members/edit">
-                                <button type="button" class="btn btn-outline-dark">
-                                    <img src="/assets/Vector_edit.svg" alt="edit">
-                                </button>
-                            </a>&nbsp;
-                            <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
-                                data-bs-target="#delModal">
-                                <img src="/assets/Vector_delete.svg" alt="delete">
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- delModal -->
-                    <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <img src="/assets/delModal.svg" alt="" class="centerImg"><br>
-                                    <p class="fw-bolder text-center">คุณต้องการลบข้อมูลประเภทบุคคลนี้หรือไม่</p>
-
-                                    <div class="row justify-content-center">
-                                        <button type="button" id="btnCancle" class="btn btn-outline-dark"
-                                            data-bs-dismiss="modal">ยกเลิก</button>&nbsp;&nbsp;
-                                        <button type="button" id="btnSave" class="btn btn-dark">ลบประเภทบุคคล</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+            <div class="col">
+                <div class="hstack gap-3 justify-content-md-end">
+                    <a href="members/edit">
+                        <button type="button" class="btn btn-outline-dark">
+                            <img src="/assets/Vector_edit.svg" alt="edit">
+                        </button>
+                    </a>
+                    <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
+                        data-bs-target="#delModal">
+                        <img src="/assets/Vector_delete.svg" alt="delete">
+                    </button>
                 </div>
             </div>
         </div>
+
+        <!-- delModal -->
+        <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="mt-3"></div>
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <div class="mb-4">
+                                <img src="/assets/delModal.svg" alt="delete">
+                            </div>
+                            <p class="fw-bold">คุณต้องการลบข้อมูลประเภทบุคคลนี้หรือไม่</p>
+                        </div>
+                        <div class="row g-2 justify-content-center">
+                            <div class="col-4 d-grid">
+                                <button type="button" class="btn btn-outline-dark"
+                                    data-bs-dismiss="modal">ยกเลิก</button>
+                            </div>
+                            <div class="col-4 d-grid">
+                                <button type="button" class="btn btn-dark">ลบประเภทบุคคล</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>

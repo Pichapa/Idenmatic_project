@@ -1,24 +1,27 @@
-.fw-bold{
-    font-size: 14px;
-    color: #890203;
+.card {
+  height: calc(100vh - 100px);
+  border-radius: 8px;
 }
-.btn{
-    border-radius: 8px;
-    width: 212px;
-    height: 48px;
-    font-size: 14px;
-    line-height: 16px;
+
+.form-lable {
+  color: #890203;
 }
-input,select{
-    border-radius: 8px;
-    font-size: 14px;
+
+.btn {
+  border-radius: 8px;
+  height: 48px;
+  font-size: 14px;
 }
-#btnSave{
-    background-color: #B5B5B5;
-    color: white;
+
+//input,select
+.form-control,
+.form-select {
+  border-radius: 8px;
+  font-size: 14px;
 }
-#btnCancle,#btnSubmit{
-    width: 118px;
-    height: 48px;
-    border-radius: 8px;
+select:invalid {
+  color: gray;
+}
+.form-check-input:checked {
+  background-color: #890203;
 }

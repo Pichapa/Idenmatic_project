@@ -1,0 +1,256 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+
+                <div class="mb-2">
+                    <label for="nameActivity" class="form-label fw-bold">ชื่อพื้นที่กิจกรรม*</label>
+                    <input type="text" class="form-control form-control-lg" id="nameActivity"
+                        placeholder="กรอกชื่อพื้นที่กิจกรรม">
+                </div>
+                <div class="mb-2">
+                    <label for="numRoom" class="form-label fw-bold">หมายเลขห้อง*</label>
+                    <input type="text" class="form-control form-control-lg" id="numRoom" placeholder="กรอกหมายเลขห้อง">
+                </div>
+                <div class="mb-2">
+                    <label for="floor" class="form-label fw-bold">ชั้น*</label>
+                    <select class="form-select form-select-lg" aria-label="floor" required>
+                        <option value="" selected disabled hidden>เลือกชั้น</option>
+                        <option class="text-dark" value="floor1">1</option>
+                        <option class="text-dark" value="floor2">2</option>
+                        <option class="text-dark" value="floor3">3</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="door" class="form-label fw-bold">ประตู*</label>
+                    <select class="form-select form-select-lg" aria-label="door" required>
+                        <option value="" selected disabled hidden>เลือกประตู</option>
+                        <option class="text-dark" value="door1">FL.2 Fitness</option>
+                        <option class="text-dark" value="door2">FL.2 Swimming Pool</option>
+                        <option class="text-dark" value="door2">FL.2 Garden</option>
+                    </select>
+                </div>
+
+                <h5 class="fw-bold">วันเวลาเปิดให้ใช้งาน*</h5>
+                <hr class="border border-dark">
+
+                <div class="row g-2 mb-4">
+                    <div class="col-sm-2">
+                        <label for="date" class="form-label fw-bold col-form-label col-form-label-lg">จันทร์</label>
+                    </div>
+
+                    <!-- card-toggle-open -->
+                    <div class="col-sm-4">
+                        <div class="dropdown">
+                            <input type="text" class="form-control form-select-lg" data-bs-toggle="collapse"
+                                id="openTime" href="#contentOpen" aria-expanded="false" aria-controls="contentOpen"
+                                placeholder="เปิด">
+
+                            <div class="collapse dropdown-menu" id="contentOpen">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="vstack gap-1">
+                                            <button type="button" class="btn-close ms-auto" aria-label="Close"
+                                                data-bs-target="#contentOpen" data-bs-toggle="collapse"></button>
+                                            <div class="lh-1">
+                                                <div class="fw-bolder fs-6">เลือกเวลา</div>
+                                                <hr class="border border-dark">
+                                            </div>
+                                        </div>
+
+                                        <div class="row g-4">
+                                            <div class="col">
+                                                <label for="hour" class="form-label text-dark">ชั่วโมง</label>
+                                            </div>
+                                            <div class="col">
+                                                <label for="minute" class="form-label text-dark">นาที</label>
+                                            </div>
+                                        </div>
+                                        <div class="row g-2">
+                                            <div class="col">
+                                                <select class="form-select form-select-lg"
+                                                    aria-label="Default select example">
+                                                    <option value="hour0" selected>00</option>
+                                                    <option class="text-dark" value="hour1">01</option>
+                                                    <option class="text-dark" value="hour2">02</option>
+                                                    <option class="text-dark" value="hour3">03</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-1">
+                                                <h4 class="fw-bold">:</h4>
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-select form-select-lg"
+                                                    aria-label="Default select example">
+                                                    <option class="text-dark" value="minute1">00</option>
+                                                    <option class="text-dark" value="minute2">10</option>
+                                                    <option class="text-dark" value="minute3">20</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end -->
+
+                    <!-- card-toggle-close -->
+                    <div class="col-sm-4">
+                        <div class="dropdown">
+                            <input type="text" class="form-control form-select-lg" data-bs-toggle="collapse"
+                                id="closeTime" href="#contentClose" aria-expanded="false" aria-controls="contentClose"
+                                placeholder="ปิด">
+                        </div>
+                        <div class="collapse dropdown-menu" id="contentClose">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="vstack gap-1">
+                                        <button type="button" class="btn-close ms-auto" aria-label="Close"
+                                            data-bs-target="#contentClose" data-bs-toggle="collapse"></button>
+                                        <div class="lh-1">
+                                            <div class="fw-bolder fs-6">เลือกเวลา</div>
+                                            <hr class="border border-dark">
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-4">
+                                        <div class="col">
+                                            <label for="hour" class="form-label text-dark">ชั่วโมง</label>
+                                        </div>
+                                        <div class="col">
+                                            <label for="minute" class="form-label text-dark">นาที</label>
+                                        </div>
+                                    </div>
+                                    <div class="row g-2">
+                                        <div class="col">
+                                            <select class="form-select form-select-lg"
+                                                aria-label="Default select example">
+                                                <option value="hour0" selected>00</option>
+                                                <option value="hour1">01</option>
+                                                <option value="hour2">02</option>
+                                                <option value="hour3">03</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-1">
+                                            <h4 class="fw-bold">:</h4>
+                                        </div>
+                                        <div class="col">
+                                            <select class="form-select form-select-lg"
+                                                aria-label="Default select example">
+                                                <option value="minute1">00</option>
+                                                <option value="minute2">10</option>
+                                                <option value="minute3">20</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end -->
+
+                    <div class="col">
+                        <div class="hstack gap-2 justify-content-end">
+                            <!-- button add date,time -->
+                            <img src="/assets/Icon-Add.svg" alt="icon-add-date" width="40" height="40">
+
+                            <!-- Button trigger modal -->
+                            <img src="/assets/Icon-Delete-Red.svg" alt="icon-add-date" width="40" height="40"
+                                data-bs-toggle="modal" href="#deleteModal">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-2">
+                    <label for="timeBooking" class="form-label fw-bold">เวลาเข้าใช้งานต่อการจอง*</label>
+                    <div class="row">
+                        <div class="col">
+                            <label for="min-time" class="form-label text-dark">เข้าใช้งานขั้นต่ำ*</label>
+                            <select class="form-select form-select-lg mb-3" aria-label="min-time" required>
+                                <option value="" selected disabled hidden>เลือกเวลา</option>
+                                <option class="text-dark" value="min-time1">15 นาที</option>
+                                <option class="text-dark" value="min-time2">30 นาที</option>
+                                <option class="text-dark" value="min-time3">35 นาที</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="max-time" class="form-label text-dark">เข้าใช้งานสูงสุด*</label>
+                            <select class="form-select form-select-lg mb-3" aria-label="max-time" required>
+                                <option value="" selected disabled hidden>เลือกเวลา</option>
+                                <option class="text-dark" value="max-time1">1 ชั่วโมง</option>
+                                <option class="text-dark" value="max-time2">2 ชั่วโมง</option>
+                                <option class="text-dark" value="max-time3">3 ชั่วโมง</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <label for="max-user" class="form-label fw-bold">จำนวนผู้เข้าใช้งานสูงสุด*</label>
+                    <input type="text" class="form-control form-control-lg" id="max-user" placeholder="0">
+                </div>
+                <div class="mb-2">
+                    <label for="areaInformation" class="form-label fw-bold">ข้อมูล/รายละเอียดของพื้นที่*</label>
+                    <textarea class="form-control" id="areaInformation" rows="4"
+                        placeholder="กรอกข้อมูล/รายละเอียดของพื้นที่"></textarea>
+                </div>
+                <div class="mb-2">
+                    <label for="fileUpload" class="form-label fw-bold">อัพโหลดรูปพื้นที่กิจกรรม*</label>
+                    <div class="hstack gap-3">
+                        <input class="form-control form-control-lg" type="text" onfocus="(this.type='file')"
+                            id="fileUpload">
+                        <button type="button" name="upload" class="btn btn-dark" style="height: 40px;">อัพโหลด</button>
+                    </div>
+                    <div id="fileHelp" class="form-text text-dark">*อัพโหลดเฉพาะไฟล์ JPG. หรือ PNG.</div>
+                </div>
+                <div class="mb-4">
+                    <label for="exampleImageCard" class="form-label fw-bold">ดูตัวอย่างรูปพื้นที่กิจกรรม</label>
+                    <div class="card" id="exampleImageCard">
+                        <!-- image Example -->
+                        <img src="https://rachabhurahotel.com/wp-content/uploads/2019/09/superior-room09.jpg"
+                            class="card-img rounded" alt="image-activity" height="400">
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col d-grid">
+                        <button type="button" name="cancel" class="btn btn-outline-dark">
+                            <div class="fs-6">ยกเลิก</div>
+                        </button>
+                    </div>
+                    <div class="col d-grid">
+                        <button type="button" name="submit" class="btn btn-dark">
+                            <div class="fs-6">บันทึก</div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="mt-3"></div>
+            <div class="modal-body">
+                <div class="text-center mb-3">
+                    <img src="/assets/delModal.svg" alt="delete modal">
+                    <div class="mt-4"></div>
+                    <p class="fw-bold text-dark">คุณต้องการลบข้อมูลเวลาเปิดนี้หรือไม่</p>
+                </div>
+
+                <div class="row g-3 justify-content-center">
+                    <div class="col-4 d-grid">
+                        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">ยกเลิก</button>
+                    </div>
+                    <div class="col-4 d-grid">
+                        <button type="button" class="btn btn-dark">ลบเวลาเปิด</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="card-body">
+    <form class="row gx-4 align-items-center">
+        <div class="col-sm-4">
+            <div class="row gx-1">
+                <label for="inputActivity" class="col-sm-3 col-form-label fw-bold">กิจกรรม</label>
+                <div class="col-sm-8">
+                    <select class="form-select form-select-lg" aria-label="Select activity" required>
+                        <option value="" selected hidden>เลือกกิจกรรม</option>
+                        <option class="text-dark" value="swimming pool">สระว่ายน้ำ</option>
+                        <option class="text-dark" value="gym">ห้องออกกำลังกาย</option>
+                        <option class="text-dark" value="roof garden">สวนบนดาดฟ้า</option>
+                        <option class="text-dark" value="meeting room">ห้องประชุม</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="row gx-1">
+                <label for="inputActivity" class="col-sm-4 col-form-label fw-bold">วันที่ตั้งแต่</label>
+                <div class="col-sm-8">
+                    <input class="form-control form-select-lg" type="text" name="dateStart" placeholder="เลือกวันที่"
+                        onfocus="(this.type='date')" onblur="(this.type='text')">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="row gx-1">
+                <label for="inputActivity" class="col-sm-2 col-form-label fw-bold">ถึง</label>
+                <div class="col-sm-8">
+                    <input class="form-control form-select-lg" type="text" name="dateEnd" placeholder="เลือกวันที่"
+                        onfocus="(this.type='date')" onblur="(this.type='text')">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,19 +1,14 @@
-img{
-    width: 213px;
-    height: 213px;
-    left: 732px;
-    top: 186px;
+.card {
+  height: calc(100vh - 100px);
+  border-radius: 8px;
 }
-h4{
-    color: #890203;
+
+.fw-bold {
+  color: #890203;
 }
-.fw-bold{
-    font-size: 18px;
-    line-height: 24px;
-    color: #890203;
-}
-.btn{
-    border-radius: 8px;
-    width: 212px;
-    height: 48px;
+
+.btn {
+  border-radius: 8px;
+  height: 48px;
+  font-size: 14px;
 }

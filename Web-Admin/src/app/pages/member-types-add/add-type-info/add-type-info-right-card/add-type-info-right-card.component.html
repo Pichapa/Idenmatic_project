@@ -11,197 +11,323 @@
         </nav>
     </div>
 
-    <div class="overflow-auto">
-        <div class="card-body">
-            <div class="row">
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="door" role="tabpanel" aria-labelledby="door-tab">
-                        <div class="mt-3"></div>
+    <!-- <div class="overflow-auto"> -->
+    <div class="card-body">
+        <div class="row">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="door" role="tabpanel" aria-labelledby="door-tab">
+                    <div class="mt-3"></div>
 
-                        <!-- door -->
-                        <div class="col mb-3">
-                            <div class="row align-items-center">
-                                <div class="col-auto">
-                                    <div class="col align-self-center">
-                                        <label class="fw-bold">ชั้น</label>
-                                    </div>
-                                </div>
-                                <div class="col-5">
-                                    <select class="form-select">
-                                        <option selected>1</option>
-                                        <option select>2</option>
-                                        <option select>3</option>
-                                    </select>
+                    <!-- door -->
+                    <div class="col mb-3">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="col align-self-center">
+                                    <label class="fw-bold">ชั้น</label>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkDoorAll">
-                            <label class="form-check-label fw-normal" for="checkDoorAll">
-                                เลือกทั้งหมด
-                            </label>
-                        </div>
-                        <hr>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="door1">
-                            <label class="form-check-label fw-normal" for="door1">
-                                ประตูทางเข้า 1
-                            </label>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-md-5">
-                                <div class="input-group mb-2 mr-sm-2">
-                                    <input type="text" class="form-control" id="open" placeholder="เปิด">
-                                    <span class="input-group-text"><img src="/assets/Vector-time.svg" alt=""></span>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="input-group mb-2 mr-sm-2">
-                                    <input type="text" class="form-control" id="close" placeholder="ปิด">
-                                    <span class="input-group-text"><img src="/assets/Vector-time.svg" alt=""></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="door2">
-                            <label class="form-check-label fw-normal" for="door2">
-                                ประตูทางเข้า 2
-                            </label>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-5">
-                                <div class="input-group mb-2 mr-sm-2">
-                                    <input type="text" class="form-control" id="open2" placeholder="เปิด">
-                                    <span class="input-group-text"><img src="/assets/Vector-time.svg" alt=""></span>
-                                </div>
-                            </div>
-                            <div class="col-sm-5">
-                                <div class="input-group mb-2 mr-sm-2">
-                                    <input type="text" class="form-control" id="close2" placeholder="ปิด">
-                                    <span class="input-group-text"><img src="/assets/Vector-time.svg" alt=""></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="door3">
-                            <label class="form-check-label fw-normal" for="door3">
-                                ประตูทางเข้า 3
-                            </label>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-5">
-                                <div class="input-group mb-2 mr-sm-2">
-                                    <input type="text" class="form-control" id="open3" placeholder="เปิด">
-                                    <span class="input-group-text"><img src="/assets/Vector-time.svg" alt=""></span>
-                                </div>
-                            </div>
-                            <div class="col-sm-5">
-                                <div class="input-group mb-2 mr-sm-2">
-                                    <input type="text" class="form-control" id="close3" placeholder="ปิด">
-                                    <span class="input-group-text"><img src="/assets/Vector-time.svg" alt=""></span>
-                                </div>
+                            <div class="col-5">
+                                <select class="form-select form-select-lg">
+                                    <option value="door1" selected>1</option>
+                                    <option value="door2" select>2</option>
+                                    <option value="door3" select>3</option>
+                                </select>
                             </div>
                         </div>
                     </div>
 
-                    <!-- floor -->
-                    <div class="tab-pane fade" id="elevator" role="tabpanel" aria-labelledby="elevator-tab">
-                        <div class="mt-3"></div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkDoorAll">
+                        <label class="form-check-label fw-normal" for="checkDoorAll">
+                            เลือกทั้งหมด
+                        </label>
+                    </div>
+                    <hr>
 
-                        <div class="col mb-3">
-                            <div class="row align-items-center">
-                                <div class="col-auto">
-                                    <div class="col align-self-center">
-                                        <label class="fw-bold">ชั้น</label>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="door1">
+                        <label class="form-check-label fw-normal" for="door1">
+                            ประตูทางเข้า 1
+                        </label>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-5">
+                            <div class="input-group mb-2 mr-sm-2">
+
+                                <!-- card-time-open -->
+                                <div class="dropdown">
+                                    <input type="text" class="form-control form-control-lg" data-bs-toggle="collapse"
+                                        id="open" href="#cardOpen" aria-expanded="false" aria-controls="cardOpen"
+                                        placeholder="เปิด">
+
+                                    <div class="collapse dropdown-menu" id="cardOpen">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="vstack gap-1">
+                                                    <button type="button" class="btn-close ms-auto" aria-label="Close"
+                                                        data-bs-target="#cardOpen" data-bs-toggle="collapse"></button>
+                                                    <div class="lh-1">
+                                                        <div class="fw-bold fs-6">เลือกเวลา</div>
+                                                        <hr class="border border-dark">
+                                                    </div>
+                                                </div>
+                                                <div class="row g-5">
+                                                    <div class="col mb-1">
+                                                        <label class="fst-normal" for="hour">ชั่วโมง</label>
+                                                    </div>
+                                                    <div class="col mb-1">
+                                                        <label class="fst-normal" for="minute">นาที</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-3">
+                                                    <div class="col">
+                                                        <select class="form-select form-select-lg" id="hour">
+                                                            <option value="hour1" selected>00</option>
+                                                            <option value="hour2" select>01</option>
+                                                            <option value="hour3" select>02</option>
+                                                            <option value="hour4" select>03</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-1 align-self-center">
+                                                        <h4 class="fw-bolder">:</h4>
+                                                    </div>
+                                                    <div class="col">
+                                                        <select class="form-select form-select-lg" id="minute">
+                                                            <option value="minute1" selected>00</option>
+                                                            <option value="minute2" select>01</option>
+                                                            <option value="minute3" select>02</option>
+                                                            <option value="minute4" select>03</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-5">
-                                    <select class="form-select">
-                                        <option selected>1</option>
-                                        <option select>2</option>
-                                        <option select>3</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
+                                <!-- end -->
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="checkElevatorAll">
-                            <label class="form-check-label fw-normal" for="checkElevatorAll">
-                                เลือกทั้งหมด
-                            </label>
-                        </div>
-                        <hr>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="elevator1">
-                            <label class="form-check-label fw-normal" for="elevator1">
-                                ประตูทางเข้า 1
-                            </label>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-5">
-                                <div class="input-group mb-2 mr-sm-2">
-                                    <input type="text" class="form-control" id="elevatorOpen" placeholder="เปิด">
-                                    <span class="input-group-text"><img src="/assets/Vector-time.svg" alt=""></span>
-                                </div>
-                            </div>
-                            <div class="col-sm-5">
-                                <div class="input-group mb-2 mr-sm-2">
-                                    <input type="text" class="form-control" id="elevatorClose" placeholder="ปิด">
-                                    <span class="input-group-text"><img src="/assets/Vector-time.svg" alt=""></span>
-                                </div>
                             </div>
                         </div>
+                        <div class="col-5">
+                            <div class="input-group mb-2 mr-sm-2">
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="elevator2">
-                            <label class="form-check-label fw-normal" for="elevator2">
-                                ประตูทางเข้า 2
-                            </label>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-5">
-                                <div class="input-group mb-2 mr-sm-2">
-                                    <input type="text" class="form-control" id="elevatorOpen2" placeholder="เปิด">
-                                    <span class="input-group-text"><img src="/assets/Vector-time.svg" alt=""></span>
-                                </div>
-                            </div>
-                            <div class="col-sm-5">
-                                <div class="input-group mb-2 mr-sm-2">
-                                    <input type="text" class="form-control" id="elevatorClose2" placeholder="ปิด">
-                                    <span class="input-group-text"><img src="/assets/Vector-time.svg" alt=""></span>
-                                </div>
-                            </div>
-                        </div>
+                                <!-- card-time-close -->
+                                <div class="dropdown">
+                                    <input type="text" class="form-control form-control-lg" data-bs-toggle="collapse"
+                                        id="close" href="#cardClose" aria-expanded="false" aria-controls="cardClose"
+                                        placeholder="ปิด">
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="elevator3">
-                            <label class="form-check-label fw-normal" for="elevator3">
-                                ประตูทางเข้า 3
-                            </label>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-sm-5">
-                                <div class="input-group mb-2 mr-sm-2">
-                                    <input type="text" class="form-control" id="elevatorOpen3" placeholder="เปิด">
-                                    <span class="input-group-text"><img src="/assets/Vector-time.svg" alt=""></span>
-                                </div>
-                            </div>
-                            <div class="col-sm-5">
-                                <div class="input-group mb-2 mr-sm-2">
-                                    <input type="text" class="form-control" id="elevatorClose3" placeholder="ปิด">
-                                    <span class="input-group-text"><img src="/assets/Vector-time.svg" alt=""></span>
-                                </div>
-                            </div>
-                        </div>
+                                    <div class="collapse dropdown-menu" id="cardClose">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="vstack gap-1">
+                                                    <button type="button" class="btn-close ms-auto" aria-label="Close"
+                                                        data-bs-target="#cardClose" data-bs-toggle="collapse"></button>
+                                                    <div class="lh-1">
+                                                        <div class="fw-bold fs-6">เลือกเวลา</div>
+                                                        <hr class="border border-dark">
+                                                    </div>
+                                                </div>
+                                                <div class="row g-5">
+                                                    <div class="col mb-1">
+                                                        <label class="fst-normal" for="hour">ชั่วโมง</label>
+                                                    </div>
+                                                    <div class="col mb-1">
+                                                        <label class="fst-normal" for="minute">นาที</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-3">
+                                                    <div class="col">
+                                                        <select class="form-select form-select-lg" id="hour">
+                                                            <option value="hour1" selected>00</option>
+                                                            <option value="hour2" select>01</option>
+                                                            <option value="hour3" select>02</option>
+                                                            <option value="hour4" select>03</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-1 align-self-center">
+                                                        <h4 class="fw-bolder">:</h4>
+                                                    </div>
+                                                    <div class="col">
+                                                        <select class="form-select form-select-lg" id="minute">
+                                                            <option value="minute1" selected>00</option>
+                                                            <option value="minute2" select>01</option>
+                                                            <option value="minute3" select>02</option>
+                                                            <option value="minute4" select>03</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+
+                            </div>
+                        </div>
                     </div>
+                </div>
+
+                <!-- floor -->
+                <div class="tab-pane fade" id="elevator" role="tabpanel" aria-labelledby="elevator-tab">
+                    <div class="mt-3"></div>
+
+                    <div class="col mb-3">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="col align-self-center">
+                                    <label class="fw-bold">ชั้น</label>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <select class="form-select form-select-lg">
+                                    <option value="floor1" selected>1</option>
+                                    <option value="floor2" select>2</option>
+                                    <option value="floor3" select>3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkElevatorAll">
+                        <label class="form-check-label fw-normal" for="checkElevatorAll">
+                            เลือกทั้งหมด
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="elevator1">
+                        <label class="form-check-label fw-normal" for="elevator1">
+                            ประตูทางเข้า 1
+                        </label>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-5">
+                            <div class="input-group mb-2 mr-sm-2">
+
+                                <!-- card-elevator-open -->
+                                <div class="dropdown">
+                                    <input type="text" class="form-control form-control-lg" data-bs-toggle="collapse"
+                                        id="elevatorOpen" href="#cardElevatorOpen" aria-expanded="false"
+                                        aria-controls="cardElevatorOpen" placeholder="เปิด">
+
+                                    <div class="collapse dropdown-menu" id="cardElevatorOpen">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="vstack gap-1">
+                                                    <button type="button" class="btn-close ms-auto" aria-label="Close"
+                                                        data-bs-target="#cardElevatorOpen"
+                                                        data-bs-toggle="collapse"></button>
+                                                    <div class="lh-1">
+                                                        <div class="fw-bold fs-6">เลือกเวลา</div>
+                                                        <hr class="border border-dark">
+                                                    </div>
+                                                </div>
+                                                <div class="row g-5">
+                                                    <div class="col mb-1">
+                                                        <label class="fst-normal" for="hour">ชั่วโมง</label>
+                                                    </div>
+                                                    <div class="col mb-1">
+                                                        <label class="fst-normal" for="minute">นาที</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-3">
+                                                    <div class="col">
+                                                        <select class="form-select form-select-lg" id="hour">
+                                                            <option value="hour1" selected>00</option>
+                                                            <option value="hour2" select>01</option>
+                                                            <option value="hour3" select>02</option>
+                                                            <option value="hour4" select>03</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-1 align-self-center">
+                                                        <h4 class="fw-bolder">:</h4>
+                                                    </div>
+                                                    <div class="col">
+                                                        <select class="form-select form-select-lg" id="minute">
+                                                            <option value="minute1" selected>00</option>
+                                                            <option value="minute2" select>01</option>
+                                                            <option value="minute3" select>02</option>
+                                                            <option value="minute4" select>03</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5">
+                            <div class="input-group mb-2 mr-sm-2">
+
+                                <!-- card-elevator-close -->
+                                <div class="dropdown">
+                                    <input type="text" class="form-control form-control-lg" data-bs-toggle="collapse"
+                                        id="elevatorClose" href="#cardElevatorClose" aria-expanded="false"
+                                        aria-controls="cardElevatorClose" placeholder="ปิด">
+                                    <div class="collapse dropdown-menu" id="cardElevatorClose">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="vstack gap-1">
+                                                    <button type="button" class="btn-close ms-auto" aria-label="Close"
+                                                        data-bs-target="#cardElevatorClose"
+                                                        data-bs-toggle="collapse"></button>
+                                                    <div class="lh-1">
+                                                        <div class="fw-bold fs-6">เลือกเวลา</div>
+                                                        <hr class="border border-dark">
+                                                    </div>
+                                                </div>
+                                                <div class="row g-5">
+                                                    <div class="col mb-1">
+                                                        <label class="fst-normal" for="hour">ชั่วโมง</label>
+                                                    </div>
+                                                    <div class="col mb-1">
+                                                        <label class="fst-normal" for="minute">นาที</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row g-3">
+                                                    <div class="col">
+                                                        <select class="form-select form-select-lg" id="hour">
+                                                            <option value="hour1" selected>00</option>
+                                                            <option value="hour2" select>01</option>
+                                                            <option value="hour3" select>02</option>
+                                                            <option value="hour4" select>03</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-1 align-self-center">
+                                                        <h4 class="fw-bolder">:</h4>
+                                                    </div>
+                                                    <div class="col">
+                                                        <select class="form-select form-select-lg" id="minute">
+                                                            <option value="minute1" selected>00</option>
+                                                            <option value="minute2" select>01</option>
+                                                            <option value="minute3" select>02</option>
+                                                            <option value="minute4" select>03</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end -->
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!-- </div> -->

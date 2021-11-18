@@ -1,6 +1,5 @@
 {
     "recommendations": [
-        "esbenp.prettier-vscode",
-        "bmewburn.vscode-intelephense-client"
+        "esbenp.prettier-vscode"
     ]
 }

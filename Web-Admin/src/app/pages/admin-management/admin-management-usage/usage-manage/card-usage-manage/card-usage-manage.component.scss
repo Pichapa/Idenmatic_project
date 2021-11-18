@@ -1,0 +1,39 @@
+.card {
+  height: calc(100vh - 100px);
+  // overflow: auto;
+  border-radius: 8px;
+}
+
+//nav
+.navbar {
+  border-radius: 8px;
+  background-color: #ededed;
+}
+.nav-pills {
+  background-color: #ededed;
+  width: 236px;
+  height: calc(89vh - 100px);
+}
+.list-group-item {
+  background-color: #ededed;
+  border-right: none;
+  height: 50px;
+}
+.list-group-item.active,
+.list-group-item.hover {
+  color: #890203;
+  border-right: none;
+  background-color: white;
+  border-color: #ededed;
+}
+
+//image
+.rounded-circle {
+  width: 92px;
+  height: 92px;
+}
+
+//font
+.fw-bolder {
+  color: #890203;
+}

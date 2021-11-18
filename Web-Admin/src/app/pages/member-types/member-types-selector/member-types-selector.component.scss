@@ -1,19 +1,17 @@
-#btnCancle,#btnSave{
-    width: 150px;
-    height : 48px;
-    border-radius: 8px;
+.card {
+  border-radius: 8px;
 }
-.centerImg{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.form-select,
+.form-control {
+  border-radius: 8px;
+  font-size: 14px;
+}
+select:required {
+  color: gray;
 }
 
-input,select{
-    border-radius: 8px;
-}
-.btn{
-    height : 48px;
-    width: 48px;
-    border-radius: 8px;
+.btn {
+  height: 48px;
+  border-radius: 8px;
+  font-size: 14px;
 }

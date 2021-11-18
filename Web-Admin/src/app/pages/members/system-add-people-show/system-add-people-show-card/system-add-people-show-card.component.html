@@ -1,22 +1,23 @@
 <div class="card">
     <div class="card-body">
-        <div class="col-sm-6 mx-auto">
+        <div class="col-sm-6 mx-auto mt-2">
 
             <div class="text-center">
-                <div class="mb-2">
-                    <img class="rounded-circle" alt="" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg"
-                        data-holder-rendered="true"><br>
+                <div class="mb-3">
+                    <img class="rounded-circle" alt="user-image"
+                        src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" data-holder-rendered="true"
+                        width="213" height="213">
                 </div>
                 <div class="mb-3">
-                    <h4><b>ID ผู้ใช้งาน : 123456</b></h4>
+                    <h4 class="fw-bold">ID ผู้ใช้งาน : 123456</h4>
                 </div>
             </div>
 
             <div class="col mb-3">
                 <p class="fw-bold">ข้อมูลส่วนตัว</p>
-                <hr>
+                <hr class="border border-dark">
 
-                <div class="row" style="font-size: 18px;">
+                <div class="row">
                     <div class="mb-2 row">
                         <div class="col">หมายเลขบัตรประชาชน :</div>
                         <div class="col">1234567891234</div>
@@ -40,47 +41,39 @@
                 </div>
             </div>
 
-            <div class="col mb-3">
+            <div class="col mb-4">
                 <p class="fw-bold">รูปบัตรประชาชน</p>
-                <hr>
+                <hr class="border border-dark">
 
-                <div class="row" style="font-size: 14px;">
-                    <div class="mb-2 row">
-                        <div class="col"> <img src="/assets/doc-jpg.svg" alt="" style="width: 25.6px;height: 32px;">
-                            รูปบัตรประชาชน.JPG</div>
-                        <div class="col text-end">
-                            <a href="#" style="color: #890203;">ดูเอกสาร</a>
-                        </div>
+                <div class="row">
+                    <div class="hstack gap-3">
+                        <img src="/assets/doc-jpg.svg" alt="file-doc">
+                        <div class="fw-normal">รูปบัตรประชาชน.JPG</div>
+                        <a href="#" class="ms-auto" style="color: #890203;">ดูเอกสาร</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col mb-3">
+            <div class="col mb-5">
                 <p class="fw-bold">รายการเอกสาร 1</p>
-                <hr>
+                <hr class="border border-dark">
 
-                <div class="row" style="font-size: 14px;">
-                    <div class="mb-2 row">
-                        <div class="col"> <img src="/assets/doc-pdf.svg" alt="" style="width: 25.6px;height: 32px;">
-                            เอกสาร 1.PDF</div>
-                        <div class="col text-end">
-                            <a href="#" style="color: #890203;">ดูเอกสาร</a>
-                        </div>
+                <div class="row">
+                    <div class="hstack gap-3 mb-2">
+                        <img src="/assets/doc-pdf.svg" alt="file-pdf">
+                        <div class="fw-normal">เอกสาร 1.PDF</div>
+                        <a href="#" class="ms-auto" style="color: #890203;">ดูเอกสาร</a>
                     </div>
-                    <div class="mb-2 row">
-                        <div class="col"> <img src="/assets/doc-docx.svg" alt="" style="width: 25.6px;height: 32px;">
-                            เอกสารสำคัญ.DOCX</div>
-                        <div class="col text-end">
-                            <a href="#" style="color: #890203;">ดูเอกสาร</a>
-                        </div>
+                    <div class="hstack gap-3 mb-2">
+                        <img src="/assets/doc-docx.svg" alt="file-docx">
+                        <div class="fw-normal"> เอกสารสำคัญ.DOCX</div>
+                        <a href="#" class="ms-auto" style="color: #890203;">ดูเอกสาร</a>
                     </div>
                 </div>
             </div>
 
-            <div class="text-center">
-                <button class="btn btn-dark">
-                    กลับสู่หน้าแดชบอร์ด
-                </button>
+            <div class="d-grid col-6 mx-auto">
+                <button class="btn btn-dark" type="button">กลับสู่หน้าแดชบอร์ด</button>
             </div>
 
         </div>

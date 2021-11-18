@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="card-body">
+        <div class="col-sm-6 mx-auto">
+            <div class="mb-3">
+                <label for="type" class="form-label fw-bold">ประเภทบุคคล*</label>
+                <select class="form-select form-select-lg" required>
+                    <option value="" selected disabled hidden>เลือกประเภทบุคคล</option>
+                    <option class="text-dark" value="1">ผู้อยู่อาศัย</option>
+                    <option class="text-dark" value="2">ผู้เข้าพบ</option>
+                    <option class="text-dark" value="3">เจ้าหน้าที่/พนักงาน</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="userID" class="form-label fw-bold">ID ผู้ใช้งาน*</label>
+                <input class="form-control form-control-lg" type="text" id="userID" placeholder="กรอก ID ผู้ใช้งาน"
+                    required>
+            </div>
+
+            <div class="mb-3">
+                <label for="dateStart" class="form-label fw-bold">วันที่เริ่มต้น*</label>
+                <input class="form-control form-control-lg" type="text" onfocus="(this.type = 'date')"
+                    placeholder="เลือกวันที่เริ่มต้น" required />
+            </div>
+
+            <div class="mb-5">
+                <label for="dateEnd" class="form-label fw-bold">วันที่สิ้นสุด*</label>
+                <input class="form-control form-control-lg" type="text" onfocus="(this.type = 'date')"
+                    placeholder="เลือกวันที่เริ่มต้น" required />
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col d-grid">
+                    <button type="button" name="cancle" class="btn btn-outline-dark btn-lg">ยกเลิก</button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" name="save" class="btn btn-dark btn-lg">บันทึก</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

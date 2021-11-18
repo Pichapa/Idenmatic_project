@@ -1,0 +1,42 @@
+.card {
+  // height: calc(100vh - 100px);
+  border-radius: 8px;
+}
+//font
+.fw-bold {
+  color: #890203;
+}
+p {
+  font-size: 14px;
+}
+
+//card activity area
+.card-centralArea {
+  background-color: #ededed;
+  border: none;
+  box-shadow: none;
+  border-radius: 8px;
+  width: auto;
+}
+.card-img-top {
+  height: 145px;
+}
+.btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+}
+.img-icon {
+  width: 20px;
+}
+
+//modal
+.modal-content {
+  border-radius: 8px;
+}
+.btn-modal {
+  width: 150px;
+  height: 48px;
+  border-radius: 8px;
+  font-size: 14px;
+}

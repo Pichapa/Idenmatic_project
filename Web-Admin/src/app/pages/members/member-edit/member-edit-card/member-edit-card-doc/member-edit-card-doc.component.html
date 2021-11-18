@@ -1,114 +1,190 @@
-<div class="mb-3">
+<!-- <div class="mb-4">
     <div class="d-flex justify-content-between">
         <div class="align-self-center">
-            <h6><strong>รายชื่อผู้เข้าถึงห้อง</strong></h6>
+            <h5 class="fw-bold">รายชื่อผู้เข้าถึงห้อง</h5>
         </div>
         <div class="col">
             <a href="members/add-access">
-                <button type="button" class="btn btn-dark float-end">
-                    <img src="/assets/add.svg" alt="add" class="float-start">
-                    <div class="p-2 text-center">
-                        เพิ่มผู้เข้าถึงห้อง
+                <button type="button" class="btn btn-dark float-end" style="width: 212px;">
+                    <div class="row align-items-center">
+                        <div class="col-1">
+                            <img src="/assets/add.svg" class="float-start" alt="add">
+                        </div>
+                        <div class="col-10">
+                            <span class="align-middle">เพิ่มผู้เข้าถึงห้อง</span>
+                        </div>
                     </div>
                 </button>
             </a>
         </div>
     </div>
     <hr>
-    <div class="card">
+    <div class="card" id="card-doc">
         <div class="card-body">
             <div class="row">
-                <div class="d-flex justify-content-between">
-                    <div class="row align-items-center">
-                        <div class="col-sm">
-                            <img class="imgUser" src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" alt="">
+                <div class="col-3">
+                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded"
+                        alt="user-image" width="104" height="104">
+                </div>
+                <div class="col-5 align-self-center">
+                    <div class="row">
+                        <div class="hstack gap-2">
+                            <h6 class="fw-bold">ID :</h6>
+                            <h6 class="fw-bold">222222</h6>
                         </div>
-
-                        <div class="col-sm">
-                            <div class="row" style="font-size: 18px;color: #890203;">
-                                ID : 1111
-                            </div>
-
-                            <div class="row" style="font-size: 14px;">
-                                ชื่อ : Ppp
-                            </div>
-
-                            <div class="row" style="font-size: 14px;">
-                                นามสกุล : Pppooop
-                            </div>
-
-                            <div class="row" style="font-size: 14px;">
-                                ประเภทบุคคล : ผู้อาศัย
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="hstack gap-2">
+                            <div class="fw-normal">ชื่อ :</div>
+                            <div class="fw-normal">ณัฐ</div>
                         </div>
-
-                        <div class="col-sm">
-                            <div class="d-flex justify-content-end">
-                                <button type="button" id="btnEdit" class="btn btn-outline-secondary"><img
-                                        src="/assets/Vector_edit.svg" alt="edit">
-                                </button>
-                                &nbsp;
-                                <button type="button" id="btnDelete" class="btn btn-outline-secondary"
-                                    data-bs-toggle="modal" data-bs-target="#deleteModal"><img
-                                        src="/assets/Vector_delete.svg" alt="delete"></button>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="hstack gap-2">
+                            <div class="fw-normal">นามสกุล :</div>
+                            <div class="fw-normal">นิรนาม</div>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="hstack gap-2">
+                            <div class="fw-normal">ประเภทบุคคล :</div>
+                            <div class="fw-normal">ผู้อาศัย</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col align-self-center">
+                    <div class="hstack gap-2">
+                        <button type="button" class="btn btn-outline-secondary"
+                            onclick="window.location.href='members/edit-access';">
+                            <img src="/assets/Vector_edit.svg" alt="edit">
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                            data-bs-target="#deleteModal"><img src="/assets/Vector_delete.svg" alt="delete"></button>
                     </div>
                 </div>
             </div>
             <hr>
 
+            <div class="row">
+                <div class="col-3">
+                    <img src="/assets/scan-img.jpg" class="rounded" alt="user-image" width="104" height="104">
+                </div>
+                <div class="col-5 align-self-center">
+                    <div class="row">
+                        <div class="hstack gap-2">
+                            <h6 class="fw-bold">ID :</h6>
+                            <h6 class="fw-bold">333333</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="hstack gap-2">
+                            <div class="fw-normal">ชื่อ :</div>
+                            <div class="fw-normal">สัญญา</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="hstack gap-2">
+                            <div class="fw-normal">นามสกุล :</div>
+                            <div class="fw-normal">มีสกุล</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="hstack gap-2">
+                            <div class="fw-normal">ประเภทบุคคล :</div>
+                            <div class="fw-normal">ผู้เข้าพบ</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col align-self-center">
+                    <div class="hstack gap-2">
+                        <button type="button" class="btn btn-outline-secondary"
+                            onclick="window.location.href='members/edit-access';">
+                            <img src="/assets/Vector_edit.svg" alt="edit">
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                            data-bs-target="#deleteModal"><img src="/assets/Vector_delete.svg" alt="delete"></button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-</div>
+</div> -->
 
-<div class="mb-3">
-    <h6><strong>เอกสาร 1</strong></h6>
+<div class="mb-4">
+    <h5 class="fw-bold">เอกสาร 1</h5>
     <hr>
-    <div class="card">
+    <div class="card" id="card-doc">
         <div class="card-body">
-            <!-- <input type="text" class="form-control" id="Docname" name="Docname"> -->
-
-            <div class="text-center">
-                <hr>
-                <button type="button" class="btn btn-dark">
-                    <img src="/assets/add.svg" alt="add" class="float-start">
-                    <div class="p-2 text-center">
-                        อัพโหลดเอกสาร
+            <div class="row mb-2">
+                <div class="hstack gap-3">
+                    <img src="/assets/doc-pdf.svg" alt="pdf-icon">
+                    <div class="fw-normal">เอกสาร 1.PDF</div>
+                    <div class="ms-auto">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
                     </div>
-                </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="hstack gap-3">
+                    <img src="/assets/doc-docx.svg" alt="docx-icon">
+                    <div class="fw-normal">เอกสารสำคัญ.DOCX</div>
+                    <div class="ms-auto">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-center">
+                <div class="col-6 d-grid mb-3">
+                    <button type="button" class="btn btn-dark">
+                        <div class="row align-items-center">
+                            <div class="col-1">
+                                <img src="/assets/add.svg" class="float-start" alt="add">
+                            </div>
+                            <div class="col-10">
+                                <span class="align-middle">อัพโหลดเอกสาร</span>
+                            </div>
+                        </div>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="mb-3">
-    <h6><strong>สแกนใบหน้า</strong></h6>
+<div class="mb-4">
+    <h5 class="fw-bold">สแกนใบหน้า</h5>
     <hr>
-    <div class="row justify-content-between">
-        <div class="col-9">
-            <input type="text" class="form-control" id="formScan">
-        </div>
-        <div class="col-3">
-            <a href="members/add-scan">
-                <button class="btn btn-dark float-end" style="width:94px;height:39px ;">สแกน</button>
-            </a>
-        </div>
+    <div class="hstack gap-2">
+        <input class="form-control form-control-lg me-auto" type="text" onfocus="(this.type = 'file')">
+        <a href="members/add-scan">
+            <button type="button" class="btn btn-dark btn-lg">สแกน</button>
+        </a>
     </div>
 </div>
 
-<!-- delModal -->
+<!-- deleteModal -->
 <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
+            <div class="mt-3"></div>
             <div class="modal-body">
-                <img src="/assets/delModal.svg" alt="" class="centerImg"><br>
-                <p style="text-align: center;"><b>คุณต้องการลบข้อมูลผู้อยู่อาศัยนี้หรือไม่</b></p>
-
-                <div class="row justify-content-center">
-                    <button type="button" id="btnCancle" class="btn btn-outline-dark"
-                        data-bs-dismiss="modal">ยกเลิก</button>&nbsp;&nbsp;
-                    <button type="button" id="btnSave" class="btn btn-dark">ลบผู้อยู่อาศัย</button>
+                <div class="text-center">
+                    <div class="mb-4">
+                        <img src="/assets/delModal.svg" alt="delete">
+                    </div>
+                    <p class="fw-bolder">คุณต้องการลบข้อมูลผู้อยู่อาศัยนี้หรือไม่</p>
+                </div>
+                <div class="row g-3 justify-content-center">
+                    <div class="col-3 d-grid">
+                        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">ยกเลิก</button>
+                    </div>
+                    <div class="col-3 d-grid">
+                        <button type="button" class="btn btn-dark">ลบผู้อยู่อาศัย</button>
+                    </div>
                 </div>
             </div>
         </div>

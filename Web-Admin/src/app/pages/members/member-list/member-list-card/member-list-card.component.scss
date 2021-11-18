@@ -1,72 +1,64 @@
-table{
-    width: 100%;
-    
+.card {
+  height: calc(100vh - 188px);
+  // overflow: auto;
+  border-radius: 8px;
 }
 
-table th{
-    color:#890203;
-}
-table td{
-    width: 15%;
-}
-
-.btn{
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
-}
-.centerImg{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p{
-    text-align: center;
-}
-#btnCancle,#btnSave{
-    width: 118px;
-height : 48px;
-border-radius: 8px;
-}
-#searchUser[type=search] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
+#searchInput {
+  background: url(/assets/search.svg) right no-repeat;
   border: none;
   border-bottom: 2px solid #d1d0d0;
+  border-radius: 1px;
 }
 
-
-
-.pagination-outer{ text-align: center; }
-.pagination{
-    display: inline-flex;
-    position: relative;
+table {
+  width: 100%;
 }
-.pagination li a.page-link{
-    color: #231F20;
-    background-color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 39px;
-    height: 40px;
-    width: 40px;
-    padding: 0;
-    margin: 0 5px;
-    border: none;
-    border-radius: 7px;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    transition: all 0.3s ease 0s;
-        border: 1px solid #939393;
+
+table th {
+  color: #890203;
+}
+table td {
+  width: 15%;
+}
+
+.btn {
+  height: 48px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+//pagination
+.pagination-outer {
+  text-align: center;
+}
+.pagination {
+  display: inline-flex;
+  position: relative;
+}
+.pagination li a.page-link {
+  color: #231f20;
+  background-color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 39px;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 0 5px;
+  border: none;
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease 0s;
+  border: 1px solid #939393;
 }
 
 .pagination li a.page-link:hover,
 .pagination li a.page-link:focus,
 .pagination li.active a.page-link:hover,
-.pagination li.active a.page-link{
-    color: #fff;
-    background: #231F20;
+.pagination li.active a.page-link {
+  color: #fff;
+  background: #231f20;
 }

@@ -1,0 +1,12 @@
+.container {
+  height: calc(90vh - 100px);
+}
+//font
+.fw-bold {
+  color: #890203;
+}
+
+//input checked
+input:checked {
+  background-color: #890203;
+}

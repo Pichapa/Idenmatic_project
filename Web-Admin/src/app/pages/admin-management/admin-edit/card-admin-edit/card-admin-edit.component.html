@@ -1,0 +1,67 @@
+<div class="card">
+    <div class="card-body overflow-auto">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <form>
+                    <div class="mb-2 mt-2">
+                        <label class="form-label fw-bold">เลข ID ผู้ดูแล</label>
+                        <input type="text" class="form-control form-control-lg" id="adminID" disabled>
+                    </div>
+
+                    <div class="mb-2">
+                        <label class="form-label fw-bold">อัพโหลดรูปโปรไฟล์</label>
+                        <div class="hstack gap-4">
+                            <input type="text" class="form-control me-auto form-control-lg"
+                                onfocus="(this.type = 'file')" required>
+                            <button type="submit" id="btnUpload" class="btn btn-dark">อัพโหลด</button>
+                        </div>
+                        <div id="fileUpload" class="form-text text-dark">*อัพโหลดเฉพาะไฟล์ .jpg .png
+                            เท่านั้น</div>
+                    </div>
+
+                    <div class="mb-2">
+                        <label class="form-label fw-bold">ประเภทผู้ดูแล</label>
+                        <select class="form-select form-select-lg">
+                            <option value="" selected disabled hidden>เลือกระดับผู้ดูแล</option>
+                            <option value="admin1">ผู้ดูแลระดับที่ 1</option>
+                            <option value="admin2">ผู้ดูแลระดับที่ 2</option>
+                            <option value="admin3">ผู้ดูแลระดับที่ 3</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-2">
+                        <label class="form-label fw-bold">ชื่อผู้ดูแล*</label>
+                        <input type="text" class="form-control form-control-lg" id="adminName"
+                            placeholder="กรอกชื่อผู้ดูแล">
+                    </div>
+
+                    <div class="mb-2">
+                        <label class="form-label fw-bold">นามสกุล*</label>
+                        <input type="text" class="form-control form-control-lg" id="adminLastName"
+                            placeholder="กรอกนามสกุล">
+                    </div>
+
+                    <div class="mb-2">
+                        <label class="form-label fw-bold">เบอร์โทร</label>
+                        <input type="text" class="form-control form-control-lg" id="adminTel"
+                            placeholder="กรอกเบอร์โทร">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-bold">อีเมล*</label>
+                        <input type="text" class="form-control form-control-lg" id="adminEmail" placeholder="กรอกอีเมล">
+                    </div>
+                </form>
+
+                <div class="row g-3 justify-content-center">
+                    <div class="col-4 d-grid">
+                        <button type="button" class="btn btn-outline-dark" style="height: 48px;">ยกเลิก</button>
+                    </div>
+                    <div class="col-4 d-grid">
+                        <button type="submit" class="btn btn-dark" style="height: 48px;">บันทึก</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.fw-bold {
+  color: #890203;
+}
+.table {
+  font-size: 14px;
+}
+
+//select
+.form-select {
+  border-radius: 8px;
+  font-size: 14px;
+}
+select:invalid {
+  color: gray;
+}
+
+//card
+#owner,
+#partner {
+  border-radius: 8px;
+  border: 1px solid #939393;
+  box-shadow: none;
+}
+
+.btn {
+  height: 48px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+#searchInput {
+  background: url(/assets/search.svg) right no-repeat;
+  border: none;
+  border-bottom: 2px solid #d1d0d0;
+  border-radius: 1px;
+}

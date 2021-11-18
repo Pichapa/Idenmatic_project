@@ -1,14 +1,14 @@
-#searchUser[type=search] {
-  width: 100%;
-  box-sizing: border-box;
+#searchInput {
+  background: url(/assets/search.svg) right no-repeat;
   border: none;
   border-bottom: 2px solid #d1d0d0;
   border-radius: 1px;
 }
-label{
+
+.form-lable {
   color: #890203;
-  font-size: 16px;
 }
-select{
+.form-select {
   border-radius: 8px;
+  font-size: 14px;
 }

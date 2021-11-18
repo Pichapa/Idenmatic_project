@@ -1,34 +1,16 @@
-#btnEdit,#btnDelete{
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
+.fw-bold {
+  color: #890203;
 }
-.btn{
-    border-radius: 8px;
-    width: 212px;
-    height: 48px;
-    font-size: 14px;
-    line-height: 16px;
-    
+.fw-normal {
+  font-size: 14px;
 }
-label{
-   color: #231F20;
-   font-size: 14px;
+#card-car {
+  box-shadow: none;
+  border-radius: 8px;
 }
-h6{
-    font-size: 18px;
-    color: #890203;
-}
-.centerImg{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-p{
-    text-align: center;
-}
-#btnSave,#btnCancle{
-    width : 118px;
-    height: 48px;
-    border-radius: 8px;
+
+.btn {
+  height: 48px;
+  border-radius: 8px;
+  font-size: 14px;
 }

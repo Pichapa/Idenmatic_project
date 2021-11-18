@@ -1,0 +1,99 @@
+<div class="card">
+    <!-- nav bar -->
+
+    <nav class="navbar">
+        <div class="container-fluid justify-content-center">
+            <div class="row gx-1">
+                <div class="col-auto">
+                    <div class="p-2">
+                        <img src="/assets/scan-img.jpg" class="rounded-circle" alt="">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="p-3">
+                        <p class="fw-bolder">ID ผู้ดูแลระบบ : 123456</p>
+                        <p class="fw-bolder">ผุู้ดูแลระดับ 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- nav-tab -->
+
+    <div class="d-flex align-items-start">
+        <div class="nav list-group flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+            aria-orientation="vertical">
+            <button class="list-group-item list-group-item-action active" data-bs-toggle="pill"
+                data-bs-target="#door-tab" type="button" role="tab" aria-controls="door-tab" aria-selected="true">
+                <div class="fw-normal">การจัดการประตู</div>
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="pill" data-bs-target="#space-tab"
+                type="button" role="tab" aria-controls="space-tab" aria-selected="false">
+                <div class="fw-normal">การจัดการพื้นที่</div>
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="pill" data-bs-target="#room-tab"
+                type="button" role="tab" aria-controls="room-tab" aria-selected="false">
+                <div class="fw-normal">การจัดการห้อง</div>
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="pill" data-bs-target="#user-tab"
+                type="button" role="tab" aria-controls="user-tab" aria-selected="false">
+                <div class="fw-normal">การจัดการผู้ใช้</div>
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="pill" data-bs-target="#parking-tab"
+                type="button" role="tab" aria-controls="parking-tab" aria-selected="false">
+                <div class="fw-normal">การจัดการที่จอดรถ</div>
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="pill"
+                data-bs-target="#Notification-tab" type="button" role="tab" aria-controls="Notification-tab"
+                aria-selected="false">
+                <div class="fw-normal">แจ้งเตือน</div>
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="pill" data-bs-target="#mainImage-tab"
+                type="button" role="tab" aria-controls="mainImage-tab" aria-selected="false">
+                <div class="fw-normal">จัดการรูปภาพหลัก</div>
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="pill" data-bs-target="#admin-tab"
+                type="button" role="tab" aria-controls="admin-tab" aria-selected="false">
+                <div class="fw-normal">การจัดการผู้ดูแล</div>
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="pill" data-bs-target="#history-tab"
+                type="button" role="tab" aria-controls="history-tab" aria-selected="false">
+                <div class="fw-normal">ประวัติการเข้าออก</div>
+            </button>
+        </div>
+
+
+        <!-- content -->
+
+        <div class="tab-content w-100" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="door-tab" role="tabpanel" aria-labelledby="v-pills-door-tab">
+                <app-door-manage></app-door-manage>
+            </div>
+            <div class="tab-pane fade" id="space-tab" role="tabpanel" aria-labelledby="v-pills-space-tab">
+                <app-space-manage></app-space-manage>
+            </div>
+            <div class="tab-pane fade" id="room-tab" role="tabpanel" aria-labelledby="v-pills-room-tab">
+                <app-room-manage></app-room-manage>
+            </div>
+            <div class="tab-pane fade" id="user-tab" role="tabpanel" aria-labelledby="v-pills-user-tab">
+                <app-user-manage></app-user-manage>
+            </div>
+            <div class="tab-pane fade" id="parking-tab" role="tabpanel" aria-labelledby="v-pills-parking-tab">
+                <app-parking-manage></app-parking-manage>
+            </div>
+            <div class="tab-pane fade" id="Notification-tab" role="tabpanel" aria-labelledby="v-pills-Notification-tab">
+                <app-notification-manage></app-notification-manage>
+            </div>
+            <div class="tab-pane fade" id="mainImage-tab" role="tabpanel" aria-labelledby="v-pills-mainImage-tab">
+                <app-main-image-manage></app-main-image-manage>
+            </div>
+            <div class="tab-pane fade" id="admin-tab" role="tabpanel" aria-labelledby="v-pills-admin-tab">
+                <app-admin-manage></app-admin-manage>
+            </div>
+            <div class="tab-pane fade" id="history-tab" role="tabpanel" aria-labelledby="v-pills-history-tab">
+                <app-history-manage></app-history-manage>
+            </div>
+        </div>
+    </div>
+</div>

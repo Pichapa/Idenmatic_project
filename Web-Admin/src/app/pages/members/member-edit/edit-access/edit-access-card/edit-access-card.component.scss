@@ -1,0 +1,23 @@
+.card {
+  height: calc(100vh - 100px);
+  overflow: auto;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #890203;
+}
+.form-select,
+.form-control {
+  font-size: 14px;
+  border-radius: 8px;
+}
+select:required {
+  color: gray;
+}
+
+.btn {
+  border-radius: 8px;
+  height: 48px;
+  font-size: 14px;
+}

@@ -1,9 +1,22 @@
-.card{
-    height: 600px;
+.card {
+  // height: calc(100vh - 188px);
+  // overflow: auto;
+  border-radius: 8px;
 }
-.fw-bold{
-    color: #890203;
+
+//font
+.form-lable {
+  font-size: 14px;
 }
-input,select{
-    border-radius: 8px;
+.fw-bold {
+  color: #890203;
+}
+
+//input
+.form-control {
+  border-radius: 8px;
+  font-size: 14px;
+}
+.form-check-input:checked {
+  background-color: #890203;
 }

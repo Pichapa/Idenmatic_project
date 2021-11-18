@@ -1,36 +1,20 @@
-label{
-    font-size: 14px;
-    line-height: 16px;
-    color: #890203;
-}
-span{
-    font-size: 14px;
-    line-height: 16px;
+.card {
+  // height: calc(100vh - 100px);
+  // overflow: auto;
+  border-radius: 8px;
 }
 
-.btn{
-    border-radius: 8px;
-    width: 212px;
-    height: 48px;
-    font-size: 14px;
-    line-height: 16px;
-    
+.form-control,
+.form-select,
+.btn {
+  border-radius: 8px;
+  font-size: 14px;
 }
-#formDoc{
-     height: 144px;
-    box-sizing: border-box;
-    border-radius: 8px;
-}
-#Docname[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid #C4C4C4;
+select:required {
+  color: gray;
 }
 
-
-
-
-
+.form-label {
+  font-size: 14px;
+  color: #890203;
+}

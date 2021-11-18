@@ -1,32 +1,15 @@
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+// .card {
+//   // height: calc(100vh - 100px);
+//   // overflow: auto;
+// }
 
-    width: 213px;
-    height: 213px;
-    left: 732px;
-    top: 186px;
-}
-.rowUser{
-    text-align: center;
-    color: #890203;
-    font-size: 24px;
-}
-.userInfo{
-    font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 24px;
-}
-.userInfo b{
-    color: #890203;
-    font-size: 18px;
+//font
+.fw-bold {
+  color: #890203;
 }
 
-.btn{
-box-sizing: border-box;
-border-radius: 8px;
-width: 212px;
-height: 48px;
+.btn {
+  border-radius: 8px;
+  height: 48px;
+  font-size: 14px;
 }

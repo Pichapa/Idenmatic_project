@@ -1,0 +1,48 @@
+//table
+.table-responsive {
+  border-radius: 8px;
+}
+.table {
+  width: 150%;
+}
+.table th {
+  color: #890203;
+}
+.table td {
+  height: 10rem;
+}
+// .overflow-auto {
+//   height: calc(80vh - 100px);
+// }
+.tableFixHead thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+//card
+#cardId {
+  width: 15rem;
+  height: 9rem;
+  border-radius: 8px;
+}
+.list-group {
+  background: none;
+  border: none;
+  a:hover {
+    background-color: black;
+    color: #fff;
+  }
+}
+.list-group-item {
+  width: 8rem;
+}
+
+//modal
+.modal-content {
+  border-radius: 8px;
+}
+.btn {
+  border-radius: 8px;
+  height: 48px;
+}

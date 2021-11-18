@@ -4,6 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+//menu
+import { SidebarComponent } from './menu/sidebar/sidebar.component';
+import { NavbarComponent } from './menu/navbar/navbar.component';
+
 import { MemberTypesComponent } from './pages/member-types/member-types.component';
 import { MemberTypesInfoComponent } from './pages/member-types/member-types-info/member-types-info.component';
 import { MemberTypesSelectorComponent } from './pages/member-types/member-types-selector/member-types-selector.component';
@@ -46,24 +50,24 @@ import { SystemAddPeopleShowCardComponent } from './pages/members/system-add-peo
 import { SystemAddPeopleRequestComponent } from './pages/members/system-add-people-request/system-add-people-request.component';
 import { RequestCardLeftComponent } from './pages/members/system-add-people-request/request-card-left/request-card-left.component';
 import { RequestCardRightComponent } from './pages/members/system-add-people-request/request-card-right/request-card-right.component';
+
 import { RoomListComponent } from './pages/rooms/room/room-list/room-list.component';
 import { RoomListCardSelectComponent } from './pages/rooms/room/room-list/room-list-card-select/room-list-card-select.component';
 import { RoomListCardTableComponent } from './pages/rooms/room/room-list/room-list-card-table/room-list-card-table.component';
-//menu
-import { SidebarComponent } from './menu/sidebar/sidebar.component';
-import { NavbarComponent } from './menu/navbar/navbar.component';
+
+import { EditAccessComponent } from './pages/members/member-edit/edit-access/edit-access.component';
+import { EditAccessCardComponent } from './pages/members/member-edit/edit-access/edit-access-card/edit-access-card.component';
+
+//members
+
 //rooms
-import { RoomAddComponent } from './pages/rooms/room/room-add/room-add.component';
-import { RoomAddCardComponent } from './pages/rooms/room/room-add/room-add-card/room-add-card.component';
-import { RoomAddInfoComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info.component';
-import { RoomAddInfoCardLeftComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info-card-left/room-add-info-card-left.component';
-import { RoomAddInfoCardRightComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info-card-right/room-add-info-card-right.component';
-import { AddCardRightCurrentComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info-card-right/add-card-right-current/add-card-right-current.component';
-import { AddCardRightPreviousComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info-card-right/add-card-right-previous/add-card-right-previous.component';
-import { AddRoomOwnerComponent } from './pages/rooms/room/room-add/add-room-owner/add-room-owner.component';
-import { AddRoomOwnerCardComponent } from './pages/rooms/room/room-add/add-room-owner/add-room-owner-card/add-room-owner-card.component';
-import { AddAccessRoomComponent } from './pages/rooms/room/room-add/add-access-room/add-access-room.component';
-import { AddAccessRoomCardComponent } from './pages/rooms/room/room-add/add-access-room/add-access-room-card/add-access-room-card.component';
+import { RoomsRoutingModule } from './pages/rooms/rooms-routing/rooms-routing.module';
+
+//admin management
+import { AdminManagementModule } from './pages/admin-management/admin-routing/admin-management.module';
+
+//central-area-management
+import { CentralAreaModule } from './pages/central-area-management/central-area-routing/central-area.module';
 
 @NgModule({
   declarations: [
@@ -107,24 +111,24 @@ import { AddAccessRoomCardComponent } from './pages/rooms/room/room-add/add-acce
     SystemAddPeopleRequestComponent,
     RequestCardLeftComponent,
     RequestCardRightComponent,
+
     RoomListComponent,
     RoomListCardSelectComponent,
     RoomListCardTableComponent,
     SidebarComponent,
     NavbarComponent,
-    RoomAddComponent,
-    RoomAddCardComponent,
-    RoomAddInfoComponent,
-    RoomAddInfoCardLeftComponent,
-    RoomAddInfoCardRightComponent,
-    AddCardRightCurrentComponent,
-    AddCardRightPreviousComponent,
-    AddRoomOwnerComponent,
-    AddRoomOwnerCardComponent,
-    AddAccessRoomComponent,
-    AddAccessRoomCardComponent,
+
+    EditAccessComponent,
+    EditAccessCardComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    // FormsModule,
+    RoomsRoutingModule,
+    AdminManagementModule,
+    CentralAreaModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

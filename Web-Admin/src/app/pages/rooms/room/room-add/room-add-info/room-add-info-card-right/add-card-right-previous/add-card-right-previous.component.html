@@ -42,13 +42,15 @@
                                 <td>28 ก.พ. 64</td>
                                 <td>
                                     <div class="hstack gap-3">
-                                        <button type="button" class="btn btn-outline-secondary">
-                                            <div class="d-flex justify-content-center">
-                                                <img src="/assets/Vector-show.svg" alt="show" width="20">
-                                            </div>
-                                        </button>
+                                        <a href="members/show-members">
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <div class="d-flex justify-content-center">
+                                                    <img src="/assets/Vector-show.svg" alt="show" width="20">
+                                                </div>
+                                            </button>
+                                        </a>
                                         <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
-                                            data-bs-target="#modelDel">
+                                            data-bs-target="#deleteModal">
                                             <div class="d-flex justify-content-center">
                                                 <img src="/assets/Vector_delete.svg" alt="delete" width="20">
                                             </div>
@@ -75,15 +77,8 @@
                 <div class="card-body">
                     <div class="row mb-3">
                         <div class="col-md-7">
-                            <div class="d-flex justify-content-start">
-                                <div class="col-11">
-                                    <input type="search" class="form-control" id="searchUser" name="searchUser"
-                                        placeholder="ค้นหา" />
-                                </div>
-                                <div class="col-1 align-self-center">
-                                    <img src="/assets/search.svg" alt="" class="align-middle" />
-                                </div>
-                            </div>
+                            <input type="search" class="form-control" name="" id="searchInput"
+                                aria-describedby="searchAdmin" placeholder="ค้นหา">
                         </div>
                         <div class="col-md-4 ms-auto">
                             <select class="form-select form-select-lg form-rounded fw-normal" name="namePartner"
@@ -116,13 +111,15 @@
                                 <td>28 ก.พ. 64</td>
                                 <td>
                                     <div class="hstack gap-3">
-                                        <button type="button" class="btn btn-outline-secondary">
-                                            <div class="d-flex justify-content-center">
-                                                <img src="/assets/Vector-show.svg" alt="show" width="20">
-                                            </div>
-                                        </button>
+                                        <a href="members/show-members">
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <div class="d-flex justify-content-center">
+                                                    <img src="/assets/Vector-show.svg" alt="show" width="20">
+                                                </div>
+                                            </button>
+                                        </a>
                                         <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
-                                            data-bs-target="#modelDelPartner">
+                                            data-bs-target="#partnerModal">
                                             <div class="d-flex justify-content-center">
                                                 <img src="/assets/Vector_delete.svg" alt="delete" width="20">
                                             </div>
@@ -134,6 +131,52 @@
                     </table>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal owner-->
+
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="mt-3"></div>
+                <div class="modal-body">
+                    <img src="/assets/delModal.svg" class="mx-auto d-block" alt="">
+                    <div class="mt-5"></div>
+                    <div class="text-center">
+                        <p class="fw-bolder lh-1">คุณต้องการลบเจ้าของห้องก่อนหน้านี้หรือไม่</p>
+                    </div>
+                    <div class="hstack gap-3  justify-content-center">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"
+                            style="width: 125px;font-size: 14px; height: 48px;">ยกเลิก</button>
+                        <button type="button" class="btn btn-dark"
+                            style="width: 150px;font-size: 14px;height: 48px; border-radius: 8px;">ลบเจ้าของก่อนหน้า</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal partner-->
+<div class="modal fade" id="partnerModal" tabindex="-1" role="dialog" aria-labelledby="partnerModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="mt-3"></div>
+            <div class="modal-body">
+                <img src="/assets/delModal.svg" class="mx-auto d-block" alt="">
+                <div class="mt-5"></div>
+                <p class="fw-bolder text-center">คุณต้องการลบผู้เข้าถึงห้องก่อนหน้านี้หรือไม่</p>
+                <div class="hstack gap-3 justify-content-center">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"
+                        style="width: 125px;font-size: 14px;height: 48px;">ยกเลิก</button>
+                    <button type="button" class="btn btn-dark"
+                        style="width: 150px;font-size: 14px;height: 48px; border-radius: 8px;">ลบผู้เข้าถึงก่อนหน้า</button>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

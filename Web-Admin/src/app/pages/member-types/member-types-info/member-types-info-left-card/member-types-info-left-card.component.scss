@@ -1,11 +1,15 @@
-.fw-bold,.fw-bolder{
-    color: #890203;
+.card {
+  // height: calc(100vh - 190px);
+  // overflow: auto;
+  border-radius: 8px;
 }
 
-.form-check-input{
- background-color:#890203 ;
+//check radio
+.form-check-input:checked {
+  background-color: #890203;
 }
 
-.card{
-  height: 600px;
+//font
+.fw-bold {
+  color: #890203;
 }

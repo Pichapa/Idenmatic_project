@@ -1,94 +1,121 @@
-<div class="card">
+<div class="card mb-4">
     <div class="card-body">
+
         <app-room-list-card-select></app-room-list-card-select>
+
         <div class="mt-4"></div>
         <div class="row">
-            <div class="col-sm-12">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>เลขที่ห้อง</th>
-                            <th>รูปแบบห้อง</th>
-                            <th>ชั้น</th>
-                            <th>ID ผู้ใช้</th>
-                            <th>เจ้าของห้องปัจจุบัน</th>
-                            <th>เบอร์โทร</th>
-                            <th>เปิด/ปิดห้อง</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="align-middle" style="width: 11%;">AA/001</td>
-                            <td class="align-middle" style="width: 14%;">รูปแบบห้อง 1</td>
-                            <td class="align-middle" style="width: 7%;">1</td>
-                            <td class="align-middle" style="width: 10%;">123456</td>
-                            <td class="align-middle" style="width: 18%;">ชาญชัย สุขดี</td>
-                            <td class="align-middle" style="width: 13%;">0987654321</td>
-                            <td class="align-middle" style="width: 16%;">
-                                <div class="hstack gap-3">
-                                    <button type="button" class="btn" id="btnOn">
-                                        ON
-                                    </button>
-                                    <button type="button" class="btn" id="btnOff">
-                                        OFF
-                                    </button>
-                                </div>
-                            </td>
-                            <td class="text-end align-middle" style="width: 14%;">
-                                <div class="hstack gap-3">
-                                    <button type="button" class="btn btn-outline-secondary"><img
-                                            src="/assets/Vector_edit.svg" alt="edit">
-                                    </button>
-                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
-                                        data-bs-target="#delModal"><img src="/assets/Vector_delete.svg" alt="delete">
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="align-middle" style="width: 11%;">AA/002</td>
-                            <td class="align-middle" style="width: 14%;">รูปแบบห้อง 1</td>
-                            <td class="align-middle" style="width: 7%;">1</td>
-                            <td class="align-middle" style="width: 10%;">123456</td>
-                            <td class="align-middle" style="width: 18%;">ชาญชัย สุขดี</td>
-                            <td class="align-middle" style="width: 13%;">0987654321</td>
-                            <td class="align-middle" style="width: 16%;">
-                                <div class="hstack gap-3">
-                                    <button type="button" class="btn" id="btnOnn">ON
-                                    </button>
-                                    <button type="button" class="btn" id="btnOfff">
-                                        OFF
-                                    </button>
-                                </div>
-                            </td>
-                            <td class="text-end align-middle" style="width: 14%;">
-                                <div class="hstack gap-3">
-                                    <button type="button" class="btn btn-outline-secondary"><img
-                                            src="/assets/Vector_edit.svg" alt="edit">
-                                    </button>
-                                    <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
-                                        data-bs-target="#delModal"><img src="/assets/Vector_delete.svg" alt="delete">
-                                    </button>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table w-100 align-middle">
+                        <thead>
+                            <tr>
+                                <th class="col-1">
+                                    <div class="fw-bold">เลขที่ห้อง</div>
+                                </th>
+                                <th class="col-2">
+                                    <div class="fw-bold">รูปแบบห้อง</div>
+                                </th>
+                                <th class="col-1">
+                                    <div class="fw-bold">ชั้น</div>
+                                </th>
+                                <th class="col-1">
+                                    <div class="fw-bold">ID ผู้ใช้</div>
+                                </th>
+                                <th class="col-2">
+                                    <div class="fw-bold">เจ้าของห้องปัจจุบัน</div>
+                                </th>
+                                <th class="col-2">
+                                    <div class="fw-bold">เบอร์โทร</div>
+                                </th>
+                                <th class="col-2">
+                                    <div class="fw-bold">เปิด/ปิดห้อง</div>
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>AA/001</td>
+                                <td>รูปแบบห้อง 1</td>
+                                <td>1</td>
+                                <td>123456</td>
+                                <td>ชาญชัย สุขดี</td>
+                                <td>0987654321</td>
+                                <td>
+                                    <div class="d-grid gap-3 d-md-flex ">
+                                        <button type="button" class="btn btn-lg text-white"
+                                            style="background-color:#16c11d;">ON</button>
+                                        <button type="button" class="btn text-white"
+                                            style="background-color:#b5b5b5;">OFF</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+                                        <a href="rooms/room-edit">
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <img src="/assets/Vector_edit.svg" alt="edit">
+                                            </button>
+                                        </a>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#delModal">
+                                            <img src="/assets/Vector_delete.svg" alt="delete">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>AA/002</td>
+                                <td>รูปแบบห้อง 1</td>
+                                <td>1</td>
+                                <td>123456</td>
+                                <td>ชาญชัย สุขดี</td>
+                                <td>0987654321</td>
+                                <td>
+
+                                    <div class="d-grid gap-3 d-md-flex">
+                                        <button type="button" class="btn btn-lg text-white"
+                                            style="background-color:#b5b5b5;">ON</button>
+                                        <button type="button" class="btn text-white"
+                                            style="background-color:#ed1c24;">OFF</button>
+                                    </div>
+                                </td>
+                                <td>
+
+                                    <div class="d-grid gap-3 d-md-flex justify-content-md-end">
+                                        <a href="rooms/room-edit">
+                                            <button type="button" class="btn btn-outline-secondary"><img
+                                                    src="/assets/Vector_edit.svg" alt="edit">
+                                            </button>
+                                        </a>
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#delModal">
+                                            <img src="/assets/Vector_delete.svg" alt="delete">
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
-            <!-- delModal -->
+            <!-- deleteModal -->
             <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
+                        <div class="mt-3"></div>
                         <div class="modal-body">
-                            <img src="/assets/delModal.svg" alt="" class="centerImg"><br>
-                            <p class="text-center"><b>คุณต้องการลบข้อมูลห้องนี้หรือไม่</b></p>
-
-                            <div class="d-flex justify-content-center">
-                                <div class="hstack gap-3">
+                            <div class="text-center">
+                                <img src="/assets/delModal.svg" class="mb-4" alt="delete">
+                                <p class="fw-bolder">คุณต้องการลบข้อมูลห้องนี้หรือไม่</p>
+                            </div>
+                            <div class="row g-3 col-8 mx-auto">
+                                <div class="col d-grid">
                                     <button type="button" id="btnCancle" class="btn btn-outline-dark"
                                         data-bs-dismiss="modal">ยกเลิก</button>
+                                </div>
+                                <div class="col d-grid">
                                     <button type="button" id="btnSave" class="btn btn-dark">ลบผู้อยู่อาศัย</button>
                                 </div>
                             </div>
@@ -96,11 +123,12 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
 
-<div class="mt-1"></div>
+<!--pagination  -->
 <div class="PageNav">
     <nav class="pagination-outer" aria-label="Page navigation">
         <ul class="pagination">

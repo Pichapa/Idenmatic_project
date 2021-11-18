@@ -1,0 +1,19 @@
+.card {
+  height: calc(100vh - 100px);
+  // overflow: auto;
+  border-radius: 8px;
+}
+
+.img {
+  width: 213px;
+  height: 213px;
+}
+.fw-bold {
+  color: #890203;
+}
+.btn {
+  border-radius: 8px;
+  width: 212px;
+  height: 48px;
+  font-size: 14px;
+}

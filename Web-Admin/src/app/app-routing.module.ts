@@ -15,11 +15,7 @@ import { MemberTypesEditComponent } from './pages/member-types-edit/member-types
 import { SystemAddPeopleComponent } from './pages/members/system-add-people/system-add-people.component';
 import { SystemAddPeopleShowComponent } from './pages/members/system-add-people-show/system-add-people-show.component';
 import { SystemAddPeopleRequestComponent } from './pages/members/system-add-people-request/system-add-people-request.component';
-import { RoomListComponent } from './pages/rooms/room/room-list/room-list.component';
-import { RoomAddComponent } from './pages/rooms/room/room-add/room-add.component';
-import { RoomAddInfoComponent } from './pages/rooms/room/room-add/room-add-info/room-add-info.component';
-import { AddRoomOwnerComponent } from './pages/rooms/room/room-add/add-room-owner/add-room-owner.component';
-import { AddAccessRoomComponent } from './pages/rooms/room/room-add/add-access-room/add-access-room.component';
+import { EditAccessComponent } from './pages/members/member-edit/edit-access/edit-access.component';
 
 const routes: Routes = [
   {
@@ -55,6 +51,10 @@ const routes: Routes = [
     component: MemberEditCarComponent,
   },
   {
+    path: 'members/edit-access',
+    component: EditAccessComponent,
+  },
+  {
     path: 'members/types',
     component: MemberTypesComponent,
   },
@@ -82,27 +82,6 @@ const routes: Routes = [
     path: '',
     redirectTo: 'members/all-members',
     pathMatch: 'full',
-  },
-  //Rooms
-  {
-    path: 'rooms/room-list',
-    component: RoomListComponent,
-  },
-  {
-    path: 'rooms/room-add',
-    component: RoomAddComponent,
-  },
-  {
-    path: 'rooms/room-add-info',
-    component: RoomAddInfoComponent,
-  },
-  {
-    path: 'rooms/add-owner',
-    component: AddRoomOwnerComponent,
-  },
-  {
-    path: 'rooms/add-access-room',
-    component: AddAccessRoomComponent,
   },
 ];
 

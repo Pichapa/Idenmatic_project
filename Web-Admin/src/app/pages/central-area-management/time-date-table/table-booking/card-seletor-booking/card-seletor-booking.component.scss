@@ -1,0 +1,18 @@
+.card {
+  border-radius: 8px;
+}
+
+//form
+.form-control,
+.form-select {
+  border-radius: 8px;
+  font-size: 14px;
+}
+select:invalid {
+  color: gray;
+}
+
+//font
+.fw-bold {
+  color: #890203;
+}

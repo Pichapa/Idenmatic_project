@@ -1,20 +1,47 @@
-input,select{
-    border-radius: 8px;
+.card {
+  height: calc(115vh - 100px);
+  border-radius: 8px;
 }
 
- .card{
-      height: 600px;
-  }
-
-  .fw-bold,.fw-normal{
-    color: #890203;
+//input,select
+.form-control,
+.form-select {
+  border-radius: 8px;
+  font-size: 14px;
+}
+.form-check-input:checked {
+  background-color: #890203;
+}
+//font
+.fw-bold,
+.fw-normal {
+  color: #890203;
 }
 
- .nav-link.active,
-  .nav-item.show .nav-link {
-       color: #890203;
-  }
-  .nav-link{
-      background-color: #939393;
-      color: white;
-  }
+//card-toggle
+.form-control {
+  background: url(/assets/Icon-Time.svg) right 10% center no-repeat;
+}
+#cardOpen,
+#cardClose,
+#cardElevatorOpen,
+#cardElevatorClose {
+  background: none;
+  border-radius: 8px;
+  height: 200px;
+  width: 230px;
+  border: none;
+}
+
+//nav bar
+.nav-link.active,
+.nav-item.show .nav-link {
+  color: #890203;
+}
+.nav-link {
+  background-color: #939393;
+  color: white;
+}
+#myTabContent {
+  min-height: 500px;
+}

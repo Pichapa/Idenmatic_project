@@ -1,17 +1,23 @@
-label{
-    font-size: 14px;
-    line-height: 16px;
-    color: #890203;
+.card {
+  height: calc(100vh - 100px);
+  overflow: auto;
 }
-select,input{
-box-sizing: border-box;
-border-radius: 8px;
+
+.form-label {
+  font-size: 14px;
+  color: #890203;
 }
-.btn{
-    border-radius: 8px;
-    width: 212px;
-    height: 48px;
-    font-size: 14px;
-    line-height: 16px;
-    
+//form-input
+.form-control,
+.form-select,
+.btn {
+  border-radius: 8px;
+  font-size: 14px;
+}
+select:required:invalid {
+  color: gray;
+}
+
+.btn {
+  height: 48px;
 }

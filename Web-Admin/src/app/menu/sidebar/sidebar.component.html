@@ -1,15 +1,40 @@
 <nav id="sidebar">
     <ul class="list-unstyled components">
         <li class="active">
+            <a class="dropdown-toggle" data-bs-toggle="collapse" href="#centralAreaSubmenu" aria-expanded="false"
+                aria-controls="contentMember">
+                <img src="/assets/Icon-Central-Area.svg" alt="Central-Area" />
+                การจัดการพื้นที่
+            </a>
+            <div class="collapse" id="centralAreaSubmenu">
+                <ul class="list-unstyled" style="font-size: 14px;">
+                    <li>
+                        <a href="central-area/table"
+                            class="d-inline-flex align-items-center rounded">ตารางเวลาและวันที่</a>
+                    </li>
+                    <li>
+                        <a href="central-area/central-area"
+                            class="d-inline-flex align-items-center rounded">พื้นที่กิจกรรม</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+    <ul class="list-unstyled components">
+        <li class="active">
             <a class="dropdown-toggle" data-bs-toggle="collapse" href="#roomSubmenu" aria-expanded="false"
                 aria-controls="contentRoom">
-                <img class="people" src="/assets/Icon-Room.svg" /> การจัดการห้อง
+                <img src="/assets/Icon-Room.svg" alt="room" /> การจัดการห้อง
             </a>
             <div class="collapse" id="roomSubmenu">
                 <ul class="list-unstyled" style="font-size: 14px;">
-                    <li><a href="rooms/room-list" class="d-inline-flex align-items-center rounded">ข้อมูลห้องทั้งหมด</a>
+                    <li><a href="rooms/room-list" class="d-inline-flex align-items-center rounded">
+                            ข้อมูลห้องทั้งหมด
+                        </a>
                     </li>
-                    <li><a href="" class="d-inline-flex align-items-center rounded">รูปแบบห้อง</a></li>
+                    <li><a href="rooms/Type-room" class="d-inline-flex align-items-center rounded">รูปแบบห้อง</a>
+                    </li>
                 </ul>
             </div>
         </li>
@@ -18,7 +43,7 @@
         <li class="active">
             <a class="dropdown-toggle" data-bs-toggle="collapse" href="#memberSubmenu" aria-expanded="false"
                 aria-controls="contentMember">
-                <img class="people" src="/assets/Icon-People.svg" />
+                <img src="/assets/Icon-People.svg" alt="people" />
                 การจัดการผู้ใช้
             </a>
             <div class="collapse" id="memberSubmenu">
@@ -38,24 +63,13 @@
             </div>
         </li>
     </ul>
+
+    <ul class="list-unstyled components">
+        <li class="active">
+            <a href="admin/List">
+                <img src="/assets/Icon-Admin.svg" alt="admin" />
+                การจัดการผู้ดูแล
+            </a>
+        </li>
+    </ul>
 </nav>
-
-
-<!-- <ul class="list-unstyled components">
-            <li class="active">
-                <a href="#memberSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                    <img class="people" src="/assets/Icon-People.svg" /> การจัดการผู้ใช้
-                </a>
-                <ul class="collapse list-unstyled" id="memberSubmenu">
-                    <li>
-                        <a href="members/all-members">ข้อมูลคนทั้งหมด</a>
-                    </li>
-                    <li>
-                        <a href="members/types">ประเภทบุคคล</a>
-                    </li>
-                    <li>
-                        <a href="members/approve-people">ระบบอนุมัติการเพิ่มคน</a>
-                    </li>
-                </ul>
-            </li>
-        </ul> -->

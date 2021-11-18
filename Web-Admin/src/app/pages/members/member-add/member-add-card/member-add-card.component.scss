@@ -1,49 +1,42 @@
-label{
-    font-size: 14px;
-    line-height: 16px;
-    color: #890203;
-}
-span{
-    font-size: 14px;
-    line-height: 16px;
+.card {
+  // height: calc(100vh - 100px);
+  // overflow: auto;
+  border-radius: 8px;
 }
 
-select {
-    color:#9C9C9C ;
+//form-input
+.form-control,
+.form-select,
+.btn {
+  border-radius: 8px;
+  font-size: 14px;
+}
+select:required:invalid {
+  color: gray;
 }
 
-.btn{
-    border-radius: 8px;
-    width: 212px;
-    height: 48px;
-    font-size: 14px;
-    line-height: 16px;
-    
+//font
+.form-label {
+  font-size: 14px;
 }
-h6{
-    font-size: 18px;
-    color: #890203;
-}
-#InputCar{
-    height: 144px;
-    box-sizing: border-box;
-    border-radius: 8px;
-}
-#formDoc{
-     height: 144px;
-    box-sizing: border-box;
-    border-radius: 8px;
-}
-#Docname[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: none;
-  border-bottom: 2px solid #C4C4C4;
+.fw-bold {
+  color: #890203;
 }
 
+.btnRight {
+  width: 212px;
+  height: 48px;
+}
 
-
-
-
+//form card
+#formCar,
+#formResidents {
+  height: 144px;
+  border-radius: 8px;
+  box-shadow: none;
+}
+#formDoc {
+  height: 150px;
+  border-radius: 8px;
+  box-shadow: none;
+}

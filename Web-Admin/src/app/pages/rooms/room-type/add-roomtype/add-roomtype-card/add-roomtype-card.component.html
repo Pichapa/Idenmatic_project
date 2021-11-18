@@ -1,0 +1,84 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+
+                <form class="was-validated">
+                    <div class="mb-2">
+                        <label for="nameInput" class="form-label fw-bold">ชื่อรูปแบบห้อง*</label>
+                        <input type="text" class="form-control form-control-lg is-invalid" id="nameInput"
+                            placeholder="กรอกชื่อรูปแบบห้อง" name="name" [(ngModel)]="roomType.name" required>
+                        <div class="invalid-feedback">
+                            กรุณากรอกชื่อรูปแบบห้อง
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="residentsInput" class="form-label fw-bold">จำนวนผู้อยู่อาศัยสูงสุด*</label>
+                        <input type="text" class="form-control form-control-lg is-invalid" id="residentsInput"
+                            placeholder="กรอกจำนวนผู้อยู่อาศัยสูงสุด" required name="maxUser"
+                            [(ngModel)]="roomType.maxUser">
+                        <div class="invalid-feedback">
+                            กรุณากรอกจำนวนผู้อยู่อาศัยสูงสุด
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <label for="sizeRoomInput" class="form-label fw-bold">ขนาดห้อง (ตร. ม.)*</label>
+                        <input type="text" class="form-control form-control-lg is-invalid" id="sizeRoomInput"
+                            placeholder="กรอกขนาดห้อง" required name="size" [(ngModel)]="roomType.size">
+                        <div class="invalid-feedback">
+                            กรุณากรอกขนาดห้อง
+                        </div>
+                    </div>
+                </form>
+
+                <div class="mb-2">
+                    <label for="numBedrooms" class="form-label fw-bold">จำนวนห้องนอน</label>
+                    <input type="text" class="form-control form-control-lg" id="numBedrooms"
+                        placeholder="กรอกจำนวนห้องนอน" name="bedRoom" [(ngModel)]="roomType.bedRoom">
+                </div>
+                <div class="mb-2">
+                    <label for="numBathrooms" class="form-label fw-bold">จำนวนห้องน้ำ</label>
+                    <input type="text" class="form-control form-control-lg" id="numBathrooms"
+                        placeholder="กรอกจำนวนห้องน้ำ" name="bathRoom" [(ngModel)]="roomType.bathRoom">
+                </div>
+                <div class="mb-3 was-validated">
+                    <label for="uploadFile" class="form-label fw-bold">อัพโหลดรูปห้อง*</label>
+                    <div class="hstack gap-3">
+                        <input class="form-control me-auto form-control-lg" type="text" id="uploadFile"
+                            onfocus="(this.type = 'file')" required>
+                        <button type="button" class="btn btn-dark btn-lg">
+                            <div class="fs-6">อัพโหลด</div>
+                        </button>
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณาอัพโหลดรูปห้อง
+                    </div>
+                    <div id="uploadFile" class="form-text text-dark">*อัพโหลดเฉพาะไฟล์ JPG. หรือ
+                        PNG.
+                    </div>
+                </div>
+
+                <div class="mb-5">
+                    <label for="exampleInputFile" class="form-label fw-bold">ดูตัวอย่างรูปห้อง</label>
+                    <div class="card" id="cardImage">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1469&q=80"
+                            class="card-img" alt="room-image" height="300">
+                    </div>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col d-grid">
+                        <button type="button" name="cancel" class="btn btn-lg btn-outline-dark">
+                            <div class="fs-6">ยกเลิก</div>
+                        </button>
+                    </div>
+                    <div class="col d-grid">
+                        <button type="button" name="submit" class="btn btn-lg btn-dark" (click)="save()">
+                            <div class="fs-6">บันทึก</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
