@@ -1,0 +1,124 @@
+<div class="card">
+
+    <!-- nav tab -->
+    <div class="row">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="col nav-item nav-link active fw-bold text-center fs-5" id="door-tab" data-bs-toggle="tab"
+                    href="#door" role="tab" aria-controls="door" aria-selected="true">สิทธิ์การเข้าออกประตู</a>
+                <a class="col nav-item nav-link fw-bold text-center fs-5" id="elevator-tab" data-bs-toggle="tab"
+                    href="#elevator" role="tab" aria-controls="elevator-tab"
+                    aria-selected="false">สิทธิ์การเข้าออกลิฟต์</a>
+            </div>
+        </nav>
+    </div>
+    <!-- end -->
+
+    <div class="card-body">
+        <div class="row">
+            <div class="tab-content" id="nav-tabContent">
+
+                <!-- door -->
+                <div class="tab-pane fade show active" id="door" role="tabpanel" aria-labelledby="door-tab">
+                    <div class="row mb-3 mt-3">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="col align-self-center">
+                                    <label class="fw-bold fs-5">ชั้น</label>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <select class="form-select form-select-lg">
+                                    <option value="door1" selected>1</option>
+                                    <option value="door2" select>2</option>
+                                    <option value="door3" select>3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table align-middle fs-5">
+                                <thead>
+                                    <tr>
+                                        <th class="col-4">ชื่อประตู</th>
+                                        <th class="col-3">ชั้น</th>
+                                        <th class="col-3">เวลาเปิด</th>
+                                        <th class="col-2">เวลาปิด</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ประตูทางเข้า 1</td>
+                                        <td>1</td>
+                                        <td>09.00 น.</td>
+                                        <td>22.00 น.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ประตูทางเข้า 2</td>
+                                        <td>1</td>
+                                        <td>09.00 น.</td>
+                                        <td>22.00 น.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+
+                <!-- floor -->
+                <div class="tab-pane fade" id="elevator" role="tabpanel" aria-labelledby="elevator-tab">
+                    <div class="row mb-3 mt-3">
+                        <div class="row align-items-center">
+                            <div class="col-auto">
+                                <div class="col align-self-center">
+                                    <label class="fw-bold fs-5">ชั้น</label>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <select class="form-select form-select-lg">
+                                    <option value="floor1" selected>1</option>
+                                    <option value="floor2" select>2</option>
+                                    <option value="floor3" select>3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table class="table align-middle fs-5">
+                                <thead>
+                                    <tr>
+                                        <th class="col-4">ชื่อลิฟต์</th>
+                                        <th class="col-3">ชั้น</th>
+                                        <th class="col-3">เวลาเปิด</th>
+                                        <th class="col-2">เวลาปิด</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ลิฟต์ 1</td>
+                                        <td>1</td>
+                                        <td>09.00 น.</td>
+                                        <td>22.00 น.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ลิฟต์ 2</td>
+                                        <td>1</td>
+                                        <td>09.00 น.</td>
+                                        <td>22.00 น.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- end -->
+
+            </div>
+        </div>
+    </div>
+</div>

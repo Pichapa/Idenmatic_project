@@ -1,0 +1,100 @@
+<div class="card">
+    <div class="card-body">
+        <div class="col-sm-5 mb-3">
+            <input type="search" class="form-control" name="" id="searchInput" aria-describedby="searchAdmin"
+                placeholder="ค้นหา">
+        </div>
+
+        <!-- table list -->
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th scope="col">รายชื่ออาคาร</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ตึก A</td>
+                        <td>
+                            <!-- button table -->
+                            <div class="hstack gap-3 justify-content-end">
+                                <a href="building/edit">
+                                    <button type="button" class="btn btn-outline-dark" id="btnTable">
+                                        <img src="/assets/Vector_edit.svg" alt="">
+                                    </button>
+                                </a>
+                                <button type="button" class="btn btn-outline-dark" id="btnTable" data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal">
+                                    <img src="/assets/Vector_delete.svg" alt="">
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ตึก B</td>
+                        <td>
+                            <!-- button table -->
+                            <div class="hstack gap-3 justify-content-end">
+                                <a href="building/edit">
+                                    <button type="button" class="btn btn-outline-dark" id="btnTable">
+                                        <img src="/assets/Vector_edit.svg" alt="">
+                                    </button>
+                                </a>
+                                <button type="button" class="btn btn-outline-dark" id="btnTable" data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal">
+                                    <img src="/assets/Vector_delete.svg" alt="">
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>ตึก C</td>
+                        <td>
+                            <!-- button table -->
+                            <div class="hstack gap-3 justify-content-end">
+                                <a href="building/edit">
+                                    <button type="button" class="btn btn-outline-dark" id="btnTable">
+                                        <img src="/assets/Vector_edit.svg" alt="">
+                                    </button>
+                                </a>
+                                <button type="button" class="btn btn-outline-dark" id="btnTable" data-bs-toggle="modal"
+                                    data-bs-target="#deleteModal">
+                                    <img src="/assets/Vector_delete.svg" alt="">
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="mt-3"></div>
+            <div class="modal-body text-center">
+                <img src="/assets/delModal.svg" alt="">
+                <div class="mt-4"></div>
+                <div class="fw-bolder">คุณต้องการลบข้อมูลชื่ออาคารนี้หรือไม่</div>
+            </div>
+            <div class="row justify-content-center mb-4">
+                <div class="col-4 d-grid">
+                    <button type="button" class="btn btn-outline-dark" id="btnModal">
+                        ยกเลิก
+                    </button>
+                </div>
+                <div class="col-4 d-grid">
+                    <button type="button" class="btn btn-dark" id="btnModal">
+                        ลบชื่ออาคาร
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

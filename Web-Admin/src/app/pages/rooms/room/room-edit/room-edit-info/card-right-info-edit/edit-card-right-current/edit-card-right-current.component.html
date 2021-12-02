@@ -4,6 +4,7 @@
     <div class="row mb-4">
         <div class="col align-self-center">
             <h4 class="fw-bold">เจ้าของห้อง</h4>
+            <p class="fw-bold">(เพิ่มผู้อยู่อาศัยได้สูงสุด 3 คน)</p>
         </div>
         <div class="col">
             <a href="rooms/edit-owner">
@@ -13,7 +14,7 @@
                 </button>
             </a>
         </div>
-        <div class="mt-3"></div>
+        <div class="mt-2"></div>
 
         <div class="col-12">
             <div class="card" id="owner">
@@ -69,16 +70,16 @@
         </div>
     </div>
 
-    <!-- partner -->
-    <div class="row">
+    <!-- ผู้อยู่อาศัย -->
+    <div class="row mb-4">
         <div class="col align-self-center">
-            <h4 class="fw-bold">รายชื่อผู้เข้าถึงห้อง</h4>
+            <h4 class="fw-bold">รายชื่อผู้อยู่อาศัย</h4>
         </div>
         <div class="col">
             <a href="rooms/edit-access-room">
                 <button type="button" class="btn btn-dark float-end">
                     <img src="/assets/add.svg" class="float-start" alt="add">
-                    <span class="align-middle" style="font-size: 14px;">เพิ่มผู้เข้าถึงห้อง</span>
+                    <span class="align-middle" style="font-size: 14px;">เพิ่มผู้อยู่อาศัย</span>
                 </button>
             </a>
         </div>
@@ -88,26 +89,12 @@
             <div class="card" id="partner">
                 <div class="card-body">
 
-                    <div class="row mb-3">
-                        <div class="col-md-7">
-                            <input type="search" class="form-control" name="" id="searchInput"
-                                aria-describedby="searchAdmin" placeholder="ค้นหา">
-                        </div>
-                        <div class="col-md-4 ms-auto">
-                            <select class="form-select" name="selectPartner" id="selectPartner" required>
-                                <option value="" selected disabled hidden>ทุกประเภท</option>
-                                <option value=""></option>
-                            </select>
-                        </div>
-                    </div>
-
                     <table class="table w-100">
                         <thead>
                             <tr class="align-bottom">
                                 <th scope="col">ID ผู้ใช้</th>
                                 <th scope="col">ชื่อ</th>
                                 <th scope="col"> นามสกุล</th>
-                                <th scope="col"> ประเภทบุคคล</th>
                                 <th scope="col">วันที่เข้า</th>
                                 <th scope="col">วันที่ออก</th>
                                 <th class="col-1"></th>
@@ -119,7 +106,6 @@
                                 <td>123456</td>
                                 <td>สมชาย</td>
                                 <td>สุขดี</td>
-                                <td>ผู้อยู่อาศัย</td>
                                 <td>13 ก.พ. 64</td>
                                 <td>-</td>
                                 <td>
@@ -150,6 +136,83 @@
             </div>
         </div>
     </div>
+    <!-- end -->
+
+    <!-- รายชื่อผู้เข้าพบ -->
+    <div class="row">
+        <div class="col align-self-center">
+            <h4 class="fw-bold">รายชื่อผู้เข้าพบ</h4>
+        </div>
+        <div class="col">
+            <a href="rooms/edit-access-room">
+                <button type="button" class="btn btn-dark float-end">
+                    <img src="/assets/add.svg" class="float-start" alt="add">
+                    <span class="align-middle" style="font-size: 14px;">เพิ่มผู้เข้าพบ</span>
+                </button>
+            </a>
+        </div>
+        <div class="mt-3"></div>
+
+        <div class="col-12">
+            <div class="card" id="partner">
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-7">
+                            <input type="search" class="form-control" name="" id="searchInput"
+                                aria-describedby="searchAdmin" placeholder="ค้นหา">
+                        </div>
+                    </div>
+
+                    <table class="table w-100">
+                        <thead>
+                            <tr class="align-bottom">
+                                <th scope="col">ID ผู้ใช้</th>
+                                <th scope="col">ชื่อ</th>
+                                <th scope="col"> นามสกุล</th>
+                                <th scope="col">วันที่เข้า</th>
+                                <th scope="col">วันที่ออก</th>
+                                <th class="col-1"></th>
+                                <th class="col-1"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="align-middle">
+                                <td>123456</td>
+                                <td>สมชาย</td>
+                                <td>สุขดี</td>
+                                <td>13 ก.พ. 64</td>
+                                <td>28 ก.พ. 64</td>
+                                <td>
+                                    <div class="justify-content-end">
+                                        <a href="members/show-members">
+                                            <button type="button" class="btn btn-outline-secondary">
+                                                <div class="d-flex justify-content-center">
+                                                    <img src="/assets/Vector-show.svg" alt="show" width="20">
+                                                </div>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="justify-content-end">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal"
+                                            data-bs-target="#visitor">
+                                            <div class="d-flex justify-content-center">
+                                                <img src="/assets/Vector_delete.svg" alt="delete" width="20">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
 </div>
 
 <!-- Modal owner-->
@@ -185,13 +248,34 @@
             <div class="modal-body">
                 <img src="/assets/delModal.svg" class="mx-auto d-block" alt="">
                 <div class="mt-4"></div>
-                <p class="fw-bolder text-center">คุณต้องการลบผู้เข้าถึงห้องนี้หรือไม่</p>
+                <p class="fw-bolder text-center">คุณต้องการลบผู้อยู่อาศัยท่านนี้หรือไม่</p>
 
                 <div class="hstack gap-3 justify-content-center">
                     <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"
                         style="width: 125px;font-size: 14px;height: 48px;">ยกเลิก</button>
                     <button type="button" class="btn btn-dark"
-                        style="width: 125px;font-size: 14px;height: 48px;">ลบผู้เข้าถึงห้อง</button>
+                        style="width: 125px;font-size: 14px;height: 48px;">ลบผู้อยู่อาศัย</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal visitor-->
+<div class="modal fade" id="visitor" tabindex="-1" role="dialog" aria-labelledby="modelTitlevisitor" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="mt-3"></div>
+            <div class="modal-body">
+                <img src="/assets/delModal.svg" class="mx-auto d-block" alt="">
+                <div class="mt-4"></div>
+                <p class="fw-bolder text-center">คุณต้องการลบผู้เข้าพบท่านนี้หรือไม่</p>
+
+                <div class="hstack gap-3 justify-content-center">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal"
+                        style="width: 125px;font-size: 14px;height: 48px;">ยกเลิก</button>
+                    <button type="button" class="btn btn-dark"
+                        style="width: 125px;font-size: 14px;height: 48px;">ลบผู้เข้าพบ</button>
                 </div>
             </div>
         </div>

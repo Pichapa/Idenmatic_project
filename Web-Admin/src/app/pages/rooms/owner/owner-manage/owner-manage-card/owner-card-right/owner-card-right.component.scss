@@ -1,0 +1,28 @@
+.card {
+  border-radius: 8px;
+}
+
+//form
+.form-select {
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+//table
+th,
+.fw-bold {
+  color: #890203;
+}
+
+//nav tab
+.nav-item {
+  border-radius: 8px;
+}
+.nav-link.active,
+.nav-item.show .nav-link {
+  color: #890203;
+}
+.nav-link {
+  background-color: #939393;
+  color: white;
+}

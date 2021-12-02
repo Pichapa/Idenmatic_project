@@ -1,0 +1,55 @@
+<div class="card">
+    <div class="card-body">
+
+        <div class="row g-3 align-items-center">
+            <div class="col-auto">
+                <label for="personType" class="col-form-label fw-bold fs-5">ประเภทบุคคล</label>
+            </div>
+            <div class="col-2">
+                <select class="form-select form-select-lg" aria-label=".form-select-lg personType">
+                    <!-- <option selected disabled hidden>Open this select menu</option> -->
+                    <option value="personType1">เจ้าของห้อง</option>
+                    <option value="personType2">ผู้อยู่อาศัย</option>
+                    <option value="personType3">ผู้เข้าพบ</option>
+                </select>
+            </div>
+
+            <!-- button -->
+            <div class="col">
+                <div class="hstack gap-2 justify-content-md-end">
+                    <a href="rooms/owner-edit">
+                        <button type="button" class="btn btn-outline-dark">
+                            <img src="/assets/Vector_edit.svg" alt="edit-page">
+                        </button></a>
+                    <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
+                        data-bs-target="#deleteModal">
+                        <img src="/assets/Vector_delete.svg" alt="delete-page">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <div class="mt-3 mb-3">
+                    <img src="/assets/delModal.svg" alt="delete-modal">
+                    <p class="fw-bolder fs-5 mt-5">คุณต้องการลบข้อมูลประเภทสิทธิ์เจ้าของนี้หรือไม่</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-4 d-grid">
+                        <button type="button" class="btn btn-outline-dark btnModal">ยกเลิก</button>
+                    </div>
+                    <div class="col-4 d-grid">
+                        <button type="button" class="btn btn-dark btnModal">ลบประเภทบุคคล</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

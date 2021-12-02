@@ -1,0 +1,29 @@
+//card
+.card {
+  border-radius: 8px;
+}
+
+#searchInput {
+  background: url(/assets/search.svg) right no-repeat;
+  border: none;
+  border-bottom: 2px solid #d1d0d0;
+  border-radius: 1px;
+}
+
+//table
+th {
+  color: #890203;
+}
+#btnTable {
+  border-radius: 8px;
+  width: 48px;
+}
+
+//modal
+.modal-content {
+  border-radius: 8px;
+}
+#btnModal {
+  border-radius: 8px;
+  height: 48px;
+}

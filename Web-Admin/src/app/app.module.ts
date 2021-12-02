@@ -69,6 +69,9 @@ import { AdminManagementModule } from './pages/admin-management/admin-routing/ad
 //central-area-management
 import { CentralAreaModule } from './pages/central-area-management/central-area-routing/central-area.module';
 
+//building-management
+import { BuildingModule } from './pages/building-management/building/building.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -128,6 +131,7 @@ import { CentralAreaModule } from './pages/central-area-management/central-area-
     RoomsRoutingModule,
     AdminManagementModule,
     CentralAreaModule,
+    BuildingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

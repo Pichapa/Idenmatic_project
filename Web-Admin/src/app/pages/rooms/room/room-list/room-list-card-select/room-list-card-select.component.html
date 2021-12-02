@@ -1,14 +1,28 @@
-<div class="row mt-2 mb-4">
+<div class="row mt-3 mb-5">
     <div class="col-5">
         <input type="search" class="form-control" name="" id="searchInput" aria-describedby="searchAdmin"
             placeholder="ค้นหา">
     </div>
-    <div class="col">
+    <div class="col-sm-2">
+        <div class="row g-3">
+            <div class="col-auto align-self-center">
+                <label class="form-lable fw-bold" for="building">อาคาร</label>
+            </div>
+            <div class="col-8">
+                <select class="form-select form-select-lg" id="building">
+                    <option value="building1">ตึก A</option>
+                    <option value="building2">ตึก B</option>
+                    <option value="building3">ตึก C</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
         <div class="row g-3">
             <div class="col-auto align-self-center">
                 <label class="form-lable fw-bold" for="floor-selector">เลือกชั้น</label>
             </div>
-            <div class="col-9">
+            <div class="col-8">
                 <select class="form-select form-select-lg" id="floorSelect">
                     <option value="floor1">1</option>
                     <option value="floor2">2</option>
@@ -17,7 +31,7 @@
             </div>
         </div>
     </div>
-    <div class="col">
+    <div class="col-sm-3">
         <div class="row g-3">
             <div class="col-auto align-self-center">
                 <label class="form-lable fw-bold" for="room-type-selector">รูปแบบห้อง</label>

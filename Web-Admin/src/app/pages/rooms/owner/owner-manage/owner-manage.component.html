@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row mb-3">
+        <div class="col align-self-center">
+            <div class="hstack gap-3 align-items-center">
+                <strong>การจัดการห้อง</strong>
+                <img src="/assets/next-page.svg" alt="next">
+                <strong>การจัดการสิทธิ์เจ้าของ</strong>
+            </div>
+        </div>
+        <div class="col">
+            <a href="rooms/owner-add">
+                <button type="button" class="btn btn-dark float-end">
+                    <img src="/assets/add.svg" class="float-start" alt="add">
+                    <span class="align-middle" style="font-size:14px">เพิ่มประเภทสิทธิ์เจ้าของ</span>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <app-owner-manage-selector></app-owner-manage-selector>
+    </div>
+    <div class="row">
+        <app-owner-manage-card></app-owner-manage-card>
+    </div>
+</div>

@@ -9,6 +9,9 @@ import { EditRoomtypeComponent } from '../room-type/edit-roomtype/edit-roomtype.
 import { RoomEditComponent } from '../room/room-edit/room-edit.component';
 import { RoomEditOwnerComponent } from '../room/room-edit/room-edit-owner/room-edit-owner.component';
 import { RoomEditAccessComponent } from '../room/room-edit/room-edit-access/room-edit-access.component';
+import { OwnerManageComponent } from '../owner/owner-manage/owner-manage.component';
+import { OwnerAddComponent } from '../owner/owner-add/owner-add.component';
+import { OwnerEditComponent } from '../owner/owner-edit/owner-edit.component';
 
 const roomRoutes: Routes = [
   {
@@ -42,6 +45,18 @@ const roomRoutes: Routes = [
   {
     path: 'rooms/edit-access-room',
     component: RoomEditAccessComponent,
+  },
+  {
+    path: 'rooms/owner-manage',
+    component: OwnerManageComponent,
+  },
+  {
+    path: 'rooms/owner-add',
+    component: OwnerAddComponent,
+  },
+  {
+    path: 'rooms/owner-edit',
+    component: OwnerEditComponent,
   },
 ];
 

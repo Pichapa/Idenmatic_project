@@ -1,7 +1,7 @@
 <div class="card">
     <div class="card-body">
         <div class="row">
-            <div class="col-sm-6 mx-auto">
+            <div class="col-sm-5 mx-auto">
 
                 <div class="mb-2">
                     <label for="nameActivity" class="form-label fw-bold">ชื่อพื้นที่กิจกรรม*</label>
@@ -11,6 +11,15 @@
                 <div class="mb-2">
                     <label for="numRoom" class="form-label fw-bold">หมายเลขห้อง*</label>
                     <input type="text" class="form-control form-control-lg" id="numRoom" placeholder="กรอกหมายเลขห้อง">
+                </div>
+                <div class="mb-2">
+                    <label for="building" class="form-label fw-bold">อาคาร*</label>
+                    <select class="form-select form-select-lg" aria-label="building" required>
+                        <option value="" selected disabled hidden>เลือกอาคาร</option>
+                        <option class="text-dark" value="building1">ตึก A</option>
+                        <option class="text-dark" value="building2">ตึก B</option>
+                        <option class="text-dark" value="building3">ตึก C</option>
+                    </select>
                 </div>
                 <div class="mb-2">
                     <label for="floor" class="form-label fw-bold">ชั้น*</label>
@@ -150,14 +159,15 @@
                     </div>
                     <!-- end -->
 
-                    <div class="col">
-                        <div class="hstack gap-2 justify-content-end">
+                    <div class="col-sm-2">
+                        <div class="hstack gap-1 justify-content-end">
                             <!-- button add date,time -->
                             <img src="/assets/Icon-Add.svg" alt="icon-add-date" width="40" height="40">
 
                             <!-- Button trigger modal -->
-                            <img src="/assets/Icon-Delete-Red.svg" alt="icon-add-date" width="40" height="40"
+                            <img src="/assets/Icon-Delete-Red.svg" alt="icon-delete-date" width="40" height="40"
                                 data-bs-toggle="modal" href="#deleteModal">
+
                         </div>
                     </div>
                 </div>
