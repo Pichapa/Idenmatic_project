@@ -11,29 +11,30 @@ export class RoomListCardTableComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  //delete btn
+  //Delete Button Swal
   btnDel() {
-    const swalWithBootstrapButtons = Swal.mixin({
+    Swal.fire({
+      html: '<b>คุณต้องการลบข้อมูลห้องนี้หรือไม่</b>',
+      imageUrl: '/assets/delModal.svg',
+      showCancelButton: true,
       customClass: {
-        confirmButton: 'btn btn-dark btn-lg',
-        cancelButton: 'btn btn-outline-dark btn-lg',
+        confirmButton: 'btn btn-lg btn-dark',
+        cancelButton: 'btn btn-lg  btn-outline-dark',
       },
       buttonsStyling: false,
+      confirmButtonText: 'ลบห้อง',
+      cancelButtonText: 'ยกเลิก',
+      reverseButtons: true,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'ลบห้องสำเร็จ!',
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
     });
-
-    swalWithBootstrapButtons
-      .fire({
-        html: '<b>คุณต้องการลบข้อมูลห้องนี้หรือไม่</b>',
-        imageUrl: '/assets/delModal.svg',
-        showCancelButton: true,
-        confirmButtonText: 'ลบห้อง',
-        cancelButtonText: 'ยกเลิก',
-        reverseButtons: true,
-      })
-      .then((result) => {
-        if (result.isConfirmed) {
-          swalWithBootstrapButtons.fire('ลบห้องสำเร็จ!', '', 'success');
-        }
-      });
   }
 }

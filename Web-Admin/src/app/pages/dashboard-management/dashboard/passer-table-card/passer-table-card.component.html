@@ -1,0 +1,79 @@
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-body">
+            <div class="row mb-3 mt-2">
+                <h4 class="fw-bolder">ผู้ผ่านประตูเข้าตึกล่าสุด</h4>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th class="col-2">
+                                <font class="fw-bolder">โปรไฟล์</font>
+                            </th>
+                            <th class="col-2">
+                                <font class="fw-bolder">เลข ID</font>
+                            </th>
+                            <th class="col-2">
+                                <font class="fw-bolder">ชื่อ</font>
+                            </th>
+                            <th class="col-2">
+                                <font class="fw-bolder">นามสกุล</font>
+                            </th>
+                            <th class="col-3">
+                                <font class="fw-bolder">เบอร์โทร</font>
+                            </th>
+                            <th class="col">
+                                <font class="fw-bolder">บล็อก</font>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img class="rounded" alt="blog" src="/assets/scan-img.jpg" width="50" height="50">
+                            </td>
+                            <td>123456</td>
+                            <td>ชาญชัย</td>
+                            <td>สุขดี</td>
+                            <td>0987654321</td>
+                            <td>
+                                <div class="hstack gap-3">
+                                    <button type="button" class="btn btn-outline-dark btn-lg" (click)="btnBlock()">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="/assets/Vector-block.svg" alt="button-block">
+                                        </div>
+                                    </button>
+                                    <a class="btn btn-outline-dark btn-lg" href="dashboard/Information" role="button">
+                                        <img src="/assets/Vector-show.svg" alt="button-show" class="mx-auto"></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img class="rounded" alt="blog" src="/assets/scan-img.jpg" width="50" height="50">
+                            </td>
+                            <td>123456</td>
+                            <td>ชาญชัย</td>
+                            <td>สุขดี</td>
+                            <td>0987654321</td>
+                            <td>
+                                <div class="hstack gap-3">
+                                    <button type="button" class="btn btn-danger btn-lg" (click)="btnUnBlock()">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="/assets/Vector-unBlock.svg" alt="button-unBlock">
+                                        </div>
+                                    </button>
+                                    <a class="btn btn-outline-dark btn-lg" href="dashboard/Information" role="button">
+                                        <img src="/assets/Vector-show.svg" alt="button-show" class="mx-auto"></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+//เส้นคั่นหน้า
+.decoration-vl {
+  height: 650px; /* ความสูงของเส้น */
+  width: 1px; /* ความหนาของเส้น */
+  background-color: black; /* สีของเส้น */
+  display: block;
+}
+
+//font
+.fw-bold {
+  color: #890203;
+}
+
+.form-control {
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.btn {
+  border-radius: 8px;
+  height: 48px;
+  font-size: 14px;
+}

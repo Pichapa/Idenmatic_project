@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './menu/sidebar/sidebar.component';
 import { NavbarComponent } from './menu/navbar/navbar.component';
 
+//members
 import { MemberTypesComponent } from './pages/member-types/member-types.component';
 import { MemberTypesInfoComponent } from './pages/member-types/member-types-info/member-types-info.component';
 import { MemberTypesSelectorComponent } from './pages/member-types/member-types-selector/member-types-selector.component';
@@ -58,8 +59,6 @@ import { RoomListCardTableComponent } from './pages/rooms/room/room-list/room-li
 import { EditAccessComponent } from './pages/members/member-edit/edit-access/edit-access.component';
 import { EditAccessCardComponent } from './pages/members/member-edit/edit-access/edit-access-card/edit-access-card.component';
 
-//members
-
 //rooms
 import { RoomsRoutingModule } from './pages/rooms/rooms-routing/rooms-routing.module';
 
@@ -71,6 +70,9 @@ import { CentralAreaModule } from './pages/central-area-management/central-area-
 
 //building-management
 import { BuildingModule } from './pages/building-management/building/building.module';
+
+//dashboard-management
+import { DashboardRoutingModule } from './pages/dashboard-management/dashboard-routing/dashboard-routing.module';
 
 @NgModule({
   declarations: [
@@ -132,6 +134,7 @@ import { BuildingModule } from './pages/building-management/building/building.mo
     AdminManagementModule,
     CentralAreaModule,
     BuildingModule,
+    DashboardRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

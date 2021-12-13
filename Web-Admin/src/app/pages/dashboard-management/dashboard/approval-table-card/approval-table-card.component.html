@@ -1,0 +1,92 @@
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-body">
+            <div class="row mb-3 mt-2">
+                <h4 class="fw-bolder">คำขออนุมัติล่าสุด</h4>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th class="col-2">
+                                <font class="fw-bolder">เลข ID</font>
+                            </th>
+                            <th class="col-2">
+                                <font class="fw-bolder">เลขบัตรประชาชน</font>
+                            </th>
+                            <th class="col-2">
+                                <font class="fw-bolder">ชื่อ</font>
+                            </th>
+                            <th class="col-2">
+                                <font class="fw-bolder">นามสกุล</font>
+                            </th>
+                            <th class="col-2">
+                                <font class="fw-bolder">เบอร์โทร</font>
+                            </th>
+                            <th class="col-2">
+                                <font class="fw-bolder">เลขทะเบียนรถ</font>
+                            </th>
+                            <th class="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>123456</td>
+                            <td>1234567891234</td>
+                            <td>ชาญชัย</td>
+                            <td>สุขดี</td>
+                            <td>0987654321</td>
+                            <td>กข1234</td>
+                            <td>
+                                <div class="hstack gap-3">
+                                    <a class="btn btn-outline-dark btn-lg" href="dashboard/Information" role="button">
+                                        <img src="/assets/Vector-show.svg" alt="button-show"></a>
+                                    <button type="button" class="btn btn-dark btn-lg" style="width: 150px;"
+                                        (click)="btnConfirm()">อนุมัติ</button>
+                                    <a class="btn btn-outline-dark btn-lg" href="dashboard/Request-Information"
+                                        role="button" style="width: 150px;">ขอข้อมูลเพิ่ม</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123456</td>
+                            <td>1234567891234</td>
+                            <td>ชาญชัย</td>
+                            <td>สุขดี</td>
+                            <td>0987654321</td>
+                            <td>กข1234</td>
+                            <td>
+                                <div class="hstack gap-3">
+                                    <a class="btn btn-outline-dark btn-lg" href="dashboard/Information" role="button">
+                                        <img src="/assets/Vector-show.svg" alt="button-show"></a>
+                                    <button type="button" class="btn btn-dark btn-lg" disabled
+                                        style="width: 150px;">อนุมัติแล้ว</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>123456</td>
+                            <td>1234567891234</td>
+                            <td>ชาญชัย</td>
+                            <td>สุขดี</td>
+                            <td>0987654321</td>
+                            <td>กข1234</td>
+                            <td>
+                                <div class="hstack gap-3">
+                                    <a class="btn btn-outline-dark btn-lg" href="dashboard/Information" role="button">
+                                        <img src="/assets/Vector-show.svg" alt="button-show"></a>
+                                    <button type="button" class="btn btn-dark btn-lg"
+                                        style="width: 150px;">อนุมัติ</button>
+                                    <button type="button" class="btn btn-danger btn-lg" style="width: 150px;"
+                                        (click)="btnCancel()">ยกเลิกคำขอ</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
