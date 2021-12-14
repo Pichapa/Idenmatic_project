@@ -1,0 +1,92 @@
+<div class="card">
+
+    <!-- nav-tab -->
+    <div class="d-flex align-items-start">
+        <div class="nav list-group flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+            aria-orientation="vertical">
+            <button class="list-group-item list-group-item-action active" data-bs-toggle="pill"
+                data-bs-target="#image-tab" type="button" role="tab" aria-controls="door-tab" aria-selected="true">
+                <div class="fw-bold">สไลด์ภาพที่ 1</div>
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="pill" data-bs-target="#image-tab"
+                type="button" role="tab" aria-controls="space-tab" aria-selected="false">
+                <div class="fw-bold">สไลด์ภาพที่ 2</div>
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="pill" data-bs-target="#image-tab"
+                type="button" role="tab" aria-controls="space-tab" aria-selected="false">
+                <div class="fw-bold">สไลด์ภาพที่ 3</div>
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="pill" data-bs-target="#image-tab"
+                type="button" role="tab" aria-controls="space-tab" aria-selected="false">
+                <div class="fw-bold">สไลด์ภาพที่ 4</div>
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="pill" data-bs-target="#image-tab"
+                type="button" role="tab" aria-controls="space-tab" aria-selected="false">
+                <div class="fw-bold">สไลด์ภาพที่ 5</div>
+            </button>
+        </div>
+
+
+        <!-- content -->
+        <div class="card-body">
+            <div class="tab-content w-100" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="image-tab" role="tabpanel"
+                    aria-labelledby="v-pills-door-tab">
+
+                    <div class="col-sm-5 mx-auto">
+                        <form>
+                            <div class="mb-3 mt-3">
+                                <label for="slideName" class="form-label fw-bold">ชื่อสไลด์ภาพที่ 1*</label>
+                                <input type="text" class="form-control form-control-lg fs-6" id="slideName"
+                                    placeholder="กรอกชื่อภาพสไลด์" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="slideDetail" class="form-label fw-bold">คำอธิบายเกี่ยวกับภาพสไลด์</label>
+                                <textarea class="form-control fs-6" id="slideDetail" rows="5"
+                                    placeholder="เขียนคำอธิบายเกี่ยวกับภาพสไลด์"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="slideUpload" class="form-label fw-bold">อัพโหลดภาพสไลด์*</label>
+                                <div class="hstack gap-3">
+                                    <input class="form-control form-control-lg me-auto" type="text"
+                                        onfocus="(this.type = 'file')" required>
+                                    <button type="button" class="btn btn-dark btn-lg">
+                                        <font class="fs-6">อัพโหลด</font>
+                                    </button>
+                                </div>
+                                <div id="textUpload" class="form-text fs-6">*อัพโหลดเฉพาะไฟล์ JPG. หรือ PNG.<br>
+                                    ภาพที่อัพโหลดควรมีขนาด 375*200 px
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <label for="slideExample" class="form-label fw-bold">ดูตัวอย่างภาพสไลด์</label>
+
+                                <!-- images Example -->
+                                <div class="card" id="card-example">
+                                    <div class="card-header bg-dark" style="height: 50px;opacity: 0.5;"></div>
+                                    <div class="card-body"></div>
+                                    <div class="card-footer bg-dark" style="height: 50px;opacity: 0.5;"></div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col d-grid">
+                                    <button type="button" class="btn btn-outline-dark btn-lg">
+                                        <font class="fs-6">ยกเลิก</font>
+                                    </button>
+                                </div>
+                                <div class="col d-grid">
+                                    <button type="button" class="btn btn-dark btn-lg">
+                                        <font class="fs-6">บันทึก</font>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

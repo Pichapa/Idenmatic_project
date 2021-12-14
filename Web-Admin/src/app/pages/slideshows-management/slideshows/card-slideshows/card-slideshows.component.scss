@@ -1,0 +1,36 @@
+.card {
+  border-radius: 8px;
+}
+
+//form
+.form-control,
+.btn {
+  border-radius: 8px;
+}
+.form-label {
+  color: #890203;
+}
+#card-example {
+  border-radius: 8px;
+  height: 300px;
+}
+
+//nav
+.nav-pills {
+  background-color: #ededed;
+  width: 236px;
+  height: calc(100vh - 150px);
+  border-radius: 8px;
+}
+.list-group-item {
+  background-color: #ededed;
+  border-right: none;
+  height: 50px;
+}
+.list-group-item.active,
+.list-group-item.hover {
+  color: #890203;
+  border-right: none;
+  background-color: white;
+  border-color: #ededed;
+}

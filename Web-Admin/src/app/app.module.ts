@@ -80,6 +80,9 @@ import { LoginRoutingModule } from './pages/login-management/login-routing/login
 //notification-management
 import { NotificationRoutingModule } from './pages/notification-management/notification-routing/notification-routing.module';
 
+//slideshows-management
+import { SlideshowsRoutingModule } from './pages/slideshows-management/slideshows-routing/slideshows-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -143,6 +146,7 @@ import { NotificationRoutingModule } from './pages/notification-management/notif
     DashboardRoutingModule,
     LoginRoutingModule,
     NotificationRoutingModule,
+    SlideshowsRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
