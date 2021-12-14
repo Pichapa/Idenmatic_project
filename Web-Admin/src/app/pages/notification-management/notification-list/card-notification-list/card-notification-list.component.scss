@@ -1,0 +1,60 @@
+.card {
+  border-radius: 8px;
+}
+
+//in table
+.table th,
+td {
+  border-color: #dfdede;
+  font-size: 20px;
+}
+.fw-bolder {
+  color: #890203;
+}
+.btn,
+.form-control {
+  border-radius: 8px;
+}
+
+//input search
+#searchInput {
+  background: url(/assets/search.svg) right no-repeat;
+  border: none;
+  border-bottom: 2px solid #d1d0d0;
+  border-radius: 1px;
+}
+
+// pagination
+.pagination-outer {
+  text-align: center;
+}
+.pagination {
+  display: inline-flex;
+  position: relative;
+}
+.pagination li a.page-link {
+  color: #231f20;
+  background-color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 39px;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 0 5px;
+  border: none;
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease 0s;
+  border: 1px solid #939393;
+}
+
+.pagination li a.page-link:hover,
+.pagination li a.page-link:focus,
+.pagination li.active a.page-link:hover,
+.pagination li.active a.page-link {
+  color: #fff;
+  background: #231f20;
+}

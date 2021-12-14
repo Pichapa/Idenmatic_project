@@ -1,0 +1,85 @@
+<div class="card">
+    <div class="card-body">
+        <div class="row mt-2 mb-4">
+            <div class="col-sm-5">
+                <input type="search" class="form-control form-control-lg" name="" id="searchInput"
+                    aria-describedby="searchTable-Notification" placeholder="ค้นหา">
+            </div>
+            <div class="col-sm-3">
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="startDate" class="col-form-label fw-bolder fs-5">ตั้งแต่</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="date" id="startDate" class="form-control form-control-lg"
+                            aria-describedby="startDate">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="endDate" class="col-form-label fw-bolder fs-5">ถึง</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="date" id="endDate" class="form-control form-control-lg" aria-describedby="endDate">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th *ngFor="let head of headTable" scope="col">
+                            <font class="fw-bolder">{{head}}</font>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of itemsTable">
+                        <td>{{item.notiDate}}</td>
+                        <td>{{item.notiTime}}</td>
+                        <td>{{item.heading}}</td>
+                        <td>{{item.detail}}</td>
+                        <td>{{item.idUser}}</td>
+                        <td>{{item.userName}}</td>
+                        <td>{{item.userLast}}</td>
+                        <td>
+                            <button type="button" class="btn btn-outline-dark" (click)=" btnShow()">
+                                <img src="/assets/Vector-show.svg" alt="icon-showInfo">
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<div class="row mt-4">
+    <!--pagination  -->
+    <div class="PageNav">
+        <nav class="pagination-outer" aria-label="Page navigation">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a href="#" class="page-link" aria-label="Previous" style="background-color:#B5B5B5 ;">
+                        <span aria-hidden="true"><img src="/assets/back.svg" alt=""></span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                    <a href="#" class="page-link" aria-label="Next" style="background-color: #231F20;">
+                        <span aria-hidden="true"><img src="/assets/next.svg" alt=""></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

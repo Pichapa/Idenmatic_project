@@ -74,6 +74,12 @@ import { BuildingModule } from './pages/building-management/building/building.mo
 //dashboard-management
 import { DashboardRoutingModule } from './pages/dashboard-management/dashboard-routing/dashboard-routing.module';
 
+//login-management
+import { LoginRoutingModule } from './pages/login-management/login-routing/login-routing.module';
+
+//notification-management
+import { NotificationRoutingModule } from './pages/notification-management/notification-routing/notification-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -135,6 +141,8 @@ import { DashboardRoutingModule } from './pages/dashboard-management/dashboard-r
     CentralAreaModule,
     BuildingModule,
     DashboardRoutingModule,
+    LoginRoutingModule,
+    NotificationRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
